@@ -8,6 +8,7 @@ import com.nova.commonutils.R;
 import com.nova.eduService.entity.EduTeacher;
 import com.nova.eduService.entity.vo.QueryTeacher;
 import com.nova.eduService.service.EduTeacherService;
+import com.nova.servicebase.exceptionhandler.NovaException;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -81,9 +82,9 @@ public class EduTeacherController {
     @GetMapping("pageTeacher/{current}/{limit}")
     @ApiOperation(value = "分页查询讲师列表")
     public R PageListTeacher(
-            @ApiParam(name = "current",value = "当前页",required = true)
+            @ApiParam(name = "current", value = "当前页", required = true)
             @PathVariable Integer current,
-            @ApiParam(name = "limit",value = "每页显示数量",required = true)
+            @ApiParam(name = "limit", value = "每页显示数量", required = true)
             @PathVariable Integer limit) {
         // 创建Page 对象
         Page<EduTeacher> teacherPage = new Page<>(current, limit);
@@ -105,9 +106,9 @@ public class EduTeacherController {
     @PostMapping("pageTeacherCondition/{current}/{limit}")
     @ApiOperation(value = "多条件查询讲师列表")
     public R pageListTeacherCondition(
-            @ApiParam(name = "current",value = "当前页",required = true)
+            @ApiParam(name = "current", value = "当前页", required = true)
             @PathVariable Integer current,
-            @ApiParam(name = "limit",value = "每页显示数量",required = true)
+            @ApiParam(name = "limit", value = "每页显示数量", required = true)
             @PathVariable Integer limit,
             @RequestBody(required = false) QueryTeacher queryTeacher) {
         // 创建一个page 对象
@@ -174,5 +175,19 @@ public class EduTeacherController {
             return R.error();
         }
     }
+
+    @PostMapping("test")
+//    @ApiOperation(value = "自定义异常处理")
+    public R test() {
+        try {
+            int i = 10 / 0;
+
+        } catch (Exception e) {
+            throw new NovaException(20003, "自定义异常处理");
+        }
+        return R.ok();
+    }
+
+
 }
 
