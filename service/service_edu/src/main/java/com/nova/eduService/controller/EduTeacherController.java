@@ -33,8 +33,8 @@ import java.util.Map;
 public class EduTeacherController {
 
     // 将对应的service 注入进来
-//    @Autowired
-//    private EduTeacherService teacherService;
+    //    @Autowired
+    //    private EduTeacherService teacherService;
 
     private final EduTeacherService teacherService;
 
