@@ -30,6 +30,7 @@ import java.util.Map;
 @Api(description = "讲师管理")
 @RestController
 @RequestMapping("/eduService/eduTeacher")
+@CrossOrigin
 public class EduTeacherController {
 
     // 将对应的service 注入进来
