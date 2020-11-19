@@ -69,6 +69,7 @@ public class EduTeacherController {
     @DeleteMapping("removeTeacher/{id}")
     @ApiOperation(value = "根据ID删除讲师")
     public R removeTeacher(
+            // todo 逻辑删除未实现
             @ApiParam(name = "id", value = "讲师ID", required = true)
             @PathVariable String id) {
         boolean flag = teacherService.removeById(id);
@@ -148,8 +149,8 @@ public class EduTeacherController {
     }
 
     // 添加讲师的接口
-    @PostMapping("addTeacher")
-    @ApiOperation(value = "添加讲师")
+//    @PostMapping("addTeacher")
+//    @ApiOperation(value = "添加讲师")
     public R addTeacher(
             @ApiParam(name = "teacher", value = "讲师对象", required = true)
             @RequestBody EduTeacher eduTeacher) {
