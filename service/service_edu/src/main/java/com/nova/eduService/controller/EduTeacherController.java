@@ -131,7 +131,7 @@ public class EduTeacherController {
             wrapper.eq("level", level);
         }
 
-        if (StringUtils.isEmpty(begin)) {
+        if (!StringUtils.isEmpty(begin)) {
             wrapper.ge("gmt_create", begin);
         }
 
