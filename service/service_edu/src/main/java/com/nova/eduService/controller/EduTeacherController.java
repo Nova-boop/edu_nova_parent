@@ -51,7 +51,7 @@ public class EduTeacherController {
             @ApiParam(name = "id", value = "讲师ID", required = true)
             @PathVariable String id) {
         EduTeacher teacher = teacherService.getById(id);
-        return R.ok().data("items", teacher);
+        return R.ok().data("teacher", teacher);
     }
 
     // 查询 edu_teacher 中所有的数据
@@ -141,6 +141,9 @@ public class EduTeacherController {
             wrapper.le("gmt_create", end);
         }
 
+        // 增加默认排序方法
+        wrapper.orderByDesc("gmt_create");
+
         // 调用方法进行查询
         IPage<EduTeacher> teacherIPage = teacherService.page(eduTeacherPage, wrapper);
 
@@ -166,10 +169,10 @@ public class EduTeacherController {
         }
     }
 
-    @ApiOperation(value = "根据ID 修改讲师信息")
+    @ApiOperation(value = "修改讲师信息")
     @PostMapping("updateTeacher")
     public R updateTeacher(
-            @RequestBody EduTeacher eduTeacher) {
+        @RequestBody EduTeacher eduTeacher) {
         boolean flag = teacherService.updateById(eduTeacher);
 
         if (flag) {
