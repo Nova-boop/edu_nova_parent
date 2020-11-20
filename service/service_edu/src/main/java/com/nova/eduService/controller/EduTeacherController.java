@@ -12,6 +12,7 @@ import com.nova.servicebase.exceptionhandler.NovaException;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -34,14 +35,14 @@ import java.util.Map;
 public class EduTeacherController {
 
     // 将对应的service 注入进来
-    //    @Autowired
-    //    private EduTeacherService teacherService;
+    @Autowired
+    private EduTeacherService teacherService;
 
-    private final EduTeacherService teacherService;
-
-    public EduTeacherController(EduTeacherService teacherService) {
-        this.teacherService = teacherService;
-    }
+    //    private final EduTeacherService teacherService;
+    //
+    //    public EduTeacherController(EduTeacherService teacherService) {
+    //        this.teacherService = teacherService;
+    //    }
 
     // 根据ID 查询讲师信息
     @ApiOperation(value = "根据讲师ID查询讲师信息")
@@ -149,8 +150,8 @@ public class EduTeacherController {
     }
 
     // 添加讲师的接口
-//    @PostMapping("addTeacher")
-//    @ApiOperation(value = "添加讲师")
+    @PostMapping("addTeacher")
+    @ApiOperation(value = "添加讲师")
     public R addTeacher(
             @ApiParam(name = "teacher", value = "讲师对象", required = true)
             @RequestBody EduTeacher eduTeacher) {
@@ -177,19 +178,5 @@ public class EduTeacherController {
             return R.error();
         }
     }
-
-    @PostMapping("test")
-//    @ApiOperation(value = "自定义异常处理")
-    public R test() {
-        try {
-            int i = 10 / 0;
-
-        } catch (Exception e) {
-            throw new NovaException(20003, "自定义异常处理");
-        }
-        return R.ok();
-    }
-
-
 }
 
