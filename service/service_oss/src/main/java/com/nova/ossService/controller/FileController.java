@@ -12,7 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.FileNotFoundException;
 
 @Api(description = "文件上传")
-@RequestMapping("oss/file")
+@RequestMapping("eduOss/file")
 @RestController
 @CrossOrigin
 public class FileController {
