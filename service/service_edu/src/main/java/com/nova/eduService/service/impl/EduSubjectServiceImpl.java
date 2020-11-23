@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.nova.eduService.entity.EduSubject;
 import com.nova.eduService.entity.excel.ExcelSubjectData;
 import com.nova.eduService.entity.subject.OneSubject;
+import com.nova.eduService.entity.subject.TwoSubject;
 import com.nova.eduService.listener.SubjectExcelListener;
 import com.nova.eduService.mapper.EduSubjectMapper;
 import com.nova.eduService.service.EduSubjectService;
@@ -73,8 +74,22 @@ public class EduSubjectServiceImpl extends ServiceImpl<EduSubjectMapper, EduSubj
             // 复制对象,BeanUtils.copyProperties,功能与上面类似
             BeanUtils.copyProperties(eduSubject, oneSubject);
             subjectArrayList.add(oneSubject);
-        }
 
+            // 在一级分类中遍历二级分类
+            ArrayList<TwoSubject> twoSubjectArrayList = new ArrayList<>();
+
+            for (EduSubject eduSubject2 : eduSubjectList2) {
+                if (eduSubject2.getParentId().equals(oneSubject.getId())) {
+                    // 二级分类的getParentId 等于一级分类的id
+                    TwoSubject twoSubject = new TwoSubject();
+                    BeanUtils.copyProperties(eduSubject2,twoSubject);
+                    twoSubjectArrayList.add(twoSubject);
+                }
+            }
+
+            // 把二级分类放到一级分类中
+            oneSubject.setChildren(twoSubjectArrayList);
+        }
         // 返回数据
         return subjectArrayList;
     }
