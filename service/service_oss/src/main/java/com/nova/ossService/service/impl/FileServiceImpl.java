@@ -38,7 +38,7 @@ public class FileServiceImpl implements FileService {
 
             // 添加uuid随机字符串避免文件被覆盖
             String uuid = UUID.randomUUID().toString().replaceAll("-", "");
-            String newName =uuid + filename ;
+            String newName = uuid + filename;
 
             // 构建日期路径
             String datePath = new DateTime().toString("yyyy/MM/dd");

@@ -1,7 +1,10 @@
 package com.nova.eduService.mapper;
 
-import com.nova.eduService.entity.EduSubject;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.nova.eduService.entity.EduSubject;
+
+import java.util.List;
 
 /**
  * <p>
@@ -12,5 +15,5 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @since 2020-11-23
  */
 public interface EduSubjectMapper extends BaseMapper<EduSubject> {
-
+    List<EduSubject> selectList(QueryWrapper<Object> wrapper);
 }

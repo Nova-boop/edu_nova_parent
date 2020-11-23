@@ -8,70 +8,77 @@ import com.nova.eduService.entity.excel.ExcelSubjectData;
 import com.nova.eduService.service.EduSubjectService;
 import com.nova.servicebase.exceptionhandler.NovaException;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 public class SubjectExcelListener extends AnalysisEventListener<ExcelSubjectData> {
 
-    // SubjectExcelListener 没有交给spring 管理,使用有参构造注入service
+    //因为SubjectExcelListener不能交给spring管理,需要自己new,不能注入其他对象
+    //不能实现数据库操作
     public EduSubjectService eduSubjectService;
+    List<ExcelSubjectData> list = new ArrayList<ExcelSubjectData>();
+
+    public SubjectExcelListener() {
+    }
 
     public SubjectExcelListener(EduSubjectService eduSubjectService) {
         this.eduSubjectService = eduSubjectService;
     }
 
-    public SubjectExcelListener() {
+    //读取excel内容,一行一行进行读取
+    @Override
+    public void invoke(ExcelSubjectData subjectData, AnalysisContext analysisContext) {
+        if (subjectData == null) {
+            throw new NovaException(20001, "文件数据为空");
+        }
+        System.out.println(subjectData);
+        list.add(subjectData);
+
+        //一行一行读取,每次读取有两个值,第一个值为一级分类,第二个值为对应的二级分类
+        EduSubject eduSubject = existOneSubject(eduSubjectService, subjectData.getOneSubjectName());
+        //添加一级分类
+        if (eduSubject == null) {
+            eduSubject = new EduSubject();
+            eduSubject.setParentId("0");
+            eduSubject.setTitle(subjectData.getOneSubjectName());
+            eduSubjectService.save(eduSubject);
+        }
+        //添加二级分类
+        //获取一级分类的id值
+        String pid = eduSubject.getId();
+        EduSubject existTwoSubject = this.existTwoSubject(eduSubjectService, subjectData.getTwoSubjectName(), pid);
+        if (existTwoSubject == null) {
+            existTwoSubject = new EduSubject();
+            existTwoSubject.setTitle(subjectData.getTwoSubjectName());
+            existTwoSubject.setParentId(pid);
+            eduSubjectService.save(existTwoSubject);
+        }
+    }
+
+
+    //判断一级分类是否重复
+    private EduSubject existOneSubject(EduSubjectService eduSubjectService, String name) {
+        QueryWrapper<EduSubject> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("title", name);
+        queryWrapper.eq("parent_id", "0");
+        return eduSubjectService.getOne(queryWrapper);
+    }
+
+    //判断二级分类是否重复
+    private EduSubject existTwoSubject(EduSubjectService eduSubjectService, String name, String pid) {
+        QueryWrapper<EduSubject> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("title", name);
+        queryWrapper.eq("parent_id", pid);
+        return eduSubjectService.getOne(queryWrapper);
     }
 
     @Override
-    public void invoke(ExcelSubjectData excelSubjectData, AnalysisContext analysisContext) {
-        if (excelSubjectData==null) {
-            throw new NovaException(20001,"表格数据不能为空");
-        }
-        // 添加一级分类
-        EduSubject eduOneSubject = this.existOneSubject(eduSubjectService, excelSubjectData.getOneSubject());
-        if (eduOneSubject==null) {
-            eduOneSubject = new EduSubject();
-            eduOneSubject.setParentId("0");
-            eduOneSubject.setTitle(excelSubjectData.getOneSubject());
-            eduSubjectService.save(eduOneSubject);
-        }
-
-
-        // 添加二级分类
-        String pid = eduOneSubject.getId();
-
-        EduSubject eduTwoSubject =this.existTwoSubject(eduSubjectService, excelSubjectData.getTwoSubject(),pid);
-        if (eduTwoSubject==null) {
-            eduTwoSubject = new EduSubject();
-            eduTwoSubject.setParentId("0");
-            eduTwoSubject.setTitle(excelSubjectData.getOneSubject());
-
-            eduSubjectService.save(eduTwoSubject);
-        }
-
-
+    public void invokeHeadMap(Map<Integer, String> headMap, AnalysisContext context) {
+        System.out.println("表头信息：" + headMap);
     }
 
     @Override
     public void doAfterAllAnalysed(AnalysisContext analysisContext) {
-
     }
-
-    // 判断一级分类是否存在
-    private EduSubject existOneSubject(EduSubjectService eduSubjectService, String name) {
-        QueryWrapper<EduSubject> eduSubjectQueryWrapper = new QueryWrapper<>();
-
-        eduSubjectQueryWrapper.eq("title", name);
-        eduSubjectQueryWrapper.eq("parent_id", 0);
-        return eduSubjectService.getOne(eduSubjectQueryWrapper);
-    }
-
-    // 判断二级分类是否存在
-
-    private EduSubject existTwoSubject(EduSubjectService eduSubjectService, String name, String pid) {
-        QueryWrapper<EduSubject> eduSubjectQueryWrapper = new QueryWrapper<>();
-        eduSubjectQueryWrapper.eq("title", name);
-        eduSubjectQueryWrapper.eq("parent_id", pid);
-        return eduSubjectService.getOne(eduSubjectQueryWrapper);
-    }
-
-
 }

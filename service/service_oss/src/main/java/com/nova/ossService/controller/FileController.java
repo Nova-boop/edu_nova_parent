@@ -1,6 +1,6 @@
 package com.nova.ossService.controller;
 
-import com.nova.commonutils.R;
+import com.nova.commonutils.Result;
 import com.nova.ossService.service.FileService;
 import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -28,9 +28,9 @@ public class FileController {
 
 
     @PostMapping("upload")
-    public R OssUpload(MultipartFile file ) throws FileNotFoundException {
+    public Result OssUpload(MultipartFile file) throws FileNotFoundException {
         String url = fileService.upload(file);
-        return R.ok().message("上传成功").data("url",url);
+        return Result.ok().message("上传成功").data("url", url);
     }
 
 }

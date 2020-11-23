@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 public class ExcelSubjectData {
     @ExcelProperty(index = 0)
-    private String OneSubject;   // 一级分类
+    private String OneSubjectName;   // 一级分类
     @ExcelProperty(index = 1)
-    private String TwoSubject;   // 二级分类
+    private String TwoSubjectName;   // 二级分类
 }

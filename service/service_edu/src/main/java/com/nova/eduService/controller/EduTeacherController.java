@@ -4,11 +4,10 @@ package com.nova.eduService.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.nova.commonutils.R;
+import com.nova.commonutils.Result;
 import com.nova.eduService.entity.EduTeacher;
 import com.nova.eduService.entity.vo.QueryTeacher;
 import com.nova.eduService.service.EduTeacherService;
-import com.nova.servicebase.exceptionhandler.NovaException;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -47,44 +46,44 @@ public class EduTeacherController {
     // 根据ID 查询讲师信息
     @ApiOperation(value = "根据讲师ID查询讲师信息")
     @GetMapping("getTeacher/{id}")
-    public R getTeacher(
+    public Result getTeacher(
             @ApiParam(name = "id", value = "讲师ID", required = true)
             @PathVariable String id) {
         EduTeacher teacher = teacherService.getById(id);
-        return R.ok().data("teacher", teacher);
+        return Result.ok().data("teacher", teacher);
     }
 
     // 查询 edu_teacher 中所有的数据
     // restful 风格
     @GetMapping("finAllTeacher")
     @ApiOperation(value = "所有讲师列表")
-    public R findAllTeacher() {
+    public Result findAllTeacher() {
         // 调用service 方法实现查询
         //  List<EduTeacher> list = teacherService.list(null);
         //  return list;
         List<EduTeacher> list = teacherService.list(null);
-        return R.ok().data("items", list);
+        return Result.ok().data("items", list);
     }
 
     // 根据ID逻辑删除讲师
     @DeleteMapping("removeTeacher/{id}")
     @ApiOperation(value = "根据ID删除讲师")
-    public R removeTeacher(
+    public Result removeTeacher(
             // todo 逻辑删除未实现
             @ApiParam(name = "id", value = "讲师ID", required = true)
             @PathVariable String id) {
         boolean flag = teacherService.removeById(id);
         if (flag) {
-            return R.ok();
+            return Result.ok();
         } else {
-            return R.error();
+            return Result.error();
         }
     }
 
     // 分页查询讲师
     @GetMapping("pageTeacher/{current}/{limit}")
     @ApiOperation(value = "分页查询讲师列表")
-    public R PageListTeacher(
+    public Result PageListTeacher(
             @ApiParam(name = "current", value = "当前页", required = true)
             @PathVariable Integer current,
             @ApiParam(name = "limit", value = "每页显示数量", required = true)
@@ -101,14 +100,14 @@ public class EduTeacherController {
         Map<String, Object> map = new HashMap<>();
         map.put("total", total);
         map.put("rows", records);
-        return R.ok().data(map);
+        return Result.ok().data(map);
     }
 
     // 多条件组合查询
 
     @PostMapping("pageTeacherCondition/{current}/{limit}")
     @ApiOperation(value = "多条件查询讲师列表")
-    public R pageListTeacherCondition(
+    public Result pageListTeacherCondition(
             @ApiParam(name = "current", value = "当前页", required = true)
             @PathVariable Integer current,
             @ApiParam(name = "limit", value = "每页显示数量", required = true)
@@ -149,13 +148,13 @@ public class EduTeacherController {
 
         long total = teacherIPage.getTotal(); // 获取数据的总数
         List<EduTeacher> records = teacherIPage.getRecords(); // 获取每一页数据的列表
-        return R.ok().data("total", total).data("items", records);
+        return Result.ok().data("total", total).data("items", records);
     }
 
     // 添加讲师的接口
     @PostMapping("addTeacher")
     @ApiOperation(value = "添加讲师")
-    public R addTeacher(
+    public Result addTeacher(
             @ApiParam(name = "teacher", value = "讲师对象", required = true)
             @RequestBody EduTeacher eduTeacher) {
         // 组织数据写入数据库
@@ -163,22 +162,22 @@ public class EduTeacherController {
 
         // 返回结果
         if (saveResult) {
-            return R.ok();
+            return Result.ok();
         } else {
-            return R.error();
+            return Result.error();
         }
     }
 
     @ApiOperation(value = "修改讲师信息")
     @PostMapping("updateTeacher")
-    public R updateTeacher(
-        @RequestBody EduTeacher eduTeacher) {
+    public Result updateTeacher(
+            @RequestBody EduTeacher eduTeacher) {
         boolean flag = teacherService.updateById(eduTeacher);
 
         if (flag) {
-            return R.ok();
+            return Result.ok();
         } else {
-            return R.error();
+            return Result.error();
         }
     }
 }
