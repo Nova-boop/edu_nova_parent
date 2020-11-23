@@ -30,18 +30,15 @@ import java.util.Map;
 @Api(description = "讲师管理")
 @RestController
 @RequestMapping("/eduService/eduTeacher")
-@CrossOrigin
+//@CrossOrigin
 public class EduTeacherController {
 
     // 将对应的service 注入进来
-    @Autowired
-    private EduTeacherService teacherService;
+    private final EduTeacherService teacherService;
 
-    //    private final EduTeacherService teacherService;
-    //
-    //    public EduTeacherController(EduTeacherService teacherService) {
-    //        this.teacherService = teacherService;
-    //    }
+    public EduTeacherController(EduTeacherService teacherService) {
+        this.teacherService = teacherService;
+    }
 
     // 根据ID 查询讲师信息
     @ApiOperation(value = "根据讲师ID查询讲师信息")
