@@ -25,9 +25,8 @@ public class SubjectExcelListener extends AnalysisEventListener<ExcelSubjectData
         if (excelSubjectData==null) {
             throw new NovaException(20001,"表格数据不能为空");
         }
-
         // 添加一级分类
-        EduSubject eduOneSubject = existOneSubject(eduSubjectService, excelSubjectData.getOneSubject());
+        EduSubject eduOneSubject = this.existOneSubject(eduSubjectService, excelSubjectData.getOneSubject());
         if (eduOneSubject==null) {
             eduOneSubject = new EduSubject();
             eduOneSubject.setParentId("0");
@@ -39,11 +38,12 @@ public class SubjectExcelListener extends AnalysisEventListener<ExcelSubjectData
         // 添加二级分类
         String pid = eduOneSubject.getId();
 
-        EduSubject eduTwoSubject = existTwoSubject(eduSubjectService, excelSubjectData.getTwoSubject(),pid);
+        EduSubject eduTwoSubject =this.existTwoSubject(eduSubjectService, excelSubjectData.getTwoSubject(),pid);
         if (eduTwoSubject==null) {
             eduTwoSubject = new EduSubject();
             eduTwoSubject.setParentId("0");
             eduTwoSubject.setTitle(excelSubjectData.getOneSubject());
+
             eduSubjectService.save(eduTwoSubject);
         }
 
