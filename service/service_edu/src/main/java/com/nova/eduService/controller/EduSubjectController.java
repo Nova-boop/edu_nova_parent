@@ -20,15 +20,18 @@ import java.util.List;
  * @author nova
  * @since 2020-11-23
  */
-@Api(description = "课程分类管理")
+@Api(description  = "课程分类管理")
 @RestController
 @RequestMapping("/eduService/eduSubject")
 //@CrossOrigin
 public class EduSubjectController {
 
     // 注入Service
-    @Autowired
-    private EduSubjectService eduSubjectService;
+    private final EduSubjectService eduSubjectService;
+
+    public EduSubjectController(EduSubjectService eduSubjectService) {
+        this.eduSubjectService = eduSubjectService;
+    }
 
     // 课程分类列表
     @GetMapping("getAllSubject")

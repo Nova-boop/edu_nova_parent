@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2020-11-24
  */
 @RestController
-@RequestMapping("/eduService/edu-chapter")
+@RequestMapping("/eduService/eduChapter")
 public class EduChapterController {
 
 }

@@ -8,7 +8,6 @@ import lombok.Data;
 @Data
 public class QueryTeacher {
 
-
     @ApiModelProperty(value = "教师名称,模糊查询")
     private String name;
 

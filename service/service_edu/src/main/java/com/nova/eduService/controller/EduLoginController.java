@@ -4,7 +4,7 @@ import com.nova.commonutils.Result;
 import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.*;
 
-@Api(description = "用户登录")
+@Api(description  = "用户登录")
 @RestController
 @RequestMapping("/eduService/user")
 //@CrossOrigin

@@ -2,6 +2,7 @@ package com.nova.eduService.service;
 
 import com.nova.eduService.entity.EduCourse;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.nova.eduService.entity.vo.CourseInfoVo;
 
 /**
  * <p>
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface EduCourseService extends IService<EduCourse> {
 
+    void saveCourseInfo(CourseInfoVo courseInfoVo);
 }
