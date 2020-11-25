@@ -31,22 +31,22 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
 
     // 添加课程基本信息的方法
     @Override
-    public void saveCourseInfo(CourseInfoVo courseInfoVo) {
-
+    public String saveCourseInfo(CourseInfoVo courseInfoVo) {
         // 添加数据到课程表
         // 将courseInfoVo 转换为eduCourse
         EduCourse eduCourse = new EduCourse();
         BeanUtils.copyProperties(courseInfoVo, eduCourse);
         // 判断是否添加成功
         int insert = baseMapper.insert(eduCourse);
-        if (insert != 0) {// 添加数据到课程简介表
+        if (insert != 0) {
             String courseId = eduCourse.getId();
             EduCourseDescription courseDescription = new EduCourseDescription();
             courseDescription.setId(courseId);
             courseDescription.setDescription(courseInfoVo.getDescription());
             courseDescriptionService.save(courseDescription);
-        } else {
-            // 添加失败
+            // 返回课程ID
+            return courseId;
+        } else {// 添加数据到课程简介表
             throw new NovaException(20001, "课程添加失败");
         }
     }
