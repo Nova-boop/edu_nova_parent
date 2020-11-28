@@ -7,6 +7,7 @@ import com.nova.eduService.service.EduChapterService;
 import com.nova.eduService.service.EduCourseService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -30,18 +31,19 @@ public class EduCourseController {
 
     // 注入 eduCourseService
     private final EduCourseService eduCourseService;
-
     public EduCourseController(EduCourseService eduCourseService) {
         this.eduCourseService = eduCourseService;
     }
 
     // 添加课程
     @PostMapping("addCourseInfo")
-    public Result addCourseInfo(@RequestBody CourseInfoVo courseInfoVo ){
+    @ApiOperation(value = "添加课程")
+    public Result addCourseInfo(
+            @ApiParam(name = "courseInfoVo",value = "课程信息",required = true)
+            @RequestBody CourseInfoVo courseInfoVo){
        String id= eduCourseService.saveCourseInfo(courseInfoVo);
        // 返回课程的ID
         return Result.ok().data("courseId",id);
     }
-
 }
 

@@ -1,7 +1,11 @@
 package com.nova.eduService.mapper;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.nova.eduService.entity.EduChapter;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.nova.eduService.entity.chapter.ChapterVo;
+
+import java.util.List;
 
 /**
  * <p>
@@ -12,5 +16,4 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @since 2020-11-24
  */
 public interface EduChapterMapper extends BaseMapper<EduChapter> {
-
 }
