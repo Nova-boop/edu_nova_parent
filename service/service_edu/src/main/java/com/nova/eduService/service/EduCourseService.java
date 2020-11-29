@@ -13,6 +13,9 @@ import com.nova.eduService.entity.vo.CourseInfoVo;
  * @since 2020-11-24
  */
 public interface EduCourseService extends IService<EduCourse> {
-
     String saveCourseInfo(CourseInfoVo courseInfoVo);
+    // 根据Id 查询课程基本信息
+    CourseInfoVo getCourseInfo(String courseId);
+
+    void updateCourseInfo(CourseInfoVo courseInfoVo);
 }

@@ -36,7 +36,7 @@ public class EduChapterController {
         // 根据课程ID 查询课程的章节及小节列表
         List<ChapterVo> chapterVoList= eduChapterService.getChapterVideoByCourseId(courseId);
 
-        return Result.ok().data("chapterVoList",chapterVoList);
+        return Result.ok().data("chapterVideoList",chapterVoList);
     }
 
     // 添加章节
