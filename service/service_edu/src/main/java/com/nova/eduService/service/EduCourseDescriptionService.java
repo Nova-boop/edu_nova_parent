@@ -1,7 +1,7 @@
 package com.nova.eduService.service;
 
-import com.nova.eduService.entity.EduCourseDescription;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.nova.eduService.entity.EduCourseDescription;
 
 /**
  * <p>

@@ -1,10 +1,7 @@
 package com.nova.eduService.mapper;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.nova.eduService.entity.EduCourse;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-
-import java.util.List;
+import com.nova.eduService.entity.EduCourse;
 
 /**
  * <p>

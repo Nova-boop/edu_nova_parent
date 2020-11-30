@@ -1,9 +1,9 @@
 package com.nova.eduService.service.impl;
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.nova.eduService.entity.EduVideo;
 import com.nova.eduService.mapper.EduVideoMapper;
 import com.nova.eduService.service.EduVideoService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**

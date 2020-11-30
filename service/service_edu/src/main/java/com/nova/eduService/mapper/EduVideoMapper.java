@@ -1,7 +1,7 @@
 package com.nova.eduService.mapper;
 
-import com.nova.eduService.entity.EduVideo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.nova.eduService.entity.EduVideo;
 
 /**
  * <p>

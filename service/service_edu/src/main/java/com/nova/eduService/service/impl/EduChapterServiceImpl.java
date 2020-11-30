@@ -1,13 +1,13 @@
 package com.nova.eduService.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.nova.eduService.entity.EduChapter;
 import com.nova.eduService.entity.EduVideo;
 import com.nova.eduService.entity.chapter.ChapterVo;
 import com.nova.eduService.entity.chapter.VideoVo;
 import com.nova.eduService.mapper.EduChapterMapper;
 import com.nova.eduService.service.EduChapterService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.nova.eduService.service.EduVideoService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +36,7 @@ public class EduChapterServiceImpl extends ServiceImpl<EduChapterMapper, EduChap
         // 获取章列表
         QueryWrapper<EduChapter> chapterVoQueryWrapper = new QueryWrapper<>();
 
-        chapterVoQueryWrapper.eq("course_id",courseId);
+        chapterVoQueryWrapper.eq("course_id", courseId);
         List<EduChapter> eduChapters = baseMapper.selectList(chapterVoQueryWrapper);
 
         // 获取节列表

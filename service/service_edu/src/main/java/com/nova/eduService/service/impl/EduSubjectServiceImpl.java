@@ -82,7 +82,7 @@ public class EduSubjectServiceImpl extends ServiceImpl<EduSubjectMapper, EduSubj
                 if (eduSubject2.getParentId().equals(oneSubject.getId())) {
                     // 二级分类的getParentId 等于一级分类的id
                     TwoSubject twoSubject = new TwoSubject();
-                    BeanUtils.copyProperties(eduSubject2,twoSubject);
+                    BeanUtils.copyProperties(eduSubject2, twoSubject);
                     twoSubjectArrayList.add(twoSubject);
                 }
             }

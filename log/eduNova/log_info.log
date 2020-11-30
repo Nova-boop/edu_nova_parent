@@ -1,169 +1,116 @@
-2020-11-23 17:33:33.647 [main] INFO  com.nova.eduService.EduApplication - Starting EduApplication on SC with PID 17056 (D:\02-JavaPrjs\edu_nova_parent\service\service_edu\target\classes started by nova in D:\02-JavaPrjs\edu_nova_parent)
-2020-11-23 17:33:33.655 [main] INFO  com.nova.eduService.EduApplication - The following profiles are active: dev
-2020-11-23 17:33:36.590 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-23 17:33:36.600 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2020-11-23 17:33:36.715 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49ms. Found 0 repository interfaces.
-2020-11-23 17:33:37.502 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-23 17:33:38.110 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
-2020-11-23 17:33:38.131 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8001"]
-2020-11-23 17:33:38.135 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2020-11-23 17:33:38.137 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2020-11-23 17:33:38.413 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2020-11-23 17:33:38.413 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4551 ms
-2020-11-23 17:33:38.879 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2020-11-23 17:33:40.810 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2020-11-23 17:33:42.003 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-23 17:33:42.287 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-23 17:33:43.870 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2020-11-23 17:33:43.909 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2020-11-23 17:33:43.991 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2020-11-23 17:33:44.602 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8001"]
-2020-11-23 17:33:44.669 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
-2020-11-23 17:33:44.679 [main] INFO  com.nova.eduService.EduApplication - Started EduApplication in 12.595 seconds (JVM running for 18.299)
-2020-11-23 17:52:20.883 [main] INFO  com.nova.eduService.EduApplication - Starting EduApplication on SC with PID 4224 (D:\02-JavaPrjs\edu_nova_parent\service\service_edu\target\classes started by nova in D:\02-JavaPrjs\edu_nova_parent)
-2020-11-23 17:52:20.889 [main] INFO  com.nova.eduService.EduApplication - The following profiles are active: dev
-2020-11-23 17:52:22.565 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-23 17:52:22.569 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2020-11-23 17:52:22.618 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
-2020-11-23 17:52:23.133 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-23 17:52:23.522 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
-2020-11-23 17:52:23.534 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8001"]
-2020-11-23 17:52:23.535 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2020-11-23 17:52:23.536 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2020-11-23 17:52:23.671 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2020-11-23 17:52:23.671 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2650 ms
-2020-11-23 17:52:23.909 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2020-11-23 17:52:24.887 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2020-11-23 17:52:25.605 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-23 17:52:25.739 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-23 17:52:26.563 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2020-11-23 17:52:26.590 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2020-11-23 17:52:26.649 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2020-11-23 17:52:27.002 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8001"]
-2020-11-23 17:52:27.035 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
-2020-11-23 17:52:27.042 [main] INFO  com.nova.eduService.EduApplication - Started EduApplication in 7.404 seconds (JVM running for 9.764)
-2020-11-23 17:52:30.734 [http-nio-0.0.0.0-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-23 17:52:30.735 [http-nio-0.0.0.0-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2020-11-23 17:52:30.744 [http-nio-0.0.0.0-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
-2020-11-23 18:08:14.030 [main] INFO  com.nova.eduService.EduApplication - Starting EduApplication on SC with PID 13180 (D:\02-JavaPrjs\edu_nova_parent\service\service_edu\target\classes started by nova in D:\02-JavaPrjs\edu_nova_parent)
-2020-11-23 18:08:14.041 [main] INFO  com.nova.eduService.EduApplication - The following profiles are active: dev
-2020-11-23 18:08:15.927 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-23 18:08:15.930 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2020-11-23 18:08:15.970 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
-2020-11-23 18:08:16.357 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-23 18:08:16.697 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
-2020-11-23 18:08:16.708 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8001"]
-2020-11-23 18:08:16.709 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2020-11-23 18:08:16.709 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2020-11-23 18:08:16.849 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2020-11-23 18:08:16.850 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2562 ms
-2020-11-23 18:08:17.138 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2020-11-23 18:08:18.260 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2020-11-23 18:08:19.052 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-23 18:08:19.237 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-23 18:08:20.090 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2020-11-23 18:08:20.117 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2020-11-23 18:08:20.180 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2020-11-23 18:08:20.429 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8001"]
-2020-11-23 18:08:20.460 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
-2020-11-23 18:08:20.463 [main] INFO  com.nova.eduService.EduApplication - Started EduApplication in 7.715 seconds (JVM running for 9.588)
-2020-11-23 18:08:24.080 [http-nio-0.0.0.0-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-23 18:08:24.080 [http-nio-0.0.0.0-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2020-11-23 18:08:24.091 [http-nio-0.0.0.0-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
-2020-11-23 18:09:19.306 [main] INFO  com.nova.eduService.EduApplication - Starting EduApplication on SC with PID 8496 (D:\02-JavaPrjs\edu_nova_parent\service\service_edu\target\classes started by nova in D:\02-JavaPrjs\edu_nova_parent)
-2020-11-23 18:09:19.315 [main] INFO  com.nova.eduService.EduApplication - The following profiles are active: dev
-2020-11-23 18:09:20.965 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-23 18:09:20.968 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2020-11-23 18:09:21.002 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
-2020-11-23 18:09:21.382 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-23 18:09:21.733 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
-2020-11-23 18:09:21.749 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8001"]
-2020-11-23 18:09:21.751 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2020-11-23 18:09:21.751 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2020-11-23 18:09:21.891 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2020-11-23 18:09:21.892 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2375 ms
-2020-11-23 18:09:22.184 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2020-11-23 18:09:23.238 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2020-11-23 18:09:24.020 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-23 18:09:24.174 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-23 18:09:24.909 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2020-11-23 18:09:24.933 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2020-11-23 18:09:24.988 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2020-11-23 18:09:25.280 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8001"]
-2020-11-23 18:09:25.310 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
-2020-11-23 18:09:25.313 [main] INFO  com.nova.eduService.EduApplication - Started EduApplication in 7.209 seconds (JVM running for 9.146)
-2020-11-23 18:09:31.892 [http-nio-0.0.0.0-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-23 18:09:31.893 [http-nio-0.0.0.0-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2020-11-23 18:09:31.903 [http-nio-0.0.0.0-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
-2020-11-23 18:17:43.687 [main] INFO  com.nova.eduService.EduApplication - Starting EduApplication on SC with PID 15124 (D:\02-JavaPrjs\edu_nova_parent\service\service_edu\target\classes started by nova in D:\02-JavaPrjs\edu_nova_parent)
-2020-11-23 18:17:43.693 [main] INFO  com.nova.eduService.EduApplication - The following profiles are active: dev
-2020-11-23 18:17:45.436 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-23 18:17:45.440 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2020-11-23 18:17:45.490 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
-2020-11-23 18:17:46.011 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-23 18:17:46.345 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
-2020-11-23 18:17:46.356 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8001"]
-2020-11-23 18:17:46.357 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2020-11-23 18:17:46.358 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2020-11-23 18:17:46.480 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2020-11-23 18:17:46.480 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2589 ms
-2020-11-23 18:17:46.860 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2020-11-23 18:17:48.094 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2020-11-23 18:17:48.844 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-23 18:17:48.991 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-23 18:17:49.717 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2020-11-23 18:17:49.740 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2020-11-23 18:17:49.793 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2020-11-23 18:17:50.046 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8001"]
-2020-11-23 18:17:50.071 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
-2020-11-23 18:17:50.075 [main] INFO  com.nova.eduService.EduApplication - Started EduApplication in 7.504 seconds (JVM running for 9.354)
-2020-11-23 18:17:51.873 [http-nio-0.0.0.0-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-23 18:17:51.873 [http-nio-0.0.0.0-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2020-11-23 18:17:51.881 [http-nio-0.0.0.0-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
-2020-11-23 18:18:46.040 [main] INFO  com.nova.eduService.EduApplication - Starting EduApplication on SC with PID 2396 (D:\02-JavaPrjs\edu_nova_parent\service\service_edu\target\classes started by nova in D:\02-JavaPrjs\edu_nova_parent)
-2020-11-23 18:18:46.047 [main] INFO  com.nova.eduService.EduApplication - The following profiles are active: dev
-2020-11-23 18:18:48.491 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-23 18:18:48.494 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2020-11-23 18:18:48.542 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
-2020-11-23 18:18:48.939 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-23 18:18:49.269 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
-2020-11-23 18:18:49.280 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8001"]
-2020-11-23 18:18:49.281 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2020-11-23 18:18:49.281 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2020-11-23 18:18:49.410 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2020-11-23 18:18:49.411 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3024 ms
-2020-11-23 18:18:49.681 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2020-11-23 18:18:50.938 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2020-11-23 18:18:51.687 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-23 18:18:51.824 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-23 18:18:52.537 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2020-11-23 18:18:52.558 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2020-11-23 18:18:52.608 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2020-11-23 18:18:52.936 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8001"]
-2020-11-23 18:18:52.968 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
-2020-11-23 18:18:52.972 [main] INFO  com.nova.eduService.EduApplication - Started EduApplication in 8.193 seconds (JVM running for 10.194)
-2020-11-23 18:18:55.033 [http-nio-0.0.0.0-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-23 18:18:55.034 [http-nio-0.0.0.0-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2020-11-23 18:18:55.043 [http-nio-0.0.0.0-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
-2020-11-23 18:19:18.765 [main] INFO  com.nova.eduService.EduApplication - Starting EduApplication on SC with PID 14580 (D:\02-JavaPrjs\edu_nova_parent\service\service_edu\target\classes started by nova in D:\02-JavaPrjs\edu_nova_parent)
-2020-11-23 18:19:18.771 [main] INFO  com.nova.eduService.EduApplication - The following profiles are active: dev
-2020-11-23 18:19:20.485 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-11-23 18:19:20.488 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
-2020-11-23 18:19:20.520 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
-2020-11-23 18:19:20.880 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-23 18:19:21.185 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
-2020-11-23 18:19:21.197 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8001"]
-2020-11-23 18:19:21.198 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2020-11-23 18:19:21.198 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
-2020-11-23 18:19:21.320 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2020-11-23 18:19:21.320 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2352 ms
-2020-11-23 18:19:21.581 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2020-11-23 18:19:22.534 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2020-11-23 18:19:23.464 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-11-23 18:19:23.633 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-23 18:19:24.259 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2020-11-23 18:19:24.278 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2020-11-23 18:19:24.317 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2020-11-23 18:19:24.557 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8001"]
-2020-11-23 18:19:24.583 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
-2020-11-23 18:19:24.585 [main] INFO  com.nova.eduService.EduApplication - Started EduApplication in 6.947 seconds (JVM running for 8.793)
+2020-11-25 10:06:58.442 [main] INFO  com.nova.eduService.EduApplication - Starting EduApplication on SC with PID 688 (D:\02-JavaPrjs\edu_nova_parent\service\service_edu\target\classes started by nova in D:\02-JavaPrjs\edu_nova_parent)
+2020-11-25 10:06:58.589 [main] INFO  com.nova.eduService.EduApplication - The following profiles are active: dev
+2020-11-25 10:06:59.973 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 10:06:59.976 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-25 10:07:00.014 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2020-11-25 10:07:00.363 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-25 10:07:00.673 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-25 10:07:00.683 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8001"]
+2020-11-25 10:07:00.684 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 10:07:00.685 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-11-25 10:07:00.837 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 10:07:00.837 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2109 ms
+2020-11-25 10:07:01.090 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-25 10:07:02.010 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-25 10:07:02.882 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-25 10:07:03.025 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 10:07:03.647 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-25 10:07:03.667 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-25 10:07:03.710 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-25 10:07:03.962 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8001"]
+2020-11-25 10:07:03.989 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-25 10:07:03.993 [main] INFO  com.nova.eduService.EduApplication - Started EduApplication in 6.576 seconds (JVM running for 8.248)
+2020-11-25 10:16:44.216 [main] INFO  com.nova.eduService.EduApplication - Starting EduApplication on SC with PID 3816 (D:\02-JavaPrjs\edu_nova_parent\service\service_edu\target\classes started by nova in D:\02-JavaPrjs\edu_nova_parent)
+2020-11-25 10:16:44.221 [main] INFO  com.nova.eduService.EduApplication - The following profiles are active: dev
+2020-11-25 10:16:46.120 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 10:16:46.126 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-25 10:16:46.175 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2020-11-25 10:16:46.741 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-25 10:16:47.178 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-25 10:16:47.194 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8001"]
+2020-11-25 10:16:47.195 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 10:16:47.196 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-11-25 10:16:47.347 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 10:16:47.347 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3045 ms
+2020-11-25 10:16:47.651 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-25 10:16:48.717 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-25 10:16:49.690 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-25 10:16:49.839 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 10:16:50.486 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-25 10:16:50.510 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-25 10:16:50.558 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-25 10:16:50.882 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8001"]
+2020-11-25 10:16:50.910 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-25 10:16:50.913 [main] INFO  com.nova.eduService.EduApplication - Started EduApplication in 8.088 seconds (JVM running for 10.164)
+2020-11-25 10:17:58.326 [main] INFO  com.nova.eduService.EduApplication - Starting EduApplication on SC with PID 16352 (D:\02-JavaPrjs\edu_nova_parent\service\service_edu\target\classes started by nova in D:\02-JavaPrjs\edu_nova_parent)
+2020-11-25 10:17:58.331 [main] INFO  com.nova.eduService.EduApplication - The following profiles are active: dev
+2020-11-25 10:17:59.915 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 10:17:59.918 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-25 10:17:59.954 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2020-11-25 10:18:00.343 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-25 10:18:00.701 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-25 10:18:00.718 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8001"]
+2020-11-25 10:18:00.719 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 10:18:00.720 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-11-25 10:18:00.876 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 10:18:00.877 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2429 ms
+2020-11-25 10:18:01.205 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-25 10:18:02.179 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-25 10:18:03.160 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-25 10:18:03.323 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 10:18:03.936 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-25 10:18:03.959 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-25 10:18:04.002 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-25 10:18:04.269 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8001"]
+2020-11-25 10:18:04.322 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-25 10:18:04.337 [main] INFO  com.nova.eduService.EduApplication - Started EduApplication in 7.154 seconds (JVM running for 8.919)
+2020-11-25 10:22:12.573 [http-nio-0.0.0.0-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-25 10:22:12.574 [http-nio-0.0.0.0-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-25 10:22:12.587 [http-nio-0.0.0.0-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2020-11-25 14:45:27.599 [main] INFO  com.nova.eduService.EduApplication - Starting EduApplication on SC with PID 2212 (D:\02-JavaPrjs\edu_nova_parent\service\service_edu\target\classes started by nova in D:\02-JavaPrjs\edu_nova_parent)
+2020-11-25 14:45:27.605 [main] INFO  com.nova.eduService.EduApplication - The following profiles are active: dev
+2020-11-25 14:45:29.379 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 14:45:29.383 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-25 14:45:29.422 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2020-11-25 14:45:29.917 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-25 14:45:30.291 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-25 14:45:30.309 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8001"]
+2020-11-25 14:45:30.311 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 14:45:30.312 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-11-25 14:45:30.456 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 14:45:30.456 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2686 ms
+2020-11-25 14:45:30.782 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-25 14:45:31.904 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-25 14:45:32.977 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-25 14:45:33.122 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 14:45:33.732 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-25 14:45:33.753 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-25 14:45:33.810 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-25 14:45:34.101 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8001"]
+2020-11-25 14:45:34.131 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-25 14:45:34.137 [main] INFO  com.nova.eduService.EduApplication - Started EduApplication in 7.627 seconds (JVM running for 9.474)
+2020-11-25 14:45:47.902 [http-nio-0.0.0.0-8001-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-25 14:45:47.904 [http-nio-0.0.0.0-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-25 14:45:47.913 [http-nio-0.0.0.0-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-11-30 09:49:43.354 [main] INFO  com.nova.eduService.EduApplication - Starting EduApplication on SC with PID 17460 (D:\02-JavaPrjs\edu_nova_parent\service\service_edu\target\classes started by nova in D:\02-JavaPrjs\edu_nova_parent)
+2020-11-30 09:49:43.359 [main] INFO  com.nova.eduService.EduApplication - The following profiles are active: dev
+2020-11-30 09:49:44.870 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-30 09:49:44.874 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-11-30 09:49:44.916 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2020-11-30 09:49:45.301 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-30 09:49:45.648 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-11-30 09:49:45.660 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8001"]
+2020-11-30 09:49:45.661 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-30 09:49:45.662 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-11-30 09:49:45.801 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-30 09:49:45.802 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2356 ms
+2020-11-30 09:49:46.081 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-11-30 09:49:47.220 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-11-30 09:49:48.128 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-30 09:49:48.259 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-30 09:49:48.895 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-30 09:49:48.917 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-30 09:49:48.960 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-30 09:49:49.237 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8001"]
+2020-11-30 09:49:49.265 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-11-30 09:49:49.269 [main] INFO  com.nova.eduService.EduApplication - Started EduApplication in 7.262 seconds (JVM running for 9.454)

@@ -30,18 +30,18 @@ public class EduChapterController {
     // 课程大纲列表
     @GetMapping("getChapterVideo/{courseId}")
     public Result getChapterVideo(
-            @ApiParam(name = "courseId",value = "课程ID",required = true)
-            @PathVariable String courseId){
+            @ApiParam(name = "courseId", value = "课程ID", required = true)
+            @PathVariable String courseId) {
 
         // 根据课程ID 查询课程的章节及小节列表
-        List<ChapterVo> chapterVoList= eduChapterService.getChapterVideoByCourseId(courseId);
+        List<ChapterVo> chapterVoList = eduChapterService.getChapterVideoByCourseId(courseId);
 
-        return Result.ok().data("chapterVideoList",chapterVoList);
+        return Result.ok().data("chapterVideoList", chapterVoList);
     }
 
     // 添加章节
     @PostMapping("addChapter")
-    public Result addChapter(){
+    public Result addChapter() {
 
         return Result.ok();
     }

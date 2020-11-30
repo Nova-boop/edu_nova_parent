@@ -2,9 +2,12 @@ package com.nova.eduService.controller;
 
 import com.nova.commonutils.Result;
 import io.swagger.annotations.Api;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Api(description  = "用户登录")
+@Api(description = "用户登录")
 @RestController
 @RequestMapping("/eduService/user")
 //@CrossOrigin

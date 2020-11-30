@@ -2,14 +2,11 @@ package com.nova.eduService.controller;
 
 
 import com.nova.commonutils.Result;
-import com.nova.eduService.entity.EduCourse;
 import com.nova.eduService.entity.vo.CourseInfoVo;
-import com.nova.eduService.service.EduChapterService;
 import com.nova.eduService.service.EduCourseService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 /**

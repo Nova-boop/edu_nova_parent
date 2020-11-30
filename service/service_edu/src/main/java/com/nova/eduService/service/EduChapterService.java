@@ -1,7 +1,7 @@
 package com.nova.eduService.service;
 
-import com.nova.eduService.entity.EduChapter;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.nova.eduService.entity.EduChapter;
 import com.nova.eduService.entity.chapter.ChapterVo;
 
 import java.util.List;

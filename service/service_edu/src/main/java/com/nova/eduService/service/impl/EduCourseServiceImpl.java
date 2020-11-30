@@ -1,6 +1,5 @@
 package com.nova.eduService.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.nova.eduService.entity.EduCourse;
 import com.nova.eduService.entity.EduCourseDescription;
@@ -11,8 +10,6 @@ import com.nova.eduService.service.EduCourseService;
 import com.nova.servicebase.exceptionhandler.NovaException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 /**
  * <p>
@@ -63,7 +60,7 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
         CourseInfoVo courseInfoVo = new CourseInfoVo();
         if (eduCourse != null) {
             // 封装数据
-            BeanUtils.copyProperties(eduCourse,courseInfoVo);
+            BeanUtils.copyProperties(eduCourse, courseInfoVo);
             // 查询描述表
             EduCourseDescription courseDescription = courseDescriptionService.getById(courseId);
             if (courseDescription != null) {
