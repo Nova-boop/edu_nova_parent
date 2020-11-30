@@ -9,8 +9,8 @@ import com.nova.eduService.entity.chapter.VideoVo;
 import com.nova.eduService.mapper.EduChapterMapper;
 import com.nova.eduService.service.EduChapterService;
 import com.nova.eduService.service.EduVideoService;
+import com.nova.servicebase.exceptionhandler.NovaException;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -27,15 +27,17 @@ import java.util.List;
 @Service
 public class EduChapterServiceImpl extends ServiceImpl<EduChapterMapper, EduChapter> implements EduChapterService {
     // 注入video 的service
-    @Autowired
-    private EduVideoService eduVideoService;
+    private final EduVideoService eduVideoService;
+
+    public EduChapterServiceImpl(EduVideoService eduVideoService) {
+        this.eduVideoService = eduVideoService;
+    }
 
     @Override
     public List<ChapterVo> getChapterVideoByCourseId(String courseId) {
 
         // 获取章列表
         QueryWrapper<EduChapter> chapterVoQueryWrapper = new QueryWrapper<>();
-
         chapterVoQueryWrapper.eq("course_id", courseId);
         List<EduChapter> eduChapters = baseMapper.selectList(chapterVoQueryWrapper);
 
@@ -52,7 +54,6 @@ public class EduChapterServiceImpl extends ServiceImpl<EduChapterMapper, EduChap
             BeanUtils.copyProperties(eduChapter, chapterVo);
             chapterVideoList.add(chapterVo);
 
-
             // 将小节列表添加到结果数据集中
             ArrayList<VideoVo> videoVoList = new ArrayList<>();
             for (EduVideo eduVideo : eduVideos) {
@@ -65,7 +66,26 @@ public class EduChapterServiceImpl extends ServiceImpl<EduChapterMapper, EduChap
             // 将小节数据封装到章
             chapterVo.setChildren(videoVoList);
         }
-
         return chapterVideoList;
     }
+
+    // 删除 chapter
+    @Override
+    public boolean delChapter(String chapterId) {
+        // 根据 chapterId 查询 video 表,如果存在 video 不能删除chapter
+        QueryWrapper<EduVideo> videoQueryWrapper = new QueryWrapper<>();
+        videoQueryWrapper.eq("chapter_id", chapterId);
+        int videoCount = eduVideoService.count(videoQueryWrapper);
+
+        if (videoCount == 0) {
+            // 不存在video 可以删除chapter
+            int delRows = baseMapper.deleteById(chapterId);
+            return delRows > 0;
+        } else {
+            // 存在video 不能删除chapter
+            throw new NovaException(20001, "chapter下存在video 不能删除该Chapter");
+        }
+
+    }
+
 }
