@@ -3,6 +3,7 @@ package com.nova.eduService.controller;
 
 import com.nova.commonutils.Result;
 import com.nova.eduService.entity.vo.CourseInfoVo;
+import com.nova.eduService.entity.vo.CoursePublishInfoVo;
 import com.nova.eduService.service.EduCourseService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -60,6 +61,15 @@ public class EduCourseController {
             @RequestBody CourseInfoVo courseInfoVo) {
         eduCourseService.updateCourseInfo(courseInfoVo);
         return Result.ok();
+    }
+
+    // 获取发布课程信息
+    @GetMapping("getPublishCourseInfo/{courseId}")
+    public Result getPublishCourseInfo(
+            @ApiParam(name = "courseId",value = "发布课程信息",required = true)
+            @PathVariable String courseId){
+        CoursePublishInfoVo coursePublishInfoVo = eduCourseService.publishCourseInfo(courseId);
+        return Result.ok().data("coursePublishInfo",coursePublishInfoVo);
     }
 }
 

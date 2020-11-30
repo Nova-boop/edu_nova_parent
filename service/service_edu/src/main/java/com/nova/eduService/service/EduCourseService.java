@@ -3,6 +3,7 @@ package com.nova.eduService.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.nova.eduService.entity.EduCourse;
 import com.nova.eduService.entity.vo.CourseInfoVo;
+import com.nova.eduService.entity.vo.CoursePublishInfoVo;
 
 /**
  * <p>
@@ -18,5 +19,9 @@ public interface EduCourseService extends IService<EduCourse> {
     // 根据Id 查询课程基本信息
     CourseInfoVo getCourseInfo(String courseId);
 
+    // 更新课程信息
     void updateCourseInfo(CourseInfoVo courseInfoVo);
+
+    // 根据课程id 查看将要发布的课程信息
+    CoursePublishInfoVo publishCourseInfo(String courseId);
 }

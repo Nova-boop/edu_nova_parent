@@ -17,4 +17,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class EduVideoServiceImpl extends ServiceImpl<EduVideoMapper, EduVideo> implements EduVideoService {
 
+    // 添加小节
+    @Override
+    public void addVideo(EduVideo eduVideo) {
+        this.save(eduVideo);
+    }
 }

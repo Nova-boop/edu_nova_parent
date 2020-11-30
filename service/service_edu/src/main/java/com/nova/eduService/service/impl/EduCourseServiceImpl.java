@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.nova.eduService.entity.EduCourse;
 import com.nova.eduService.entity.EduCourseDescription;
 import com.nova.eduService.entity.vo.CourseInfoVo;
+import com.nova.eduService.entity.vo.CoursePublishInfoVo;
 import com.nova.eduService.mapper.EduCourseMapper;
 import com.nova.eduService.service.EduCourseDescriptionService;
 import com.nova.eduService.service.EduCourseService;
@@ -89,5 +90,11 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
         if (!b) {
             throw new NovaException(20001, "更新课程详情失败");
         }
+    }
+
+    // 根据课程id 查看将要发布的课程信息
+    @Override
+    public CoursePublishInfoVo publishCourseInfo(String courseId) {
+        return baseMapper.getPublishCourseInfo(courseId);
     }
 }
