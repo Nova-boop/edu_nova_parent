@@ -56,7 +56,6 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
     public CourseInfoVo getCourseInfo(String courseId) {
         // 查询课程表
         EduCourse eduCourse = baseMapper.selectById(courseId);
-        System.out.println(eduCourse);
         CourseInfoVo courseInfoVo = new CourseInfoVo();
         if (eduCourse != null) {
             // 封装数据
@@ -66,7 +65,6 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
             if (courseDescription != null) {
                 courseInfoVo.setDescription(courseDescription.getDescription());
             }
-
         }
         return courseInfoVo;
     }
@@ -75,5 +73,21 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
     @Override
     public void updateCourseInfo(CourseInfoVo courseInfoVo) {
 
+        EduCourse eduCourse = new EduCourse();
+        BeanUtils.copyProperties(courseInfoVo, eduCourse);
+        int resultRows = baseMapper.updateById(eduCourse);
+
+        if (resultRows == 0) {
+            throw new NovaException(20001, "更新课程信息失败");
+        }
+
+
+        EduCourseDescription courseDescription = new EduCourseDescription();
+        courseDescription.setId(courseInfoVo.getId());
+        courseDescription.setDescription(courseInfoVo.getDescription());
+        boolean b = courseDescriptionService.updateById(courseDescription);
+        if (!b) {
+            throw new NovaException(20001, "更新课程详情失败");
+        }
     }
 }

@@ -48,17 +48,18 @@ public class EduCourseController {
             @ApiParam(name = "courseId", value = "课程ID", required = true)
             @PathVariable String courseId) {
         CourseInfoVo courseInfoVo = eduCourseService.getCourseInfo(courseId);
-        return Result.ok().data("courseInfo", courseInfoVo);
+        return Result.ok().data("courseInfoVo", courseInfoVo);
     }
 
 
     // 修改课程信息
     @PostMapping("updateCourseInfo")
+    @ApiOperation(value = "修改课程信息")
     public Result updateCourseInfo(
-            @PathVariable CourseInfoVo courseInfoVo) {
+            @ApiParam(name = "courseInfoVo", value = "课程基本信息", required = true)
+            @RequestBody CourseInfoVo courseInfoVo) {
         eduCourseService.updateCourseInfo(courseInfoVo);
         return Result.ok();
-
     }
 }
 
