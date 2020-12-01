@@ -1,4 +1,4 @@
-package com.nova.demo;
+package com.nova.vodTest.demo;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.annotation.IdType;

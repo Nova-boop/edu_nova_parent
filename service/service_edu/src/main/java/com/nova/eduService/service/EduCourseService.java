@@ -31,5 +31,5 @@ public interface EduCourseService extends IService<EduCourse> {
     void pageQuery(Page<EduCourse> coursePage, QueryCourseVo queryCourseVo);
 
     // 删除课程
-    boolean removeCourseById(String courseId);
+    void removeCourseById(String courseId);
 }

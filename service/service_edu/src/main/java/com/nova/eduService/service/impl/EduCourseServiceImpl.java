@@ -153,16 +153,22 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
     // 根据课程Id 删除课程信息
     // 删除 课程基本信息 描述信息 章节信息 小节信息
     @Override
-    public boolean removeCourseById(String courseId) {
-        // 删除小节
-        eduVideoService.removeVideoByCourseId(courseId);
-        // 删除章节
-        eduChapterService.removeChapterByCourseId(courseId);
-        // 删除描述
-        courseDescriptionService.removeDescription(courseId);
-        // 删除课程
-        int deleteRows = baseMapper.deleteById(courseId);
+    public void removeCourseById(String courseId) {
+        EduCourse course = baseMapper.selectById(courseId);
+        if (course != null && course.getIsDeleted() != 1) {
+            // 删除小节
+            eduVideoService.removeVideoByCourseId(courseId);
+            // 删除章节
+            eduChapterService.removeChapterByCourseId(courseId);
+            // 删除描述
+            courseDescriptionService.removeDescription(courseId);
+            // 删除课程
+            int deleteRows = baseMapper.deleteById(courseId);
 
-        return deleteRows > 0;
+            if (deleteRows == 0) {
+                throw new NovaException(20001, "删除失败");
+            }
+        }
     }
+
 }

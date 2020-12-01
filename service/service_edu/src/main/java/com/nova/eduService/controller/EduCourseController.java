@@ -27,8 +27,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/eduService/course")
 public class EduCourseController {
-
-
     // 注入 eduCourseService
     private final EduCourseService eduCourseService;
 
@@ -64,7 +62,6 @@ public class EduCourseController {
         List<EduCourse> pageRecords = coursePage.getRecords();
         long total = coursePage.getTotal();
         return Result.ok().data("total", total).data("pageRecords", pageRecords);
-
     }
 
     // 添加课程
@@ -80,15 +77,13 @@ public class EduCourseController {
 
     // 删除课程
     @DeleteMapping("removeCourse/{courseId}")
-    public Result removeCourse(@PathVariable String courseId) {
+    @ApiOperation(value = "删除课程")
+    public Result removeCourse(
+            @ApiParam(name = "courseId", value = "课程ID", required = true)
+            @PathVariable String courseId) {
 
-        boolean result = eduCourseService.removeCourseById(courseId);
-        if (result) {
-            return Result.ok();
-        } else {
-            return Result.error();
-        }
-
+        eduCourseService.removeCourseById(courseId);
+        return Result.ok();
     }
 
 
