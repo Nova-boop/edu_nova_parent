@@ -19,4 +19,6 @@ public interface EduChapterService extends IService<EduChapter> {
     List<ChapterVo> getChapterVideoByCourseId(String courseId);
 
     boolean delChapter(String chapterId);
+
+    void removeChapterByCourseId(String courseId);
 }

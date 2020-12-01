@@ -27,5 +27,9 @@ public interface EduCourseService extends IService<EduCourse> {
     // 根据课程id 查看将要发布的课程信息
     CoursePublishInfoVo publishCourseInfo(String courseId);
 
+    // 条件分页查询 课程列表
     void pageQuery(Page<EduCourse> coursePage, QueryCourseVo queryCourseVo);
+
+    // 删除课程
+    boolean removeCourseById(String courseId);
 }

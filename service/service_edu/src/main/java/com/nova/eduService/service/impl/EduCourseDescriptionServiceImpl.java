@@ -17,4 +17,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class EduCourseDescriptionServiceImpl extends ServiceImpl<EduCourseDescriptionMapper, EduCourseDescription> implements EduCourseDescriptionService {
 
+    // 根据课程ID 删除课程描述
+    @Override
+    public void removeDescription(String courseId) {
+        int deleteRows = baseMapper.deleteById(courseId);
+    }
 }

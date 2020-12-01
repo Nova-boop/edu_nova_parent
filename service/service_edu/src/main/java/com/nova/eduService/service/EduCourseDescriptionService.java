@@ -13,4 +13,5 @@ import com.nova.eduService.entity.EduCourseDescription;
  */
 public interface EduCourseDescriptionService extends IService<EduCourseDescription> {
 
+    void removeDescription(String courseId);
 }

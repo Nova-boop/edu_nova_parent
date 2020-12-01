@@ -9,10 +9,13 @@ import com.nova.eduService.entity.course.QueryCourseVo;
 import com.nova.eduService.entity.vo.CourseInfoVo;
 import com.nova.eduService.entity.vo.CoursePublishInfoVo;
 import com.nova.eduService.mapper.EduCourseMapper;
+import com.nova.eduService.service.EduChapterService;
 import com.nova.eduService.service.EduCourseDescriptionService;
 import com.nova.eduService.service.EduCourseService;
+import com.nova.eduService.service.EduVideoService;
 import com.nova.servicebase.exceptionhandler.NovaException;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -28,11 +31,17 @@ import org.springframework.util.StringUtils;
 public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse> implements EduCourseService {
 
     // 注入 eduCourseDescriptionService
-    private final EduCourseDescriptionService courseDescriptionService;
+    @Autowired
+    private EduCourseDescriptionService courseDescriptionService;
 
-    public EduCourseServiceImpl(EduCourseDescriptionService courseDescriptionService) {
-        this.courseDescriptionService = courseDescriptionService;
-    }
+    // 注入 EduVideoService
+    @Autowired
+    private EduVideoService eduVideoService;
+
+    // 注入 EduChapterService
+    @Autowired
+    private EduChapterService eduChapterService;
+
 
     // 添加课程基本信息的方法
     @Override
@@ -139,5 +148,21 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
         // 查询并组织返回数据
         baseMapper.selectPage(coursePage, courseQueryWrapper);
 
+    }
+
+    // 根据课程Id 删除课程信息
+    // 删除 课程基本信息 描述信息 章节信息 小节信息
+    @Override
+    public boolean removeCourseById(String courseId) {
+        // 删除小节
+        eduVideoService.removeVideoByCourseId(courseId);
+        // 删除章节
+        eduChapterService.removeChapterByCourseId(courseId);
+        // 删除描述
+        courseDescriptionService.removeDescription(courseId);
+        // 删除课程
+        int deleteRows = baseMapper.deleteById(courseId);
+
+        return deleteRows > 0;
     }
 }

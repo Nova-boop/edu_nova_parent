@@ -14,4 +14,6 @@ import com.nova.eduService.entity.EduVideo;
 public interface EduVideoService extends IService<EduVideo> {
 
     void addVideo(EduVideo eduVideo);
+
+    void removeVideoByCourseId(String courseId);
 }

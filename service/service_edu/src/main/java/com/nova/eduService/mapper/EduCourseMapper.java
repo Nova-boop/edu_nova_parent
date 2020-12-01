@@ -13,5 +13,5 @@ import com.nova.eduService.entity.vo.CoursePublishInfoVo;
  * @since 2020-11-24
  */
 public interface EduCourseMapper extends BaseMapper<EduCourse> {
-    public CoursePublishInfoVo getPublishCourseInfo(String courseId);
+    CoursePublishInfoVo getPublishCourseInfo(String courseId);
 }

@@ -78,6 +78,20 @@ public class EduCourseController {
         return Result.ok().data("courseId", id);
     }
 
+    // 删除课程
+    @DeleteMapping("removeCourse/{courseId}")
+    public Result removeCourse(@PathVariable String courseId) {
+
+        boolean result = eduCourseService.removeCourseById(courseId);
+        if (result) {
+            return Result.ok();
+        } else {
+            return Result.error();
+        }
+
+    }
+
+
     // 根据Id 查询课程基本信息
     @GetMapping("getCourseInfo/{courseId}")
     @ApiOperation(value = "根据课程ID 查询课程信息")
