@@ -1,7 +1,9 @@
 package com.nova.eduService.service;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.nova.eduService.entity.EduCourse;
+import com.nova.eduService.entity.course.QueryCourseVo;
 import com.nova.eduService.entity.vo.CourseInfoVo;
 import com.nova.eduService.entity.vo.CoursePublishInfoVo;
 
@@ -24,4 +26,6 @@ public interface EduCourseService extends IService<EduCourse> {
 
     // 根据课程id 查看将要发布的课程信息
     CoursePublishInfoVo publishCourseInfo(String courseId);
+
+    void pageQuery(Page<EduCourse> coursePage, QueryCourseVo queryCourseVo);
 }

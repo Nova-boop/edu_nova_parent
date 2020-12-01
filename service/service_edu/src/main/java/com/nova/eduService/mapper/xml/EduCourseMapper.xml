@@ -3,8 +3,9 @@
 <mapper namespace="com.nova.eduService.mapper.EduCourseMapper">
     <!--    SQL 语句 -->
     <!--    根据courseID 查询课程信息-->
-    <select id="getPublishCourseInfo" resultType="import com.nova.eduService.entity.vo.CoursePublishInfoVo">
+    <select id="getPublishCourseInfo" resultType="com.nova.eduService.entity.vo.CoursePublishInfoVo">
         SELECT
+            c.id,
             c.title,
             c.cover,
             c.lesson_num AS lessonNum,

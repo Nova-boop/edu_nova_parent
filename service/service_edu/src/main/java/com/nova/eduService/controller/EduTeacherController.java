@@ -87,7 +87,7 @@ public class EduTeacherController {
         // 创建Page 对象
         Page<EduTeacher> teacherPage = new Page<>(current, limit);
 
-        // 获取数据病组织
+        // 获取数据并组织
         IPage<EduTeacher> teacherIPage = teacherService.page(teacherPage, null);
         long total = teacherIPage.getTotal(); // 获取数据的总数
         List<EduTeacher> records = teacherIPage.getRecords(); // 获取每一页数据的列表

@@ -1,8 +1,11 @@
 package com.nova.eduService.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.nova.eduService.entity.EduCourse;
 import com.nova.eduService.entity.EduCourseDescription;
+import com.nova.eduService.entity.course.QueryCourseVo;
 import com.nova.eduService.entity.vo.CourseInfoVo;
 import com.nova.eduService.entity.vo.CoursePublishInfoVo;
 import com.nova.eduService.mapper.EduCourseMapper;
@@ -11,6 +14,7 @@ import com.nova.eduService.service.EduCourseService;
 import com.nova.servicebase.exceptionhandler.NovaException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 /**
  * <p>
@@ -96,5 +100,44 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
     @Override
     public CoursePublishInfoVo publishCourseInfo(String courseId) {
         return baseMapper.getPublishCourseInfo(courseId);
+    }
+
+    // 条件分页查询课程列表
+    @Override
+    public void pageQuery(Page<EduCourse> coursePage, QueryCourseVo queryCourseVo) {
+
+        // 组织查询条件
+        QueryWrapper<EduCourse> courseQueryWrapper = new QueryWrapper<>();
+
+        if (queryCourseVo == null) {
+            baseMapper.selectPage(coursePage, courseQueryWrapper);
+        }
+
+
+        assert queryCourseVo != null;
+        String title = queryCourseVo.getTitle();
+        String subjectParentId = queryCourseVo.getSubjectParentId();
+        String subjectId = queryCourseVo.getSubjectId();
+        String teacherId = queryCourseVo.getTeacherId();
+
+        if (!StringUtils.isEmpty(title)) {
+            courseQueryWrapper.like("title", title);
+        }
+
+        if (!StringUtils.isEmpty(teacherId)) {
+            courseQueryWrapper.eq("teacher_id", teacherId);
+        }
+
+        if (!StringUtils.isEmpty(subjectParentId)) {
+            courseQueryWrapper.eq("subject_parent_id", subjectParentId);
+        }
+
+        if (!StringUtils.isEmpty(subjectId)) {
+            courseQueryWrapper.eq("subject_id", subjectId);
+        }
+
+        // 查询并组织返回数据
+        baseMapper.selectPage(coursePage, courseQueryWrapper);
+
     }
 }
