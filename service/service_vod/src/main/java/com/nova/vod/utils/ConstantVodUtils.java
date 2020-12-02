@@ -1,31 +1,25 @@
-package com.nova.ossService.utils;
+package com.nova.vod.utils;
 
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ConstantPropertiesUtil implements InitializingBean {
+public class ConstantVodUtils implements InitializingBean {
 
-    public static String END_POINT;
+
     public static String ACCESS_KEY_ID;
     public static String ACCESS_KEY_SECRET;
-    public static String BUCKET_NAME;
 
-    @Value("${aliyun.oss.file.endpoint}")
-    private String endpoint;
-    @Value("${aliyun.oss.file.keyid}")
+    @Value("${aliyun.vod.file.keyid}")
     private String keyId;
-    @Value("${aliyun.oss.file.keysecret}")
+    @Value("${aliyun.vod.file.keysecret}")
     private String keySecret;
-    @Value("${aliyun.oss.file.bucketname}")
-    private String bucketName;
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        END_POINT = endpoint;
         ACCESS_KEY_ID = keyId;
         ACCESS_KEY_SECRET = keySecret;
-        BUCKET_NAME = bucketName;
+
     }
 }
