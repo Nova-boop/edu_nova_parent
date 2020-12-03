@@ -6,6 +6,8 @@ import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/eduVod/video")
 @Api(description = "阿里云视频服务")
@@ -30,6 +32,13 @@ public class VodController {
     @DeleteMapping("delVideo/{videoId}")
     public Result delVideo(@PathVariable String videoId) {
         vodService.delVideoById(videoId);
+        return Result.ok();
+    }
+
+    // 批量删除 阿里云视频
+    @DeleteMapping("delVideoList")
+    public Result delVideoList(@RequestParam("videoList") List videoList){
+        vodService.delVideoList(videoList);
         return Result.ok();
     }
 

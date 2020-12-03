@@ -156,6 +156,7 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
     public void removeCourseById(String courseId) {
         EduCourse course = baseMapper.selectById(courseId);
         if (course != null && course.getIsDeleted() != 1) {
+
             // 删除小节
             eduVideoService.removeVideoByCourseId(courseId);
             // 删除章节

@@ -9,10 +9,12 @@ import com.nova.servicebase.exceptionhandler.NovaException;
 import com.nova.vod.service.VodService;
 import com.nova.vod.utils.ConstantVodUtils;
 import com.nova.vod.utils.InitVodClient;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.InputStream;
+import java.util.List;
 
 @Service
 public class VodServiceImpl implements VodService {
@@ -61,6 +63,28 @@ public class VodServiceImpl implements VodService {
                     ConstantVodUtils.ACCESS_KEY_SECRET);
             DeleteVideoRequest request = new DeleteVideoRequest();
             request.setVideoIds(videoId);
+            client.getAcsResponse(request);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new NovaException(20001, "删除失败!!!!");
+        }
+
+    }
+
+    // 批量删除 阿里云视频
+    @Override
+    public void delVideoList(List videoList) {
+
+        try {
+            // 初始化对象
+            DefaultAcsClient client = InitVodClient.initVodClient(
+                    ConstantVodUtils.ACCESS_KEY_ID,
+                    ConstantVodUtils.ACCESS_KEY_SECRET);
+            DeleteVideoRequest request = new DeleteVideoRequest();
+            // 转换数据结构 1,2,3,4
+            String videoIds = StringUtils.join(videoList.toArray(), ",");
+            request.setVideoIds(videoIds);
             client.getAcsResponse(request);
 
         } catch (Exception e) {
