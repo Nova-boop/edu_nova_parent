@@ -32,18 +32,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06521ffc-7deb-4ba2-8f46-7372e7e7ff23" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_11_30_9_33__Default_Changelist_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/client/VodClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common_utils/common_utils.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service_base/service_base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/service_base/service_base.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu_nova_parent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/edu_nova_parent.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_edu/service_edu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/service_edu.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/EduApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/EduApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/EduVideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/EduVideoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_oss/service_oss.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_oss/service_oss.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_oss/src/main/java/com/nova/ossService/OssApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_oss/src/main/java/com/nova/ossService/OssApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_oss/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_oss/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_vod/service_vod.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_vod/service_vod.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_vod/src/main/java/com/nova/vod/VodApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_vod/src/main/java/com/nova/vod/VodApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_vod/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_vod/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +55,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -254,7 +256,7 @@
       <workItem from="1606124451312" duration="3355000" />
       <workItem from="1606182175292" duration="24004000" />
       <workItem from="1606440473388" duration="56607000" />
-      <workItem from="1606959595366" duration="3411000" />
+      <workItem from="1606959595366" duration="9336000" />
     </task>
     <task id="LOCAL-00001" summary="统一返回结果数据">
       <created>1605520996699</created>
@@ -480,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606880137846</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="配置Nacos">
+      <created>1606968797832</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1606968797832</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +543,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="新增特定异常处理" />
     <MESSAGE value="新增自定义异常处理" />
     <MESSAGE value="统一日志处理" />
     <MESSAGE value="新增模拟登陆接口,并实现跨域" />
@@ -559,7 +567,8 @@
     <MESSAGE value="课程列表条件查询" />
     <MESSAGE value="课程删除-删除小节 删除chapter 删除course" />
     <MESSAGE value="阿里云视频点播集成 - 上传 删除" />
-    <option name="LAST_COMMIT_MESSAGE" value="阿里云视频点播集成 - 上传 删除" />
+    <MESSAGE value="配置Nacos" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置Nacos" />
   </component>
   <component name="WindowStateProjectService">
     <state x="582" y="185" key="#Inspections" timestamp="1605863951331">
@@ -607,45 +616,45 @@
     </state>
     <state x="756" y="298" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606959690247" />
     <state x="1008" y="401" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1605270734149" />
-    <state width="1607" height="61" key="GridCell.Tab.0.bottom" timestamp="1606899514399">
+    <state width="1550" height="362" key="GridCell.Tab.0.bottom" timestamp="1606979438432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1607" height="61" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606899514399" />
+    <state width="1550" height="362" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606979438432" />
     <state width="2507" height="382" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605280212565" />
-    <state width="1607" height="61" key="GridCell.Tab.0.center" timestamp="1606899514399">
+    <state width="1550" height="362" key="GridCell.Tab.0.center" timestamp="1606979438432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1607" height="61" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606899514399" />
+    <state width="1550" height="362" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606979438432" />
     <state width="2507" height="382" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605280212565" />
-    <state width="1607" height="61" key="GridCell.Tab.0.left" timestamp="1606899514398">
+    <state width="1550" height="362" key="GridCell.Tab.0.left" timestamp="1606979438432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1607" height="61" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606899514398" />
+    <state width="1550" height="362" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606979438432" />
     <state width="2507" height="382" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605280212565" />
-    <state width="1607" height="61" key="GridCell.Tab.0.right" timestamp="1606899514399">
+    <state width="1550" height="362" key="GridCell.Tab.0.right" timestamp="1606979438432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1607" height="61" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606899514399" />
+    <state width="1550" height="362" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606979438432" />
     <state width="2507" height="382" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605280212565" />
-    <state width="1607" height="61" key="GridCell.Tab.1.bottom" timestamp="1606899514400">
+    <state width="1550" height="362" key="GridCell.Tab.1.bottom" timestamp="1606979438432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1607" height="61" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606899514400" />
+    <state width="1550" height="362" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606979438432" />
     <state width="2507" height="382" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605280212566" />
-    <state width="1607" height="61" key="GridCell.Tab.1.center" timestamp="1606899514399">
+    <state width="1550" height="362" key="GridCell.Tab.1.center" timestamp="1606979438432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1607" height="61" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606899514399" />
+    <state width="1550" height="362" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606979438432" />
     <state width="2507" height="382" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605280212566" />
-    <state width="1607" height="61" key="GridCell.Tab.1.left" timestamp="1606899514399">
+    <state width="1550" height="362" key="GridCell.Tab.1.left" timestamp="1606979438432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1607" height="61" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606899514399" />
+    <state width="1550" height="362" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606979438432" />
     <state width="2507" height="382" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605280212566" />
-    <state width="1607" height="61" key="GridCell.Tab.1.right" timestamp="1606899514400">
+    <state width="1550" height="362" key="GridCell.Tab.1.right" timestamp="1606979438432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1607" height="61" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606899514400" />
+    <state width="1550" height="362" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606979438432" />
     <state width="2507" height="382" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605280212566" />
     <state x="374" y="93" key="Maven.ArtifactSearchDialog" timestamp="1606874476823">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -661,10 +670,14 @@
     </state>
     <state x="202" y="109" width="1718" height="883" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606960406028" />
     <state x="633" y="175" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1605270595284" />
-    <state x="452" y="194" key="Vcs.Push.Dialog.v2" timestamp="1606817899026">
+    <state x="791" y="425" key="VCS.ChangelistChooser" timestamp="1606977812745">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="194" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606817899026" />
+    <state x="791" y="425" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606977812745" />
+    <state x="452" y="194" key="Vcs.Push.Dialog.v2" timestamp="1606968804580">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="194" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606968804580" />
     <state x="378" y="212" key="caller.chooser.dialog" timestamp="1606809249705">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

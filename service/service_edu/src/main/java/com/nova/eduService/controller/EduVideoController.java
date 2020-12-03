@@ -1,7 +1,9 @@
 package com.nova.eduService.controller;
 
 
+import com.alibaba.excel.util.StringUtils;
 import com.nova.commonutils.Result;
+import com.nova.eduService.client.VodClient;
 import com.nova.eduService.entity.EduVideo;
 import com.nova.eduService.service.EduVideoService;
 import io.swagger.annotations.Api;
@@ -22,8 +24,17 @@ import org.springframework.web.bind.annotation.*;
 @Api(description = "小节管理")
 public class EduVideoController {
 
-    @Autowired
-    private EduVideoService eduVideoService;
+    // 注入 EduVideoService
+    private final EduVideoService eduVideoService;
+
+    // 注入 VodClient interface
+    private final VodClient vodClient;
+
+    public EduVideoController(EduVideoService eduVideoService, VodClient vodClient) {
+        this.eduVideoService = eduVideoService;
+        this.vodClient = vodClient;
+    }
+
 
     // 根据id 查询小节信息
     @PostMapping("getVideoInfo/{videoId}")
@@ -41,10 +52,19 @@ public class EduVideoController {
         return Result.ok();
     }
 
-    // 删除小节  需要再完善
+    // 删除小节
     @DeleteMapping("delVideo/{videoId}")
     @ApiOperation(value = "删除小节")
     public Result delVideo(@PathVariable String videoId) {
+
+        // 删除 阿里云上视频
+        EduVideo eduVideo = eduVideoService.getById(videoId);
+        String videoSourceId = eduVideo.getVideoSourceId();
+        // 非空判断
+        if (!StringUtils.isEmpty(videoSourceId)) {
+            vodClient.delVideo(videoSourceId);
+        }
+        // 删除数据表记录
         eduVideoService.removeById(videoId);
         return Result.ok();
     }
