@@ -25,18 +25,25 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06521ffc-7deb-4ba2-8f46-7372e7e7ff23" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/log/eduNova/info/log-info-2020-11-24.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/eduNova/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/eduNova/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/eduNova/log_warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/eduNova/log_warn.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/eduNova/warn/log-warn-2020-11-24.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_11_30_9_33__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common_utils/common_utils.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service_base/service_base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/service_base/service_base.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu_nova_parent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/edu_nova_parent.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/service_edu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/service_edu.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_oss/service_oss.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_oss/service_oss.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_vod/service_vod.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_vod/service_vod.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +71,14 @@
       </set>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/EduCourseController.java" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="JupyterTrust" id="ba31c3a6-cc2b-4fb1-bb4b-3501bc3b4433" />
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Softwares\Java\apache-maven-3.6.3" />
+        <option name="mavenHome" value="C:/Softwares/Maven/apache-maven-3.6.3" />
         <option name="userSettingsFile" value="C:\Softwares\Java\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -92,12 +102,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/common_utils" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -194,6 +204,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.TestVod" />
+      <item itemvalue="JUnit.CodeGenerator.run" />
+      <item itemvalue="Spring Boot.VodApplication" />
+      <item itemvalue="Spring Boot.EduApplication" />
+      <item itemvalue="Spring Boot.OssApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.EduApplication" />
@@ -237,6 +254,7 @@
       <workItem from="1606124451312" duration="3355000" />
       <workItem from="1606182175292" duration="24004000" />
       <workItem from="1606440473388" duration="56607000" />
+      <workItem from="1606959595366" duration="3411000" />
     </task>
     <task id="LOCAL-00001" summary="统一返回结果数据">
       <created>1605520996699</created>
@@ -501,7 +519,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -556,10 +574,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="452" y="76" key="#Plugins/0.0.1920.1040@0.0.1920.1040" timestamp="1606182806958" />
-    <state x="0" y="0" width="1813" height="1040" key="#Project_Structure" timestamp="1606875408142">
+    <state x="0" y="0" width="1813" height="1040" key="#Project_Structure" timestamp="1606958598142">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="0" width="1813" height="1040" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1606875408142" />
+    <state x="0" y="0" width="1813" height="1040" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1606958598142" />
     <state x="410" y="168" width="1193" height="703" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605589234760">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -584,10 +602,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="624" y="207" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606124793495" />
-    <state x="756" y="298" key="FileChooserDialogImpl" timestamp="1606875375287">
+    <state x="756" y="298" key="FileChooserDialogImpl" timestamp="1606959690247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="756" y="298" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606875375287" />
+    <state x="756" y="298" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606959690247" />
     <state x="1008" y="401" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1605270734149" />
     <state width="1607" height="61" key="GridCell.Tab.0.bottom" timestamp="1606899514399">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -633,15 +651,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="374" y="93" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606874476823" />
-    <state x="638" y="258" key="NewModule_or_Project.wizard" timestamp="1606124376627">
+    <state x="638" y="258" key="NewModule_or_Project.wizard" timestamp="1606959692871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="638" y="258" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1606124376627" />
+    <state x="638" y="258" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1606959692871" />
     <state x="850" y="347" key="NewModule_or_Project.wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1605270364864" />
-    <state x="162" y="88" width="1718" height="883" key="SettingsEditor" timestamp="1606875320983">
+    <state x="202" y="109" width="1718" height="883" key="SettingsEditor" timestamp="1606960406028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="162" y="88" width="1718" height="883" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606875320983" />
+    <state x="202" y="109" width="1718" height="883" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606960406028" />
     <state x="633" y="175" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1605270595284" />
     <state x="452" y="194" key="Vcs.Push.Dialog.v2" timestamp="1606817899026">
       <screen x="0" y="0" width="1920" height="1040" />
