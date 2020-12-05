@@ -1,9 +1,11 @@
 package com.nova.eduService.client;
 
 import com.nova.commonutils.Result;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class VodFileDegradeFeignClient implements VodClient {
     @Override
     public Result delVideo(String videoId) {

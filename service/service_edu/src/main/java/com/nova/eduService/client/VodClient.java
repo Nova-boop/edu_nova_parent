@@ -19,5 +19,5 @@ public interface VodClient {
 
     // 调用nacos 批量删除阿里云视频
     @DeleteMapping("/eduVod/video/delVideoList")
-    public Result delVideoList(@RequestParam("videoList") List<String> videoList);
+    public Result delVideoList(@RequestParam(value = "videoList") List<String> videoList);
 }
