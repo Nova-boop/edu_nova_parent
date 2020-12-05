@@ -7,7 +7,6 @@ import com.nova.eduService.entity.EduVideo;
 import com.nova.eduService.mapper.EduVideoMapper;
 import com.nova.eduService.service.EduVideoService;
 import org.apache.commons.lang.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

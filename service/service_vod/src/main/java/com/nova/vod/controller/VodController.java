@@ -37,7 +37,7 @@ public class VodController {
 
     // 批量删除 阿里云视频
     @DeleteMapping("delVideoList")
-    public Result delVideoList(@RequestParam("videoList") List videoList){
+    public Result delVideoList(@RequestParam("videoList") List videoList) {
         vodService.delVideoList(videoList);
         return Result.ok();
     }
