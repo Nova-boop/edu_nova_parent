@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.nova")  // 扫描组件
+@ComponentScan(basePackages = {"com.nova"})  // 扫描组件
 @EnableDiscoveryClient // 微服务注册注解
 @EnableFeignClients  // 微服务调用注解
 public class EduApplication {
