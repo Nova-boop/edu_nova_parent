@@ -24,8 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e19f48f3-691e-419b-a509-9bef43edc454" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_cms/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_cms/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_oss/service_oss.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_oss/service_oss.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/client/VodFileDegradeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/client/VodFileDegradeFeignClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,8 +139,16 @@
       <updated>1607175905612</updated>
       <workItem from="1607175910817" duration="50000" />
       <workItem from="1607175973742" duration="1929000" />
-      <workItem from="1607222125718" duration="655000" />
+      <workItem from="1607222125718" duration="868000" />
     </task>
+    <task id="LOCAL-00001" summary="cms properties">
+      <created>1607222809582</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607222809582</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +165,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cms properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="cms properties" />
   </component>
   <component name="WindowStateProjectService">
     <state x="312" y="0" key="#Project_Structure" timestamp="1607178234169">
@@ -212,11 +223,23 @@
     </state>
     <state width="1867" height="196" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607178298364" />
     <state width="2507" height="414" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1607222750184" />
+    <state x="250" y="123" key="MergeDialog" timestamp="1607222909321">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="250" y="123" key="MergeDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1607222909321" />
+    <state x="830" y="409" key="MultipleFileMergeDialog" timestamp="1607222915258">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="830" y="409" key="MultipleFileMergeDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1607222915258" />
     <state x="463" y="0" key="SettingsEditor" timestamp="1607222599485">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="347" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607178293646" />
     <state x="463" y="0" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607222599485" />
+    <state x="773" y="373" key="Vcs.Push.Dialog.v2" timestamp="1607222932051">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="773" y="373" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1607222932051" />
     <state x="576" y="110" key="new project wizard" timestamp="1607176071538">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
