@@ -6,6 +6,7 @@ import com.nova.commonutils.Result;
 import com.nova.eduService.client.VodClient;
 import com.nova.eduService.entity.EduVideo;
 import com.nova.eduService.service.EduVideoService;
+import com.nova.servicebase.exceptionhandler.NovaException;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
@@ -61,7 +62,10 @@ public class EduVideoController {
         String videoSourceId = eduVideo.getVideoSourceId();
         // 非空判断
         if (!StringUtils.isEmpty(videoSourceId)) {
-            vodClient.delVideo(videoSourceId);
+            Result result = vodClient.delVideo(videoSourceId);
+            if (result.getCode()==20001) {
+                throw new NovaException(20001,"服务器异常触发熔断,删除失败!!");
+            }
         }
         // 删除数据表记录
         eduVideoService.removeById(videoId);
