@@ -1,4 +1,4 @@
-package com.nova.CodeG;
+package codeDemo;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -26,7 +26,7 @@ public class CodeGenerator {
         // 2、全局配置
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
-        gc.setOutputDir("D:\\02-JavaPrjs\\edu_nova_parent\\service\\service_banner" + "/src/main/java");
+        gc.setOutputDir("D:\\02_Projects\\Java_Projects\\edu_nova_parent\\service\\service_cms" + "/src/main/java");
         gc.setAuthor("nova");
         gc.setOpen(false); //生成后是否打开资源管理器
         gc.setFileOverride(false); //重新生成时文件是否覆盖
@@ -48,7 +48,7 @@ public class CodeGenerator {
 
         // 4、包配置
         PackageConfig pc = new PackageConfig();
-        pc.setModuleName("eduService"); //模块名
+        pc.setModuleName("cmsService"); //模块名
         pc.setParent("com.nova");
         pc.setController("controller");
         pc.setEntity("entity");
@@ -58,7 +58,7 @@ public class CodeGenerator {
 
         // 5、策略配置
         StrategyConfig strategy = new StrategyConfig();
-        strategy.setInclude("edu_course_description");
+        strategy.setInclude("crm_banner");
         strategy.setNaming(NamingStrategy.underline_to_camel);//数据库表映射到实体的命名策略
         strategy.setTablePrefix(pc.getModuleName() + "_"); //生成实体时去掉表前缀
 
