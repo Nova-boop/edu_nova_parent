@@ -3,6 +3,8 @@ package com.nova.eduService.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.nova.eduService.entity.EduTeacher;
 
+import java.util.List;
+
 /**
  * <p>
  * 讲师 服务类
@@ -13,4 +15,5 @@ import com.nova.eduService.entity.EduTeacher;
  */
 public interface EduTeacherService extends IService<EduTeacher> {
 
+    List<EduTeacher> selectPopularTeachers();
 }

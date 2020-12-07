@@ -16,8 +16,11 @@ import com.nova.eduService.service.EduVideoService;
 import com.nova.servicebase.exceptionhandler.NovaException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+
+import java.util.List;
 
 /**
  * <p>
@@ -170,6 +173,18 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
                 throw new NovaException(20001, "删除失败");
             }
         }
+    }
+
+    // 查询热门课程
+    @Cacheable(key = "'popularCourseList'",value = "index")
+    @Override
+    public List<EduCourse> selectPopularCourses() {
+
+        QueryWrapper<EduCourse> courseQueryWrapper = new QueryWrapper<>();
+        courseQueryWrapper.orderByDesc("id");
+        courseQueryWrapper.last("limit 8");
+        List<EduCourse> popularCourseList = baseMapper.selectList(courseQueryWrapper);
+        return popularCourseList;
     }
 
 }

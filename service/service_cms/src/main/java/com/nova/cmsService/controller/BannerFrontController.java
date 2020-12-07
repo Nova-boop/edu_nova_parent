@@ -35,6 +35,7 @@ public class BannerFrontController {
     // 查询首页显示的banner
     @GetMapping("getAllBanner")
     public Result getAllBanner(){
+
         List<CrmBanner> bannerList=bannerService.SelectBannerList();
 
         return Result.ok().data("bannerList",bannerList);

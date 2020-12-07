@@ -23,15 +23,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e19f48f3-691e-419b-a509-9bef43edc454" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/service/service_cms/src/main/java/com/nova/cmsService/controller/BannerFrontController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_cms/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/service_base/src/main/java/com/nova/servicebase/RedisConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_banner/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_banner/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_banner/src/test/java/com/nova/CodeG/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_cms/src/test/java/codeDemo/CodeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_cms/src/main/java/com/nova/cmsService/CmsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_cms/src/main/java/com/nova/cmsService/CmsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service_base/service_base.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/service_base/service_base.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_cms/src/main/java/com/nova/cmsService/controller/BannerFrontController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_cms/src/main/java/com/nova/cmsService/controller/BannerFrontController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_cms/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_cms/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/service_edu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/service_edu.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/service/EduCourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/service/EduCourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/service/EduTeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/service/EduTeacherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/service/impl/EduCourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/service/impl/EduCourseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/service/impl/EduTeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/service/impl/EduTeacherServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_oss/service_oss.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_oss/service_oss.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_vod/service_vod.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_vod/service_vod.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +61,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:/Softwares/Maven/apache-maven-3.6.3" />
+        <option name="mavenHome" value="C:\Softwares\Maven\apache-maven-3.6.3" />
         <option name="userSettingsFile" value="C:\Softwares\Maven\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -95,15 +102,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.EduApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,10 +155,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OssApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service_oss" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nova.ossService.OssApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VodApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service_vod" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nova.vod.VodApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="JUnit.CodeGenerator.run" />
       <item itemvalue="Spring Boot.CmsApplication" />
       <item itemvalue="Spring Boot.EduApplication" />
-      <item itemvalue="JUnit.CodeGenerator.run" />
+      <item itemvalue="Spring Boot.VodApplication" />
+      <item itemvalue="Spring Boot.OssApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -173,7 +194,8 @@
       <updated>1607175905612</updated>
       <workItem from="1607175910817" duration="50000" />
       <workItem from="1607175973742" duration="1929000" />
-      <workItem from="1607222125718" duration="6667000" />
+      <workItem from="1607222125718" duration="9565000" />
+      <workItem from="1607305883651" duration="8139000" />
     </task>
     <task id="LOCAL-00001" summary="cms properties">
       <created>1607222809582</created>
@@ -189,7 +211,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607223057229</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Banner 管理">
+      <created>1607244296175</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607244296176</updated>
+    </task>
+    <task id="LOCAL-00004" summary="首页数据管理">
+      <created>1607244337005</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607244337005</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,64 +246,71 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cms properties" />
     <MESSAGE value="update 熔断器" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 熔断器" />
+    <MESSAGE value="Banner 管理" />
+    <MESSAGE value="首页数据管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="首页数据管理" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="582" y="186" key="#Inspections" timestamp="1607327668936">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="582" y="186" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1607327668936" />
     <state x="312" y="0" key="#Project_Structure" timestamp="1607178234169">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="312" y="0" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1607178234169" />
-    <state x="934" y="495" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607222624913">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="354" y="205" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607305976302">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="354" y="205" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1607305976302" />
     <state x="934" y="495" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1607222624913" />
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1607242411924">
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1607330896653">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607242411924" />
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607330896653" />
     <state x="687" y="220" key="FileChooserDialogImpl" timestamp="1607176007966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="220" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607176007966" />
-    <state width="1867" height="287" key="GridCell.Tab.0.bottom" timestamp="1607243946676">
+    <state width="1867" height="288" key="GridCell.Tab.0.bottom" timestamp="1607331102879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607243946676" />
+    <state width="1867" height="288" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607331102879" />
     <state width="2507" height="564" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1607223077373" />
-    <state width="1867" height="287" key="GridCell.Tab.0.center" timestamp="1607243946676">
+    <state width="1867" height="288" key="GridCell.Tab.0.center" timestamp="1607331102878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="287" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607243946676" />
+    <state width="1867" height="288" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607331102878" />
     <state width="2507" height="564" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1607223077373" />
-    <state width="1867" height="287" key="GridCell.Tab.0.left" timestamp="1607243946676">
+    <state width="1867" height="288" key="GridCell.Tab.0.left" timestamp="1607331102878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="287" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607243946676" />
+    <state width="1867" height="288" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607331102878" />
     <state width="2507" height="564" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1607223077373" />
-    <state width="1867" height="287" key="GridCell.Tab.0.right" timestamp="1607243946676">
+    <state width="1867" height="288" key="GridCell.Tab.0.right" timestamp="1607331102879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="287" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607243946676" />
+    <state width="1867" height="288" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607331102879" />
     <state width="2507" height="564" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1607223077373" />
-    <state width="1867" height="287" key="GridCell.Tab.1.bottom" timestamp="1607243946677">
+    <state width="1867" height="288" key="GridCell.Tab.1.bottom" timestamp="1607331102879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="287" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607243946677" />
+    <state width="1867" height="288" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607331102879" />
     <state width="2507" height="564" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1607223077374" />
-    <state width="1867" height="287" key="GridCell.Tab.1.center" timestamp="1607243946677">
+    <state width="1867" height="288" key="GridCell.Tab.1.center" timestamp="1607331102879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="287" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607243946677" />
+    <state width="1867" height="288" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607331102879" />
     <state width="2507" height="564" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1607223077374" />
-    <state width="1867" height="287" key="GridCell.Tab.1.left" timestamp="1607243946676">
+    <state width="1867" height="288" key="GridCell.Tab.1.left" timestamp="1607331102879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="287" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607243946676" />
+    <state width="1867" height="288" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607331102879" />
     <state width="2507" height="564" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1607223077373" />
-    <state width="1867" height="287" key="GridCell.Tab.1.right" timestamp="1607243946677">
+    <state width="1867" height="288" key="GridCell.Tab.1.right" timestamp="1607331102879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="287" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607243946677" />
+    <state width="1867" height="288" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607331102879" />
     <state width="2507" height="564" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1607223077374" />
     <state x="250" y="123" key="MergeDialog" timestamp="1607222909321">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -277,14 +320,16 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="830" y="409" key="MultipleFileMergeDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1607222915258" />
-    <state x="463" y="0" key="SettingsEditor" timestamp="1607222599485">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="81" y="0" key="SettingsEditor" timestamp="1607305957920">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="347" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607178293646" />
+    <state x="81" y="0" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1607305957920" />
     <state x="463" y="0" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607222599485" />
-    <state x="773" y="373" key="Vcs.Push.Dialog.v2" timestamp="1607223075643">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="580" y="277" key="Vcs.Push.Dialog.v2" timestamp="1607244341844">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="580" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607244341844" />
     <state x="773" y="373" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1607223075643" />
     <state x="576" y="110" key="new project wizard" timestamp="1607176071538">
       <screen x="0" y="0" width="1920" height="1040" />

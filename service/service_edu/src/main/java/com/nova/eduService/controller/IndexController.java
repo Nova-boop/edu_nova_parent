@@ -1,12 +1,12 @@
 package com.nova.eduService.controller;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.nova.commonutils.Result;
 import com.nova.eduService.entity.EduCourse;
 import com.nova.eduService.entity.EduTeacher;
 import com.nova.eduService.service.EduCourseService;
 import com.nova.eduService.service.EduTeacherService;
 import io.swagger.annotations.Api;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -34,18 +34,11 @@ public class IndexController {
     public Result index() {
 
         // 查询8条热门课程
-        QueryWrapper<EduCourse> courseQueryWrapper = new QueryWrapper<>();
-        courseQueryWrapper.orderByDesc("id");
-        courseQueryWrapper.last("limit 8");
-        List<EduCourse> courseList = eduCourseService.list(courseQueryWrapper);
+        List<EduCourse> popularCoursesList = eduCourseService.selectPopularCourses();
 
         // 查询4位热门讲师数据
-        QueryWrapper<EduTeacher> teacherQueryWrapper = new QueryWrapper<>();
-        courseQueryWrapper.orderByDesc("id");
-        courseQueryWrapper.last("limit 4");
-        List<EduTeacher> teacherList = eduTeacherService.list(teacherQueryWrapper);
-
-
-        return Result.ok().data("courseList", courseList).data("teacherList", teacherList);
+        List<EduTeacher> popularTeacherList = eduTeacherService.selectPopularTeachers();
+        // 返回数据
+        return Result.ok().data("popularCoursesList", popularCoursesList).data("popularTeacherList", popularTeacherList);
     }
 }

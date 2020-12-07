@@ -7,6 +7,8 @@ import com.nova.eduService.entity.course.QueryCourseVo;
 import com.nova.eduService.entity.vo.CourseInfoVo;
 import com.nova.eduService.entity.vo.CoursePublishInfoVo;
 
+import java.util.List;
+
 /**
  * <p>
  * 课程 服务类
@@ -32,4 +34,7 @@ public interface EduCourseService extends IService<EduCourse> {
 
     // 删除课程
     void removeCourseById(String courseId);
+
+    // 查询热门课程
+    List<EduCourse> selectPopularCourses();
 }
