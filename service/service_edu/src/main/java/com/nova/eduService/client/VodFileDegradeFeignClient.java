@@ -7,7 +7,7 @@ import java.util.List;
 
 @Component
 
-public class VodFileDegradeFeignClient  implements VodClient{
+public class VodFileDegradeFeignClient implements VodClient {
 
     // 删除一个视频
     @Override

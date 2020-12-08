@@ -24,14 +24,13 @@ public class MsmController {
 
     // 注入 service
     private final MsmService msmService;
+    // 注入 redis 对象,设定验证码的有效时间
+    @Autowired
+    private RedisTemplate<String, String> redisTemplate;
 
     public MsmController(MsmService msmService) {
         this.msmService = msmService;
     }
-
-    // 注入 redis 对象,设定验证码的有效时间
-    @Autowired
-    private RedisTemplate<String, String> redisTemplate;
 
     // 发送短信验证码
     @GetMapping("send/{PhoneNumbers}")

@@ -1,6 +1,9 @@
 package com.nova.eduService.entity;
 
-import com.baomidou.mybatisplus.annotation.*;
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -50,7 +53,6 @@ public class EduTeacher implements Serializable {
     private Integer sort;
 
     @ApiModelProperty(value = "逻辑删除 1（true）已删除， 0（false）未删除")
-    @TableLogic
     @TableField(fill = FieldFill.INSERT)
     private Integer isDeleted;
 

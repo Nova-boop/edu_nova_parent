@@ -63,8 +63,8 @@ public class EduVideoController {
         // 非空判断
         if (!StringUtils.isEmpty(videoSourceId)) {
             Result result = vodClient.delVideo(videoSourceId);
-            if (result.getCode()==20001) {
-                throw new NovaException(20001,"服务器异常触发熔断,删除失败!!");
+            if (result.getCode() == 20001) {
+                throw new NovaException(20001, "服务器异常触发熔断,删除失败!!");
             }
         }
         // 删除数据表记录

@@ -5,7 +5,6 @@ import com.nova.cmsService.entity.CrmBanner;
 import com.nova.cmsService.service.CrmBannerService;
 import com.nova.commonutils.Result;
 import io.swagger.annotations.Api;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -34,11 +33,11 @@ public class BannerFrontController {
 
     // 查询首页显示的banner
     @GetMapping("getAllBanner")
-    public Result getAllBanner(){
+    public Result getAllBanner() {
 
-        List<CrmBanner> bannerList=bannerService.SelectBannerList();
+        List<CrmBanner> bannerList = bannerService.SelectBannerList();
 
-        return Result.ok().data("bannerList",bannerList);
+        return Result.ok().data("bannerList", bannerList);
     }
 
 }

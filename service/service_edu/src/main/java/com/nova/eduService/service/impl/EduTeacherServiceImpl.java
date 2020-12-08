@@ -22,7 +22,7 @@ import java.util.List;
 public class EduTeacherServiceImpl extends ServiceImpl<EduTeacherMapper, EduTeacher> implements EduTeacherService {
 
     // 热门讲师信息
-    @Cacheable(key = "'popularTeacherList'",value = "index")
+    @Cacheable(key = "'popularTeacherList'", value = "index")
     @Override
     public List<EduTeacher> selectPopularTeachers() {
 

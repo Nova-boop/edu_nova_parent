@@ -176,7 +176,7 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
     }
 
     // 查询热门课程
-    @Cacheable(key = "'popularCourseList'",value = "index")
+    @Cacheable(key = "'popularCourseList'", value = "index")
     @Override
     public List<EduCourse> selectPopularCourses() {
 

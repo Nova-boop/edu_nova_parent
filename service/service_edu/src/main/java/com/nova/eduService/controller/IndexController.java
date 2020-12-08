@@ -6,7 +6,6 @@ import com.nova.eduService.entity.EduTeacher;
 import com.nova.eduService.service.EduCourseService;
 import com.nova.eduService.service.EduTeacherService;
 import io.swagger.annotations.Api;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
