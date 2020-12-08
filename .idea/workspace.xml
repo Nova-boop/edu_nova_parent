@@ -23,16 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e19f48f3-691e-419b-a509-9bef43edc454" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/service/service_msm/src/main/java/com/nova/msmService/MsmApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_msm/src/main/java/com/nova/msmService/controller/MsmController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_msm/src/main/java/com/nova/msmService/service/MsmService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_msm/src/main/java/com/nova/msmService/service/impl/MsmServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_msm/src/main/java/com/nova/msmService/utils/RandomUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_ucenter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common_utils/src/main/java/com/nova/commonutils/MD5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_msm/src/main/java/com/nova/msmService/utils/RandomUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/nova/ucenterService/ServiceUcApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/nova/ucenterService/entity/vo/RegisterVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_ucenter/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_ucenter/src/test/java/demo/CodeGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_acl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_msm/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_acl/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_msm/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/EduApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/EduApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_msm/src/main/java/com/nova/msmService/MsmApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_msm/src/main/java/com/nova/msmService/MsmApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_msm/src/main/java/com/nova/msmService/controller/MsmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_msm/src/main/java/com/nova/msmService/controller/MsmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_msm/src/main/java/com/nova/msmService/utils/RandomUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_ucenter/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_ucenter/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +79,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/service_cms/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/service_msm/src/main/java/com/nova/msmService/utils" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -89,14 +91,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="demo" />
       <recent name="com.nova.cmsService.controller" />
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\02_Projects\Java_Projects\edu_nova_parent\service\service_msm\src\main\java\com\nova\msmService\utils" />
+      <recent name="D:\02_Projects\Java_Projects\edu_nova_parent\common\common_utils\src\main\java\com\nova\commonutils" />
+      <recent name="D:\02_Projects\Java_Projects\edu_nova_parent\service\service_ucenter\src\main\resources" />
       <recent name="D:\02_Projects\Java_Projects\edu_nova_parent\service\service_cms\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MsmApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceUcApplication">
     <configuration name="RandomUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nova.msmService.utils.RandomUtils" />
       <module name="service_msm" />
@@ -123,16 +129,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CodeGenerator.run" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service_cms" />
+    <configuration name="CodeGenerator.run (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service_ucenter" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codeDemo.*" />
+          <option name="PATTERN" value="demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="codeDemo" />
-      <option name="MAIN_CLASS_NAME" value="codeDemo.CodeGenerator" />
+      <option name="PACKAGE_NAME" value="demo" />
+      <option name="MAIN_CLASS_NAME" value="demo.CodeGenerator" />
       <option name="METHOD_NAME" value="run" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -179,6 +185,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceUcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service_ucenter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nova.ucenterService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nova.ucenterService.ServiceUcApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="VodApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service_vod" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.nova.vod.VodApplication" />
@@ -187,20 +206,22 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CodeGenerator.run" />
       <item itemvalue="Spring Boot.VodApplication" />
       <item itemvalue="Spring Boot.OssApplication" />
       <item itemvalue="Spring Boot.CmsApplication" />
       <item itemvalue="Spring Boot.EduApplication" />
       <item itemvalue="Spring Boot.MsmApplication" />
       <item itemvalue="Application.RandomUtils" />
+      <item itemvalue="JUnit.CodeGenerator.run (1)" />
+      <item itemvalue="Spring Boot.ServiceUcApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ServiceUcApplication" />
+        <item itemvalue="JUnit.CodeGenerator.run (1)" />
         <item itemvalue="Application.RandomUtils" />
         <item itemvalue="Spring Boot.EduApplication" />
         <item itemvalue="Spring Boot.CmsApplication" />
-        <item itemvalue="JUnit.CodeGenerator.run" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +237,7 @@
       <workItem from="1607175973742" duration="1929000" />
       <workItem from="1607222125718" duration="9565000" />
       <workItem from="1607305883651" duration="10270000" />
-      <workItem from="1607336123583" duration="6803000" />
+      <workItem from="1607336123583" duration="12498000" />
     </task>
     <task id="LOCAL-00001" summary="cms properties">
       <created>1607222809582</created>
@@ -260,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607337130343</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="阿里云短信发送服务">
+      <created>1607396325475</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607396325475</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +313,8 @@
     <MESSAGE value="首页数据管理" />
     <MESSAGE value="实现redis 缓存" />
     <MESSAGE value="jwt utils 工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="jwt utils 工具类" />
+    <MESSAGE value="阿里云短信发送服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="阿里云短信发送服务" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1192" y="503" key="#Custom_Plugin_Repositories" timestamp="1607336004774">
@@ -296,63 +325,67 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="582" y="186" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1607327668936" />
-    <state x="312" y="0" key="#Project_Structure" timestamp="1607396270399">
+    <state x="312" y="0" key="#Project_Structure" timestamp="1607396517606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="312" y="0" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1607396270399" />
+    <state x="312" y="0" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1607396517606" />
     <state x="354" y="203" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607393730561">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="354" y="203" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607393730561" />
     <state x="354" y="205" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1607305976302" />
     <state x="934" y="495" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1607222624913" />
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1607393344480">
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1607409938356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607393344480" />
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607409938356" />
+    <state x="1105" y="214" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607399082126">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1105" y="214" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607399082126" />
     <state x="687" y="220" key="FileChooserDialogImpl" timestamp="1607176007966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="220" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607176007966" />
-    <state width="1867" height="270" key="GridCell.Tab.0.bottom" timestamp="1607395952809">
+    <state width="1867" height="205" key="GridCell.Tab.0.bottom" timestamp="1607399843338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607395952809" />
+    <state width="1867" height="205" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607399843338" />
     <state width="2507" height="564" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1607223077373" />
-    <state width="1867" height="270" key="GridCell.Tab.0.center" timestamp="1607395952809">
+    <state width="1867" height="205" key="GridCell.Tab.0.center" timestamp="1607399843338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607395952809" />
+    <state width="1867" height="205" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607399843338" />
     <state width="2507" height="564" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1607223077373" />
-    <state width="1867" height="270" key="GridCell.Tab.0.left" timestamp="1607395952809">
+    <state width="1867" height="205" key="GridCell.Tab.0.left" timestamp="1607399843338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607395952809" />
+    <state width="1867" height="205" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607399843338" />
     <state width="2507" height="564" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1607223077373" />
-    <state width="1867" height="270" key="GridCell.Tab.0.right" timestamp="1607395952809">
+    <state width="1867" height="205" key="GridCell.Tab.0.right" timestamp="1607399843338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607395952809" />
+    <state width="1867" height="205" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607399843338" />
     <state width="2507" height="564" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1607223077373" />
-    <state width="1867" height="270" key="GridCell.Tab.1.bottom" timestamp="1607395952809">
+    <state width="1867" height="205" key="GridCell.Tab.1.bottom" timestamp="1607399843339">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="270" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607395952809" />
+    <state width="1867" height="205" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607399843339" />
     <state width="2507" height="564" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1607223077374" />
-    <state width="1867" height="270" key="GridCell.Tab.1.center" timestamp="1607395952809">
+    <state width="1867" height="205" key="GridCell.Tab.1.center" timestamp="1607399843338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="270" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607395952809" />
+    <state width="1867" height="205" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607399843338" />
     <state width="2507" height="564" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1607223077374" />
-    <state width="1867" height="270" key="GridCell.Tab.1.left" timestamp="1607395952809">
+    <state width="1867" height="205" key="GridCell.Tab.1.left" timestamp="1607399843338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="270" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607395952809" />
+    <state width="1867" height="205" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607399843338" />
     <state width="2507" height="564" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1607223077373" />
-    <state width="1867" height="270" key="GridCell.Tab.1.right" timestamp="1607395952809">
+    <state width="1867" height="205" key="GridCell.Tab.1.right" timestamp="1607399843338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="270" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607395952809" />
+    <state width="1867" height="205" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607399843338" />
     <state width="2507" height="564" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1607223077374" />
     <state x="250" y="123" key="MergeDialog" timestamp="1607222909321">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -368,10 +401,10 @@
     <state x="316" y="157" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607336061519" />
     <state x="81" y="0" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1607305957920" />
     <state x="463" y="0" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607222599485" />
-    <state x="580" y="277" key="Vcs.Push.Dialog.v2" timestamp="1607337137271">
+    <state x="580" y="277" key="Vcs.Push.Dialog.v2" timestamp="1607396330621">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="580" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607337137271" />
+    <state x="580" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607396330621" />
     <state x="773" y="373" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1607223075643" />
     <state x="576" y="110" key="new project wizard" timestamp="1607396250121">
       <screen x="0" y="0" width="1920" height="1040" />

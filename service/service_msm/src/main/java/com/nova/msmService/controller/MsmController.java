@@ -2,7 +2,7 @@ package com.nova.msmService.controller;
 
 import com.nova.commonutils.Result;
 import com.nova.msmService.service.MsmService;
-import com.nova.msmService.utils.RandomUtils;
+import com.nova.msmService.utils.RandomUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,7 +47,7 @@ public class MsmController {
         // 如果Redis 中没有值,生成验证码
 
         // 生成随机值,阿里云进行发送
-        code = RandomUtils.generateCode();
+        code = RandomUtil.getSixBitRandom();
         Map<String, Object> param = new HashMap<>();
         param.put("code", code);
 
