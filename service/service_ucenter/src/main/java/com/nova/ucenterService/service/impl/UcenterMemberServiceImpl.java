@@ -10,9 +10,12 @@ import com.nova.ucenterService.entity.vo.RegisterVo;
 import com.nova.ucenterService.mapper.UcenterMemberMapper;
 import com.nova.ucenterService.service.UcenterMemberService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.querydsl.QuerydslUtils;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+
+import java.util.List;
 
 /**
  * <p>
@@ -51,16 +54,13 @@ public class UcenterMemberServiceImpl extends ServiceImpl<UcenterMemberMapper, U
         }
 
         // 密码加密后进行比较
-
         if (!MD5.encrypt(password).equals(mobileMember.getPassword())) {
             throw new NovaException(20001, "密码错误!!");
         }
-
-        // 判断用户是否被禁用
+         // 判断用户是否被禁用
         if (mobileMember.getIsDisabled() == 1) {
             throw new NovaException(20001, "用户被禁用,登录失败!!");
         }
-
         // 登陆成功,生成token
 
         return JwtUtils.getJwtToken(mobileMember.getId(), mobileMember.getNickname());
@@ -105,5 +105,15 @@ public class UcenterMemberServiceImpl extends ServiceImpl<UcenterMemberMapper, U
         member.setNickname(nickname);
         member.setPassword(MD5.encrypt(password));
         baseMapper.insert(member);
+    }
+
+    // 根据 openid 查询是member
+    @Override
+    public UcenterMember getMemberByOpenId(String openid) {
+        QueryWrapper<UcenterMember> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("openid",openid);
+
+        UcenterMember member = baseMapper.selectOne(queryWrapper);
+        return member;
     }
 }

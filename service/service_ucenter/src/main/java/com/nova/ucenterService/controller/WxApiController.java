@@ -1,6 +1,7 @@
 package com.nova.ucenterService.controller;
 
 import com.google.gson.Gson;
+import com.nova.commonutils.JwtUtils;
 import com.nova.servicebase.exceptionhandler.NovaException;
 import com.nova.ucenterService.entity.UcenterMember;
 import com.nova.ucenterService.service.UcenterMemberService;
@@ -59,7 +60,7 @@ public class WxApiController {
     // 2.根据code 访问AccessToken(访问凭证) openId (身份ID)
     @GetMapping("callback")
     public String callback(String code, String state) {
-
+        // 根据code 访问AccessToken(访问凭证) openId (身份ID)
         try {
             //向认证服务器发送请求换取access_token
             String baseAccessTokenUrl = "https://api.weixin.qq.com/sns/oauth2/access_token" +
@@ -75,7 +76,6 @@ public class WxApiController {
 
             // 使用HttpClient 访问获取url
             String accessTokenInfo = HttpClientUtils.get(accessTokenUrl);
-            System.out.println(accessTokenInfo);
 
             // 解析Token 和openID
             Gson gson = new Gson();
@@ -83,29 +83,35 @@ public class WxApiController {
             String accessToken = (String) mapAccessToken.get("access_token");
             String openid = (String) mapAccessToken.get("openid");
 
-            // 使用Token 和openID 访问地址
-            String baseUserInfoUrl = "https://api.weixin.qq.com/sns/userinfo" +
-                    "?access_token=%s" +
-                    "&openid=%s";
+            //根据 openid 查询是member
+            UcenterMember member = ucenterMemberService.getMemberByOpenId(openid);
+            if (member == null) {
+                // 使用Token 和openID 访问地址获取用户信息
+                String baseUserInfoUrl = "https://api.weixin.qq.com/sns/userinfo" +
+                        "?access_token=%s" +
+                        "&openid=%s";
 
-            String userInfoUrl = String.format(baseUserInfoUrl, accessToken, openid);
-            String userInfo = HttpClientUtils.get(userInfoUrl);
+                String userInfoUrl = String.format(baseUserInfoUrl, accessToken, openid);
+                String userInfo = HttpClientUtils.get(userInfoUrl);
 
-            // 解析用户信息,并存储到数据库
-            HashMap userMap = gson.fromJson(userInfo, HashMap.class);
-            String nickname = (String) userMap.get("nickname");
-            String headimgurl = (String) userMap.get("headimgurl");
+                // 解析用户信息,并存储到数据库
+                HashMap userMap = gson.fromJson(userInfo, HashMap.class);
+                String nickname = (String) userMap.get("nickname");
+                String headImgUrl = (String) userMap.get("headimgurl");
 
-            UcenterMember member = new UcenterMember();
-            member.setNickname(nickname);
-            member.setOpenid(openid);
-            member.setAvatar(headimgurl);
-            ucenterMemberService.save(member);
+                // 存储到数据库
+                member = new UcenterMember();
+                member.setOpenid(openid);
+                member.setNickname(nickname);
+                member.setAvatar(headImgUrl);
+                ucenterMemberService.save(member);
+            }
 
+            // 使用jwt 成成token字符串，将token 返回到路径中
+            String token = JwtUtils.getJwtToken(member.getId(), member.getNickname());
+            return "redirect:http://localhost:9528?token=" + token;
         } catch (Exception e) {
             throw new NovaException(20001, "访问出错");
         }
-
-        return "redirect:http://localhost:3000";
     }
 }
