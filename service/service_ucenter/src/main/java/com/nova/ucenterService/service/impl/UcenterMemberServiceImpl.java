@@ -10,12 +10,9 @@ import com.nova.ucenterService.entity.vo.RegisterVo;
 import com.nova.ucenterService.mapper.UcenterMemberMapper;
 import com.nova.ucenterService.service.UcenterMemberService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.querydsl.QuerydslUtils;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
-
-import java.util.List;
 
 /**
  * <p>
@@ -57,7 +54,7 @@ public class UcenterMemberServiceImpl extends ServiceImpl<UcenterMemberMapper, U
         if (!MD5.encrypt(password).equals(mobileMember.getPassword())) {
             throw new NovaException(20001, "密码错误!!");
         }
-         // 判断用户是否被禁用
+        // 判断用户是否被禁用
         if (mobileMember.getIsDisabled() == 1) {
             throw new NovaException(20001, "用户被禁用,登录失败!!");
         }
@@ -111,7 +108,7 @@ public class UcenterMemberServiceImpl extends ServiceImpl<UcenterMemberMapper, U
     @Override
     public UcenterMember getMemberByOpenId(String openid) {
         QueryWrapper<UcenterMember> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("openid",openid);
+        queryWrapper.eq("openid", openid);
 
         UcenterMember member = baseMapper.selectOne(queryWrapper);
         return member;

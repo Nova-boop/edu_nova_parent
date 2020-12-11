@@ -13,7 +13,6 @@ import com.nova.ucenterService.entity.vo.RegisterVo;
  * @since 2020-12-08
  */
 public interface UcenterMemberService extends IService<UcenterMember> {
-
     // 用户登录
     String login(UcenterMember ucenterMember);
 

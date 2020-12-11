@@ -63,6 +63,4 @@ public class FrontTeacherController {
         // 返回数据
         return Result.ok().data("teacherInfo", teacherInfo).data("courseList", courseList);
     }
-
-
 }
