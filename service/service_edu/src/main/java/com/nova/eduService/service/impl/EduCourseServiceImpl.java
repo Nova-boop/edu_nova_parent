@@ -187,4 +187,14 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
         return popularCourseList;
     }
 
+    // 查询讲师ID所讲课程信息
+    @Override
+    public List<EduCourse> getCourseListByTeacherId(String teacherId) {
+        QueryWrapper<EduCourse> queryWrapper = new QueryWrapper<>();
+        queryWrapper.orderByDesc("buy_count");
+        queryWrapper.eq("teacher_id", teacherId);
+        List<EduCourse> courseList = baseMapper.selectList(queryWrapper);
+        return courseList;
+    }
+
 }

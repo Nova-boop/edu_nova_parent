@@ -37,4 +37,7 @@ public interface EduCourseService extends IService<EduCourse> {
 
     // 查询热门课程
     List<EduCourse> selectPopularCourses();
+
+    // 查询讲师ID所讲课程信息
+    List<EduCourse> getCourseListByTeacherId(String teacherId);
 }

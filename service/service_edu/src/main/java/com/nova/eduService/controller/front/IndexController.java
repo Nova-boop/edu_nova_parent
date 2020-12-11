@@ -1,4 +1,4 @@
-package com.nova.eduService.controller;
+package com.nova.eduService.controller.front;
 
 import com.nova.commonutils.Result;
 import com.nova.eduService.entity.EduCourse;
