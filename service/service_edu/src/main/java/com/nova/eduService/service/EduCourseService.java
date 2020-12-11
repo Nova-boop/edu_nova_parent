@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.nova.eduService.entity.EduCourse;
 import com.nova.eduService.entity.course.QueryCourseVo;
+import com.nova.eduService.entity.frontVo.CourseFrontVo;
 import com.nova.eduService.entity.vo.CourseInfoVo;
 import com.nova.eduService.entity.vo.CoursePublishInfoVo;
 
@@ -40,4 +41,7 @@ public interface EduCourseService extends IService<EduCourse> {
 
     // 查询讲师ID所讲课程信息
     List<EduCourse> getCourseListByTeacherId(String teacherId);
+
+    // 条件分页查询课程列表
+    List<EduCourse> getCourseFrontList(Page<EduCourse> pageCourse, CourseFrontVo courseFrontVo);
 }

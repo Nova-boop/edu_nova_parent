@@ -21,12 +21,16 @@ import java.util.Map;
 @RestController
 @RequestMapping("/eduService/teacherFront")
 @Api(description = "前端讲师")
-public class TeacherFrontController {
-    @Autowired
-    private EduTeacherService teacherService;
+public class FrontTeacherController {
+    // 注入 teacherService
+    private final EduTeacherService teacherService;
+    // 注入 courseService
+    private final EduCourseService courseService;
 
-    @Autowired
-    private EduCourseService courseService;
+    public FrontTeacherController(EduCourseService courseService, EduTeacherService teacherService) {
+        this.courseService = courseService;
+        this.teacherService = teacherService;
+    }
 
     //1.分页查询讲师
     @ApiOperation(value = "条件分页查询讲师")

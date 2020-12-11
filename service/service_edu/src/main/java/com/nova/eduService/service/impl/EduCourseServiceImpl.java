@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.nova.eduService.entity.EduCourse;
 import com.nova.eduService.entity.EduCourseDescription;
 import com.nova.eduService.entity.course.QueryCourseVo;
+import com.nova.eduService.entity.frontVo.CourseFrontVo;
 import com.nova.eduService.entity.vo.CourseInfoVo;
 import com.nova.eduService.entity.vo.CoursePublishInfoVo;
 import com.nova.eduService.mapper.EduCourseMapper;
@@ -14,11 +15,10 @@ import com.nova.eduService.service.EduCourseDescriptionService;
 import com.nova.eduService.service.EduCourseService;
 import com.nova.eduService.service.EduVideoService;
 import com.nova.servicebase.exceptionhandler.NovaException;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 import java.util.List;
 
@@ -34,16 +34,17 @@ import java.util.List;
 public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse> implements EduCourseService {
 
     // 注入 eduCourseDescriptionService
-    @Autowired
-    private EduCourseDescriptionService courseDescriptionService;
-
+    private final EduCourseDescriptionService courseDescriptionService;
     // 注入 EduVideoService
-    @Autowired
-    private EduVideoService eduVideoService;
-
+    private final EduVideoService eduVideoService;
     // 注入 EduChapterService
-    @Autowired
-    private EduChapterService eduChapterService;
+    private final EduChapterService eduChapterService;
+
+    public EduCourseServiceImpl(EduCourseDescriptionService courseDescriptionService, EduVideoService eduVideoService, EduChapterService eduChapterService) {
+        this.courseDescriptionService = courseDescriptionService;
+        this.eduVideoService = eduVideoService;
+        this.eduChapterService = eduChapterService;
+    }
 
 
     // 添加课程基本信息的方法
@@ -195,6 +196,41 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
         queryWrapper.eq("teacher_id", teacherId);
         List<EduCourse> courseList = baseMapper.selectList(queryWrapper);
         return courseList;
+    }
+
+    // 条件分页查询课程列表
+    @Override
+    public List<EduCourse> getCourseFrontList(Page<EduCourse> pageCourse, CourseFrontVo courseQuery) {
+
+        // 条件
+        QueryWrapper<EduCourse> queryWrapper = new QueryWrapper<>();
+
+        if (!StringUtils.isEmpty(courseQuery.getSubjectParentId())) {
+            queryWrapper.eq("subject_parent_id", courseQuery.getSubjectParentId());
+        }
+
+        if (!StringUtils.isEmpty(courseQuery.getSubjectId())) {
+            queryWrapper.eq("subject_id", courseQuery.getSubjectId());
+        }
+
+        if (!StringUtils.isEmpty(courseQuery.getBuyCountSort())) {
+            queryWrapper.orderByDesc("buy_count");
+        }
+
+        if (!StringUtils.isEmpty(courseQuery.getGmtCreateSort())) {
+            queryWrapper.orderByDesc("gmt_create");
+        }
+
+        if (!StringUtils.isEmpty(courseQuery.getPriceSort())) {
+            queryWrapper.orderByDesc("price");
+        }
+
+        // 查询数据
+        baseMapper.selectPage(pageCourse, queryWrapper);
+
+        // 返回数据
+        List<EduCourse> courseListRecords = pageCourse.getRecords();
+        return courseListRecords;
     }
 
 }
