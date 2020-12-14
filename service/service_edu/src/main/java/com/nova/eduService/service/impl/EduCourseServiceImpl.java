@@ -7,6 +7,7 @@ import com.nova.eduService.entity.EduCourse;
 import com.nova.eduService.entity.EduCourseDescription;
 import com.nova.eduService.entity.course.QueryCourseVo;
 import com.nova.eduService.entity.frontVo.CourseFrontVo;
+import com.nova.eduService.entity.frontVo.CourseWebVo;
 import com.nova.eduService.entity.vo.CourseInfoVo;
 import com.nova.eduService.entity.vo.CoursePublishInfoVo;
 import com.nova.eduService.mapper.EduCourseMapper;
@@ -33,6 +34,9 @@ import java.util.List;
 @Service
 public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse> implements EduCourseService {
 
+    //todo  注入缓存的服务
+
+
     // 注入 eduCourseDescriptionService
     private final EduCourseDescriptionService courseDescriptionService;
     // 注入 EduVideoService
@@ -40,7 +44,9 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
     // 注入 EduChapterService
     private final EduChapterService eduChapterService;
 
-    public EduCourseServiceImpl(EduCourseDescriptionService courseDescriptionService, EduVideoService eduVideoService, EduChapterService eduChapterService) {
+    public EduCourseServiceImpl(EduCourseDescriptionService courseDescriptionService,
+                                EduVideoService eduVideoService,
+                                EduChapterService eduChapterService) {
         this.courseDescriptionService = courseDescriptionService;
         this.eduVideoService = eduVideoService;
         this.eduChapterService = eduChapterService;
@@ -231,6 +237,23 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
         // 返回数据
         List<EduCourse> courseListRecords = pageCourse.getRecords();
         return courseListRecords;
+    }
+
+    // 根据课程ID 查询课程和讲师
+
+    @Override
+    public CourseWebVo selectCourseInfoById(String courseId) {
+        // 更新课程浏览数量
+        this.updatePageViewCount(courseId);
+        // 查询课程信息
+        return baseMapper.selectInfoWebById(courseId);
+    }
+
+    // 更新课程浏览数量
+    private void updatePageViewCount(String courseId) {
+        EduCourse course = baseMapper.selectById(courseId);
+        course.setViewCount(course.getViewCount() + 1);
+        baseMapper.updateById(course);
     }
 
 }

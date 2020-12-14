@@ -4,7 +4,10 @@ package com.nova.eduService.controller.front;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.nova.commonutils.Result;
 import com.nova.eduService.entity.EduCourse;
+import com.nova.eduService.entity.chapter.ChapterVo;
 import com.nova.eduService.entity.frontVo.CourseFrontVo;
+import com.nova.eduService.entity.frontVo.CourseWebVo;
+import com.nova.eduService.service.EduChapterService;
 import com.nova.eduService.service.EduCourseService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiParam;
@@ -18,9 +21,11 @@ import java.util.List;
 public class FrontCourseController {
     // 注入service
     private final EduCourseService courseService;
+    private final EduChapterService chapterService;
 
-    public FrontCourseController(EduCourseService courseService) {
+    public FrontCourseController(EduCourseService courseService, EduChapterService chapterService) {
         this.courseService = courseService;
+        this.chapterService = chapterService;
     }
 
     //条件分页查询课程列表
@@ -42,7 +47,14 @@ public class FrontCourseController {
     @GetMapping("getCourseFrontInfo/{courseId}")
     public Result getCourseFrontPageList(@PathVariable String courseId) {
 
-        return Result.ok();
+        // 根据课程ID 查询课程和讲师
+        CourseWebVo courseWebVo = courseService.selectCourseInfoById(courseId);
+
+
+        // 查询章节
+        List<ChapterVo> chapterVoList = chapterService.getChapterVideoByCourseId(courseId);
+
+        return Result.ok().data("courseWebVo", courseWebVo).data("chapterVoList", chapterVoList);
     }
 
 
