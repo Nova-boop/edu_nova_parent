@@ -13,4 +13,7 @@ public interface VodService {
 
     // 批量删除 阿里云视频
     void delVideoList(List videoList);
+
+    // 根据视频ID 获取视频的播放凭证
+    String getPlayAuth(String videoId);
 }

@@ -5,6 +5,8 @@ import com.aliyun.vod.upload.req.UploadStreamRequest;
 import com.aliyun.vod.upload.resp.UploadStreamResponse;
 import com.aliyuncs.DefaultAcsClient;
 import com.aliyuncs.vod.model.v20170321.DeleteVideoRequest;
+import com.aliyuncs.vod.model.v20170321.GetVideoPlayAuthRequest;
+import com.aliyuncs.vod.model.v20170321.GetVideoPlayAuthResponse;
 import com.nova.servicebase.exceptionhandler.NovaException;
 import com.nova.vod.service.VodService;
 import com.nova.vod.utils.ConstantVodUtils;
@@ -90,6 +92,30 @@ public class VodServiceImpl implements VodService {
         } catch (Exception e) {
             e.printStackTrace();
             throw new NovaException(20001, "删除失败!!!!");
+        }
+
+    }
+
+    // 根据视频ID 获取视频的播放凭证
+    @Override
+    public String getPlayAuth(String videoId) {
+        try {
+            // 初始化客户端
+            DefaultAcsClient client = InitVodClient.initVodClient(
+                    ConstantVodUtils.ACCESS_KEY_ID,
+                    ConstantVodUtils.ACCESS_KEY_SECRET);
+
+            // 获取响应
+            GetVideoPlayAuthRequest request = new GetVideoPlayAuthRequest();
+            request.setVideoId(videoId);
+            GetVideoPlayAuthResponse response = client.getAcsResponse(request);
+
+            // 返回播放凭证
+            String playAuth = response.getPlayAuth();
+            return playAuth;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new NovaException(20001, "获取失败!!");
         }
 
     }

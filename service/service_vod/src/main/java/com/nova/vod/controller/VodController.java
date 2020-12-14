@@ -13,6 +13,7 @@ import java.util.List;
 @Api(description = "阿里云视频服务")
 public class VodController {
 
+    // 注入Service
     private final VodService vodService;
 
     public VodController(VodService vodService) {
@@ -40,6 +41,13 @@ public class VodController {
     public Result delVideoList(@RequestParam("videoList") List videoList) {
         vodService.delVideoList(videoList);
         return Result.ok();
+    }
+
+    // 根据视频ID 获取视频的播放凭证
+    @GetMapping("getPlayAuth/{videoId}")
+    public Result getPlayAuth(@PathVariable String videoId) {
+        String playAuth = vodService.getPlayAuth(videoId);
+        return Result.ok().data("playAuth", playAuth);
     }
 
 }
