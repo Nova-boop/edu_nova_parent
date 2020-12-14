@@ -81,7 +81,6 @@ public class EduCourseController {
     public Result removeCourse(
             @ApiParam(name = "courseId", value = "课程ID", required = true)
             @PathVariable String courseId) {
-
         eduCourseService.removeCourseById(courseId);
         return Result.ok();
     }

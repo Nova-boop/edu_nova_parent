@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-
 public class VodFileDegradeFeignClient implements VodClient {
 
     // 删除一个视频

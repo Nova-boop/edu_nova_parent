@@ -3,9 +3,11 @@ package com.nova.ucenterService.controller;
 
 import com.nova.commonutils.JwtUtils;
 import com.nova.commonutils.Result;
+import com.nova.commonutils.vo.UcenterMemberVo;
 import com.nova.ucenterService.entity.UcenterMember;
 import com.nova.ucenterService.entity.vo.RegisterVo;
 import com.nova.ucenterService.service.UcenterMemberService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +22,7 @@ import javax.servlet.http.HttpServletRequest;
  * @since 2020-12-08
  */
 @RestController
-@RequestMapping("/UcService/uCenterMember")
+@RequestMapping("/ucService/uCenterMember")
 public class UcenterMemberController {
 
     @Autowired
@@ -49,5 +51,13 @@ public class UcenterMemberController {
         return Result.ok().data("userInfo", member);
     }
 
+    // 根据用户ID 获取用户信息
+    @GetMapping("getUserInfo/{userId}")
+    public UcenterMemberVo getUserInfo(@PathVariable String userId) {
+        UcenterMember member = ucenterMemberService.getById(userId);
+        UcenterMemberVo memberVo = new UcenterMemberVo();
+        BeanUtils.copyProperties(member, memberVo);
+        return memberVo;
+    }
 }
 
