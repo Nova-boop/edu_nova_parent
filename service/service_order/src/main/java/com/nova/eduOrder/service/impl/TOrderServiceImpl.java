@@ -8,6 +8,7 @@ import com.nova.eduOrder.client.UcenterClient;
 import com.nova.eduOrder.entity.TOrder;
 import com.nova.eduOrder.mapper.TOrderMapper;
 import com.nova.eduOrder.service.TOrderService;
+import com.nova.eduOrder.utils.OrderNoUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -36,12 +37,31 @@ public class TOrderServiceImpl extends ServiceImpl<TOrderMapper, TOrder> impleme
 
         // 根据用户ID远程调用获取用户信息
         UcenterMemberVo ucenterMemberVo = ucenterClient.getUserInfo(memberIdByJwtToken);
-
         // 根据课程ID远程调用获取课程信息
         CourseWebOrderVo courseInfoOrderVo = courseClient.getCourseInfoOrder(courseId);
-
         // 创建订单
+        TOrder order = new TOrder();
 
-        return null;
+        // 设置课程
+        order.setCourseId(courseInfoOrderVo.getId());
+        order.setCourseTitle(courseInfoOrderVo.getTitle());
+        order.setCourseCover(courseInfoOrderVo.getCover());
+        order.setTeacherName(courseInfoOrderVo.getTeacherName());
+
+        // 设置用户信息
+        order.setMemberId(ucenterMemberVo.getId());
+        order.setMobile(ucenterMemberVo.getMobile());
+        order.setNickname(ucenterMemberVo.getNickname());
+
+        // 设置订单信息
+        order.setOrderNo(OrderNoUtil.getOrderNo());
+        order.setTotalFee(courseInfoOrderVo.getPrice());
+        order.setStatus(0);
+        order.setPayType(1);
+
+        // 插入记录
+        baseMapper.insert(order);
+
+        return order.getId();
     }
 }

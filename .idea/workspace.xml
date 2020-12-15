@@ -23,19 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e19f48f3-691e-419b-a509-9bef43edc454" name="Default Changelist" comment="用户登录 用户注册">
-      <change afterPath="$PROJECT_DIR$/common/common_utils/src/main/java/com/nova/commonutils/courseVo/CourseWebOrderVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/OrderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/client/CourseClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/client/UcenterClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/test/java/com/nova/orderTest/CodeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common_utils/src/main/java/com/nova/commonutils/vo/UcenterMemberVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common_utils/src/main/java/com/nova/commonutils/userVo/UcenterMemberVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/client/UcenterClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/client/UcenterClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/client/UcenterFileDegradeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/client/UcenterFileDegradeFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/EduCourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/EduCourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/nova/ucenterService/controller/UcenterMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/nova/ucenterService/controller/UcenterMemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/utils/OrderNoUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/client/CourseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/client/CourseClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/client/UcenterClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/client/UcenterClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/service/impl/TOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/service/impl/TOrderServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +80,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/nova/ucenterService/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/utils" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -107,11 +99,11 @@
       <recent name="com.nova.cmsService.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\02_Projects\Java_Projects\edu_nova_parent\service\service_order\src\main\java\com\nova\eduOrder\utils" />
       <recent name="D:\02_Projects\Java_Projects\edu_nova_parent\service\service_ucenter\src\main\java\com\nova\ucenterService\utils" />
       <recent name="D:\02_Projects\Java_Projects\edu_nova_parent\service\service_msm\src\main\java\com\nova\msmService\utils" />
       <recent name="D:\02_Projects\Java_Projects\edu_nova_parent\common\common_utils\src\main\java\com\nova\commonutils" />
       <recent name="D:\02_Projects\Java_Projects\edu_nova_parent\service\service_ucenter\src\main\resources" />
-      <recent name="D:\02_Projects\Java_Projects\edu_nova_parent\service\service_cms\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.CodeGenerator.run (2)">
@@ -273,7 +265,7 @@
       <workItem from="1607305883651" duration="10270000" />
       <workItem from="1607336123583" duration="17005000" />
       <workItem from="1607415319839" duration="30561000" />
-      <workItem from="1607910445506" duration="30546000" />
+      <workItem from="1607910445506" duration="31834000" />
     </task>
     <task id="LOCAL-00001" summary="cms properties">
       <created>1607222809582</created>
@@ -394,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607935386496</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="订单服务">
+      <created>1608015435609</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1608015435609</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +428,8 @@
     <MESSAGE value="获取阿里云凭证" />
     <MESSAGE value="添加评论 依据课程ID 查看评论" />
     <MESSAGE value="评论服务添加拦截器" />
-    <option name="LAST_COMMIT_MESSAGE" value="评论服务添加拦截器" />
+    <MESSAGE value="订单服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="订单服务" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1192" y="503" key="#Custom_Plugin_Repositories" timestamp="1607336004774">
@@ -522,10 +522,10 @@
     <state x="316" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607415337729" />
     <state x="81" y="0" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1607305957920" />
     <state x="463" y="0" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607222599485" />
-    <state x="580" y="277" key="Vcs.Push.Dialog.v2" timestamp="1607935391002">
+    <state x="580" y="277" key="Vcs.Push.Dialog.v2" timestamp="1608015441330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="580" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607935391002" />
+    <state x="580" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608015441330" />
     <state x="773" y="373" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1607223075643" />
     <state x="734" y="420" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607682540861">
       <screen x="0" y="0" width="1920" height="1040" />

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface UcenterClient {
 
     // 根据用户ID 获取用户信息
-    @GetMapping("getUserInfo/{userId}")
+    @GetMapping("/ucService/uCenterMember/getUserInfo/{userId}")
     public UcenterMemberVo getUserInfo(@PathVariable String userId);
 
 }

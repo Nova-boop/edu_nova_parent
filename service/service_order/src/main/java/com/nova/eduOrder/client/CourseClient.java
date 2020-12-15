@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface CourseClient {
 
     // 根据课程ID 返回课程信息 订单
-    @GetMapping("getCourseInfoOrder/{courseId}")
+    @GetMapping("/eduService/course/getCourseInfoOrder/{courseId}")
     public CourseWebOrderVo getCourseInfoOrder(@PathVariable String courseId);
 }
