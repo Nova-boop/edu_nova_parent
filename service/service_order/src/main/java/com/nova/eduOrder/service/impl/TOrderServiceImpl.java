@@ -39,6 +39,7 @@ public class TOrderServiceImpl extends ServiceImpl<TOrderMapper, TOrder> impleme
         UcenterMemberVo ucenterMemberVo = ucenterClient.getUserInfo(memberIdByJwtToken);
         // 根据课程ID远程调用获取课程信息
         CourseWebOrderVo courseInfoOrderVo = courseClient.getCourseInfoOrder(courseId);
+
         // 创建订单
         TOrder order = new TOrder();
 

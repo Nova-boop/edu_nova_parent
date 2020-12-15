@@ -23,11 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e19f48f3-691e-419b-a509-9bef43edc454" name="Default Changelist" comment="用户登录 用户注册">
-      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/utils/OrderNoUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/client/CourseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/client/CourseClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/client/UcenterClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/client/UcenterClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/service/impl/TOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/service/impl/TOrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/utils/OrderNoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/utils/OrderNoUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +263,7 @@
       <workItem from="1607305883651" duration="10270000" />
       <workItem from="1607336123583" duration="17005000" />
       <workItem from="1607415319839" duration="30561000" />
-      <workItem from="1607910445506" duration="31834000" />
+      <workItem from="1607910445506" duration="35978000" />
     </task>
     <task id="LOCAL-00001" summary="cms properties">
       <created>1607222809582</created>
@@ -393,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608015435609</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="订单服务">
+      <created>1608017047428</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1608017047428</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,10 +527,10 @@
     <state x="316" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607415337729" />
     <state x="81" y="0" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1607305957920" />
     <state x="463" y="0" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607222599485" />
-    <state x="580" y="277" key="Vcs.Push.Dialog.v2" timestamp="1608015441330">
+    <state x="580" y="277" key="Vcs.Push.Dialog.v2" timestamp="1608017051636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="580" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608015441330" />
+    <state x="580" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608017051636" />
     <state x="773" y="373" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1607223075643" />
     <state x="734" y="420" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607682540861">
       <screen x="0" y="0" width="1920" height="1040" />
