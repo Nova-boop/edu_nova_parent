@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e19f48f3-691e-419b-a509-9bef43edc454" name="Default Changelist" comment="用户登录 用户注册">
+      <change afterPath="$PROJECT_DIR$/common/common_utils/src/main/java/com/nova/commonutils/courseVo/CourseWebOrderVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_order/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/OrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/client/CourseClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/client/UcenterClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_order/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_order/src/test/java/com/nova/orderTest/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common_utils/src/main/java/com/nova/commonutils/vo/UcenterMemberVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common_utils/src/main/java/com/nova/commonutils/userVo/UcenterMemberVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/client/UcenterClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/client/UcenterClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/client/UcenterFileDegradeFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/client/UcenterFileDegradeFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/EduCourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/EduCourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/nova/ucenterService/controller/UcenterMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/nova/ucenterService/controller/UcenterMemberController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/Nova-boop/edu_nova_parent" />
+      </set>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/EduCourseController.java" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Softwares\Maven\apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="C:\Softwares\Maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1lEx9Nd2iPxnA5VeNcWsogoENZy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/service_ucenter/src/main/java/com/nova/ucenterService/utils" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2796688" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nova.commonutils.courseVo" />
+      <recent name="com.nova.orderTest" />
+      <recent name="com.nova.commonutils.vo" />
+      <recent name="demo" />
+      <recent name="com.nova.cmsService.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\02_Projects\Java_Projects\edu_nova_parent\service\service_ucenter\src\main\java\com\nova\ucenterService\utils" />
+      <recent name="D:\02_Projects\Java_Projects\edu_nova_parent\service\service_msm\src\main\java\com\nova\msmService\utils" />
+      <recent name="D:\02_Projects\Java_Projects\edu_nova_parent\common\common_utils\src\main\java\com\nova\commonutils" />
+      <recent name="D:\02_Projects\Java_Projects\edu_nova_parent\service\service_ucenter\src\main\resources" />
+      <recent name="D:\02_Projects\Java_Projects\edu_nova_parent\service\service_cms\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CodeGenerator.run (2)">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeGenerator.run (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service_ucenter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="demo" />
+      <option name="MAIN_CLASS_NAME" value="demo.CodeGenerator" />
+      <option name="METHOD_NAME" value="run" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeGenerator.run (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service_order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nova.orderTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nova.orderTest" />
+      <option name="MAIN_CLASS_NAME" value="com.nova.orderTest.CodeGenerator" />
+      <option name="METHOD_NAME" value="run" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeGenerator.run" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service_edu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nova.vodTest.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nova.vodTest.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.nova.vodTest.demo.CodeGenerator" />
+      <option name="METHOD_NAME" value="run" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service_cms" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nova.cmsService.CmsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EduApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service_edu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nova.eduService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nova.eduService.EduApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service_msm" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nova.msmService.MsmApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service_order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nova.eduOrder.OrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OssApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service_oss" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nova.ossService.OssApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceUcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service_ucenter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nova.ucenterService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nova.ucenterService.ServiceUcApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VodApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service_vod" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nova.vod.VodApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.CodeGenerator.run (1)" />
+      <item itemvalue="Spring Boot.VodApplication" />
+      <item itemvalue="Spring Boot.OssApplication" />
+      <item itemvalue="Spring Boot.MsmApplication" />
+      <item itemvalue="Spring Boot.EduApplication" />
+      <item itemvalue="Spring Boot.ServiceUcApplication" />
+      <item itemvalue="JUnit.CodeGenerator.run" />
+      <item itemvalue="Spring Boot.CmsApplication" />
+      <item itemvalue="JUnit.CodeGenerator.run (2)" />
+      <item itemvalue="Spring Boot.OrderApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CodeGenerator.run (2)" />
+        <item itemvalue="JUnit.CodeGenerator.run" />
+        <item itemvalue="Spring Boot.EduApplication" />
+        <item itemvalue="Spring Boot.ServiceUcApplication" />
+        <item itemvalue="JUnit.CodeGenerator.run (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e19f48f3-691e-419b-a509-9bef43edc454" name="Default Changelist" comment="" />
+      <created>1607175905612</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607175905612</updated>
+      <workItem from="1607175910817" duration="50000" />
+      <workItem from="1607175973742" duration="1929000" />
+      <workItem from="1607222125718" duration="9565000" />
+      <workItem from="1607305883651" duration="10270000" />
+      <workItem from="1607336123583" duration="17005000" />
+      <workItem from="1607415319839" duration="30561000" />
+      <workItem from="1607910445506" duration="30546000" />
+    </task>
+    <task id="LOCAL-00001" summary="cms properties">
+      <created>1607222809582</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607222809582</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update 熔断器">
+      <created>1607223057229</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607223057229</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Banner 管理">
+      <created>1607244296175</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607244296176</updated>
+    </task>
+    <task id="LOCAL-00004" summary="首页数据管理">
+      <created>1607244337005</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607244337005</updated>
+    </task>
+    <task id="LOCAL-00005" summary="实现redis 缓存">
+      <created>1607331209211</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607331209211</updated>
+    </task>
+    <task id="LOCAL-00006" summary="jwt utils 工具类">
+      <created>1607337130343</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607337130343</updated>
+    </task>
+    <task id="LOCAL-00007" summary="阿里云短信发送服务">
+      <created>1607396325475</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607396325475</updated>
+    </task>
+    <task id="LOCAL-00008" summary="用户登录 注册">
+      <created>1607410775959</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607410775959</updated>
+    </task>
+    <task id="LOCAL-00009" summary="初始化UcenterMember 相关表">
+      <created>1607415167189</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607415167189</updated>
+    </task>
+    <task id="LOCAL-00010" summary="用户登录 用户注册">
+      <created>1607415217092</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607415217093</updated>
+    </task>
+    <task id="LOCAL-00011" summary="微信登录API 集成">
+      <created>1607421990271</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607421990271</updated>
+    </task>
+    <task id="LOCAL-00012" summary="微信登录API 集成">
+      <created>1607494018371</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607494018371</updated>
+    </task>
+    <task id="LOCAL-00013" summary="代码格式整理">
+      <created>1607682773762</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607682773762</updated>
+    </task>
+    <task id="LOCAL-00014" summary="获取课程详情">
+      <created>1607911176039</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1607911176039</updated>
+    </task>
+    <task id="LOCAL-00015" summary="获取阿里云凭证">
+      <created>1607913045941</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1607913045941</updated>
+    </task>
+    <task id="LOCAL-00016" summary="添加评论 依据课程ID 查看评论">
+      <created>1607935219361</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1607935219361</updated>
+    </task>
+    <task id="LOCAL-00017" summary="评论服务添加拦截器">
+      <created>1607935386496</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1607935386496</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cms properties" />
+    <MESSAGE value="update 熔断器" />
+    <MESSAGE value="Banner 管理" />
+    <MESSAGE value="首页数据管理" />
+    <MESSAGE value="实现redis 缓存" />
+    <MESSAGE value="jwt utils 工具类" />
+    <MESSAGE value="阿里云短信发送服务" />
+    <MESSAGE value="用户登录 注册" />
+    <MESSAGE value="初始化UcenterMember 相关表" />
+    <MESSAGE value="用户登录 用户注册" />
+    <MESSAGE value="微信登录API 集成" />
+    <MESSAGE value="代码格式整理" />
+    <MESSAGE value="获取课程详情" />
+    <MESSAGE value="获取阿里云凭证" />
+    <MESSAGE value="添加评论 依据课程ID 查看评论" />
+    <MESSAGE value="评论服务添加拦截器" />
+    <option name="LAST_COMMIT_MESSAGE" value="评论服务添加拦截器" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1192" y="503" key="#Custom_Plugin_Repositories" timestamp="1607336004774">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1192" y="503" key="#Custom_Plugin_Repositories/0.0.1920.1040@0.0.1920.1040" timestamp="1607336004774" />
+    <state x="582" y="186" key="#Inspections" timestamp="1607327668936">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="582" y="186" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1607327668936" />
+    <state x="312" y="0" key="#Project_Structure" timestamp="1607936172757">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="312" y="0" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1607936172757" />
+    <state x="354" y="203" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607911653866">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="354" y="203" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607911653866" />
+    <state x="354" y="205" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1607305976302" />
+    <state x="934" y="495" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1607222624913" />
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1607938409918">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607938409918" />
+    <state x="957" y="218" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1607686300860" />
+    <state x="1105" y="214" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608015063098">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1105" y="214" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608015063098" />
+    <state x="396" y="14" key="CommitChangelistDialog2" timestamp="1607415012887">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="396" y="14" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607415012887" />
+    <state x="687" y="220" key="FileChooserDialogImpl" timestamp="1607415303545">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="220" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607415303545" />
+    <state width="1867" height="422" key="GridCell.Tab.0.bottom" timestamp="1607937778270">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="422" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607937778270" />
+    <state width="1867" height="142" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
+    <state width="1867" height="422" key="GridCell.Tab.0.center" timestamp="1607937778270">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="422" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607937778270" />
+    <state width="1867" height="142" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
+    <state width="1867" height="422" key="GridCell.Tab.0.left" timestamp="1607937778270">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="422" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607937778270" />
+    <state width="1867" height="142" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135304" />
+    <state width="1867" height="422" key="GridCell.Tab.0.right" timestamp="1607937778270">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="422" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607937778270" />
+    <state width="1867" height="142" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
+    <state width="1867" height="116" key="GridCell.Tab.1.bottom" timestamp="1607937451434">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="116" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607937451434" />
+    <state width="1867" height="142" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135306" />
+    <state width="1867" height="116" key="GridCell.Tab.1.center" timestamp="1607937451433">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="116" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607937451433" />
+    <state width="1867" height="142" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
+    <state width="1867" height="116" key="GridCell.Tab.1.left" timestamp="1607937451433">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="116" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607937451433" />
+    <state width="1867" height="142" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
+    <state width="1867" height="116" key="GridCell.Tab.1.right" timestamp="1607937451434">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="116" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607937451434" />
+    <state width="1867" height="142" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135306" />
+    <state x="188" y="91" key="MergeDialog" timestamp="1607682563794">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="188" y="91" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607682563794" />
+    <state x="250" y="123" key="MergeDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1607222909321" />
+    <state x="830" y="409" key="MultipleFileMergeDialog" timestamp="1607222915258">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="830" y="409" key="MultipleFileMergeDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1607222915258" />
+    <state x="316" y="0" key="SettingsEditor" timestamp="1607415337729">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="316" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607415337729" />
+    <state x="81" y="0" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1607305957920" />
+    <state x="463" y="0" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607222599485" />
+    <state x="580" y="277" key="Vcs.Push.Dialog.v2" timestamp="1607935391002">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="580" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607935391002" />
+    <state x="773" y="373" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1607223075643" />
+    <state x="734" y="420" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607682540861">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="734" y="420" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607682540861" />
+    <state x="576" y="110" key="new project wizard" timestamp="1607936154558">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="576" y="110" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1607936154558" />
+    <state x="532" y="237" key="run.anything.popup" timestamp="1607240232765">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607240232765" />
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1607685619494">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1607685619494" />
+    <state x="449" y="140" key="spring file set editor" timestamp="1607177360339">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="449" y="140" key="spring file set editor/0.0.1920.1040@0.0.1920.1040" timestamp="1607177360339" />
+  </component>
+</project>

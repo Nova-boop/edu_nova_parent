@@ -3,7 +3,7 @@ package com.nova.ucenterService.controller;
 
 import com.nova.commonutils.JwtUtils;
 import com.nova.commonutils.Result;
-import com.nova.commonutils.vo.UcenterMemberVo;
+import com.nova.commonutils.userVo.UcenterMemberVo;
 import com.nova.ucenterService.entity.UcenterMember;
 import com.nova.ucenterService.entity.vo.RegisterVo;
 import com.nova.ucenterService.service.UcenterMemberService;

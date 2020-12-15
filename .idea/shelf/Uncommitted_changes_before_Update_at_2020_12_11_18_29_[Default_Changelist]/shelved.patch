@@ -1,0 +1,80 @@
+Index: service/service_ucenter/src/main/java/com/nova/ucenterService/controller/WxApiController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.nova.ucenterService.controller;\r\n\r\nimport com.google.gson.Gson;\r\nimport com.nova.servicebase.exceptionhandler.NovaException;\r\nimport com.nova.ucenterService.entity.UcenterMember;\r\nimport com.nova.ucenterService.service.UcenterMemberService;\r\nimport com.nova.ucenterService.utils.ConstantWxUtils;\r\nimport com.nova.ucenterService.utils.HttpClientUtils;\r\nimport org.springframework.beans.factory.annotation.Autowired;\r\nimport org.springframework.stereotype.Controller;\r\nimport org.springframework.web.bind.annotation.GetMapping;\r\nimport org.springframework.web.bind.annotation.RequestMapping;\r\n\r\nimport java.io.UnsupportedEncodingException;\r\nimport java.net.URLEncoder;\r\nimport java.util.HashMap;\r\n\r\n@Controller\r\n@RequestMapping(\"/api/ucenter/wx\")\r\npublic class WxApiController {\r\n\r\n    @Autowired\r\n    private UcenterMemberService ucenterMemberService;\r\n\r\n\r\n    // 1. 生成微信扫描二维码\r\n    @GetMapping(\"login\")\r\n    public String WxCode() {\r\n        // 固定地址\r\n        String baseUrl = \"https://open.weixin.qq.com/connect/qrconnect\" +\r\n                \"?appid=%s\" +\r\n                \"&redirect_uri=%s\" +\r\n                \"&response_type=code\" +\r\n                \"&scope=snsapi_login\" +\r\n                \"&state=%s\" +\r\n                \"#wechat_redirect\";\r\n\r\n        // 回调地址\r\n        String redirectUrl = ConstantWxUtils.WX_OPEN_REDIRECT_URL; //获取业务服务器重定向地址\r\n        try {\r\n            redirectUrl = URLEncoder.encode(redirectUrl, \"UTF-8\"); //url编码\r\n        } catch (UnsupportedEncodingException e) {\r\n            throw new NovaException(20001, e.getMessage());\r\n        }\r\n\r\n        // 防止csrf攻击（跨站请求伪造攻击）\r\n        String state = \"Nova\";//为了让大家能够使用我搭建的外网的微信回调跳转服务器，这里填写你在ngrok的前置域名\r\n\r\n        String qrcodeUrl = String.format(\r\n                baseUrl,\r\n                ConstantWxUtils.WX_OPEN_APP_ID,\r\n                redirectUrl,\r\n                state);\r\n\r\n        // 请求微信地址\r\n        return \"redirect:\" + qrcodeUrl;\r\n    }\r\n\r\n    // 2.根据code 访问AccessToken(访问凭证) openId (身份ID)\r\n    @GetMapping(\"callback\")\r\n    public String callback(String code, String state) {\r\n\r\n        try {\r\n            //向认证服务器发送请求换取access_token\r\n            String baseAccessTokenUrl = \"https://api.weixin.qq.com/sns/oauth2/access_token\" +\r\n                    \"?appid=%s\" +\r\n                    \"&secret=%s\" +\r\n                    \"&code=%s\" +\r\n                    \"&grant_type=authorization_code\";\r\n\r\n            String accessTokenUrl = String.format(baseAccessTokenUrl,\r\n                    ConstantWxUtils.WX_OPEN_APP_ID,\r\n                    ConstantWxUtils.WX_OPEN_APP_SECRET,\r\n                    code);\r\n\r\n            // 使用HttpClient 访问获取url\r\n            String accessTokenInfo = HttpClientUtils.get(accessTokenUrl);\r\n            System.out.println(accessTokenInfo);\r\n\r\n            // 解析Token 和openID\r\n            Gson gson = new Gson();\r\n            HashMap mapAccessToken = gson.fromJson(accessTokenInfo, HashMap.class);\r\n            String accessToken = (String) mapAccessToken.get(\"access_token\");\r\n            String openid = (String) mapAccessToken.get(\"openid\");\r\n\r\n            // 使用Token 和openID 访问地址\r\n            String baseUserInfoUrl = \"https://api.weixin.qq.com/sns/userinfo\" +\r\n                    \"?access_token=%s\" +\r\n                    \"&openid=%s\";\r\n\r\n            String userInfoUrl = String.format(baseUserInfoUrl, accessToken, openid);\r\n            String userInfo = HttpClientUtils.get(userInfoUrl);\r\n\r\n            // 解析用户信息,并存储到数据库\r\n            HashMap userMap = gson.fromJson(userInfo, HashMap.class);\r\n            String nickname = (String) userMap.get(\"nickname\");\r\n            String headimgurl = (String) userMap.get(\"headimgurl\");\r\n\r\n            UcenterMember member = new UcenterMember();\r\n            member.setNickname(nickname);\r\n            member.setOpenid(openid);\r\n            member.setAvatar(headimgurl);\r\n            ucenterMemberService.save(member);\r\n\r\n        } catch (Exception e) {\r\n            throw new NovaException(20001, \"访问出错\");\r\n        }\r\n\r\n        return \"redirect:http://localhost:3000\";\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- service/service_ucenter/src/main/java/com/nova/ucenterService/controller/WxApiController.java	(revision 9a6c79f17df8026b95bee78ac6ca02f12d32e74d)
++++ service/service_ucenter/src/main/java/com/nova/ucenterService/controller/WxApiController.java	(date 1607506739343)
+@@ -6,7 +6,6 @@
+ import com.nova.ucenterService.service.UcenterMemberService;
+ import com.nova.ucenterService.utils.ConstantWxUtils;
+ import com.nova.ucenterService.utils.HttpClientUtils;
+-import org.springframework.beans.factory.annotation.Autowired;
+ import org.springframework.stereotype.Controller;
+ import org.springframework.web.bind.annotation.GetMapping;
+ import org.springframework.web.bind.annotation.RequestMapping;
+@@ -19,8 +18,12 @@
+ @RequestMapping("/api/ucenter/wx")
+ public class WxApiController {
+ 
+-    @Autowired
+-    private UcenterMemberService ucenterMemberService;
++    // 注入service
++    private final UcenterMemberService ucenterMemberService;
++
++    public WxApiController(UcenterMemberService ucenterMemberService) {
++        this.ucenterMemberService = ucenterMemberService;
++    }
+ 
+ 
+     // 1. 生成微信扫描二维码
+@@ -35,6 +38,7 @@
+                 "&state=%s" +
+                 "#wechat_redirect";
+ 
++
+         // 回调地址
+         String redirectUrl = ConstantWxUtils.WX_OPEN_REDIRECT_URL; //获取业务服务器重定向地址
+         try {
+@@ -96,11 +100,18 @@
+             String nickname = (String) userMap.get("nickname");
+             String headimgurl = (String) userMap.get("headimgurl");
+ 
++            // 判断数据库中是否存在相同记录
++            // todo 未完成
+             UcenterMember member = new UcenterMember();
+-            member.setNickname(nickname);
+-            member.setOpenid(openid);
+-            member.setAvatar(headimgurl);
+-            ucenterMemberService.save(member);
++
++
++            if (member == null) {
++                member = new UcenterMember();
++                member.setNickname(nickname);
++                member.setOpenid(openid);
++                member.setAvatar(headimgurl);
++                ucenterMemberService.save(member);
++            }
+ 
+         } catch (Exception e) {
+             throw new NovaException(20001, "访问出错");
+Index: service/service_ucenter/src/main/java/com/nova/ucenterService/service/UcenterMemberService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.nova.ucenterService.service;\r\n\r\nimport com.baomidou.mybatisplus.extension.service.IService;\r\nimport com.nova.ucenterService.entity.UcenterMember;\r\nimport com.nova.ucenterService.entity.vo.RegisterVo;\r\n\r\n/**\r\n * <p>\r\n * 会员表 服务类\r\n * </p>\r\n *\r\n * @author nova\r\n * @since 2020-12-08\r\n */\r\npublic interface UcenterMemberService extends IService<UcenterMember> {\r\n\r\n    // 用户登录\r\n    String login(UcenterMember ucenterMember);\r\n\r\n    // 用户注册\r\n    void register(RegisterVo registerVo);\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- service/service_ucenter/src/main/java/com/nova/ucenterService/service/UcenterMemberService.java	(revision 9a6c79f17df8026b95bee78ac6ca02f12d32e74d)
++++ service/service_ucenter/src/main/java/com/nova/ucenterService/service/UcenterMemberService.java	(date 1607496037152)
+@@ -13,7 +13,6 @@
+  * @since 2020-12-08
+  */
+ public interface UcenterMemberService extends IService<UcenterMember> {
+-
+     // 用户登录
+     String login(UcenterMember ucenterMember);
+ 

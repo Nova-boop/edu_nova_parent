@@ -3,14 +3,17 @@ package com.nova.eduService.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.nova.commonutils.Result;
+import com.nova.commonutils.courseVo.CourseWebOrderVo;
 import com.nova.eduService.entity.EduCourse;
 import com.nova.eduService.entity.course.QueryCourseVo;
+import com.nova.eduService.entity.frontVo.CourseWebVo;
 import com.nova.eduService.entity.vo.CourseInfoVo;
 import com.nova.eduService.entity.vo.CoursePublishInfoVo;
 import com.nova.eduService.service.EduCourseService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -128,6 +131,15 @@ public class EduCourseController {
         eduCourse.setStatus("Normal");
         eduCourseService.updateById(eduCourse);
         return Result.ok();
+    }
+
+    // 根据课程ID 返回课程信息 订单
+    @GetMapping("getCourseInfoOrder/{courseId}")
+    public CourseWebOrderVo getCourseInfoOrder(@PathVariable String courseId) {
+        CourseWebVo courseWebVo = eduCourseService.selectCourseInfoById(courseId);
+        CourseWebOrderVo courseWebOrderVo = new CourseWebOrderVo();
+        BeanUtils.copyProperties(courseWebVo, courseWebOrderVo);
+        return courseWebOrderVo;
     }
 }
 

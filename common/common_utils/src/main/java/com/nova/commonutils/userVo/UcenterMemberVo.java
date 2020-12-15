@@ -1,4 +1,4 @@
-package com.nova.commonutils.vo;
+package com.nova.commonutils.userVo;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;

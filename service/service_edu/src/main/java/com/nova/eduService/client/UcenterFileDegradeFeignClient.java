@@ -1,6 +1,6 @@
 package com.nova.eduService.client;
 
-import com.nova.commonutils.vo.UcenterMemberVo;
+import com.nova.commonutils.userVo.UcenterMemberVo;
 import org.springframework.stereotype.Component;
 
 @Component
