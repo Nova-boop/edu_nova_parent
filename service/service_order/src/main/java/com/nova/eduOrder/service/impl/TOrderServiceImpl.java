@@ -9,7 +9,6 @@ import com.nova.eduOrder.entity.TOrder;
 import com.nova.eduOrder.mapper.TOrderMapper;
 import com.nova.eduOrder.service.TOrderService;
 import com.nova.eduOrder.utils.OrderNoUtil;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -24,11 +23,17 @@ import org.springframework.stereotype.Service;
 public class TOrderServiceImpl extends ServiceImpl<TOrderMapper, TOrder> implements TOrderService {
 
     // 注入service
-    @Autowired
-    private CourseClient courseClient;
 
-    @Autowired
-    private UcenterClient ucenterClient;
+    // 课程微服务
+    private final CourseClient courseClient;
+
+    // 用户微服务
+    private final UcenterClient ucenterClient;
+
+    public TOrderServiceImpl(CourseClient courseClient, UcenterClient ucenterClient) {
+        this.courseClient = courseClient;
+        this.ucenterClient = ucenterClient;
+    }
 
 
     // 生成订单(根据课程ID和用户ID生成订单)
@@ -43,6 +48,12 @@ public class TOrderServiceImpl extends ServiceImpl<TOrderMapper, TOrder> impleme
         // 创建订单
         TOrder order = new TOrder();
 
+        // 设置订单信息
+        order.setOrderNo(OrderNoUtil.getOrderNo()); // 订单号
+        order.setTotalFee(courseInfoOrderVo.getPrice());
+        order.setStatus(0);
+        order.setPayType(1);
+
         // 设置课程
         order.setCourseId(courseInfoOrderVo.getId());
         order.setCourseTitle(courseInfoOrderVo.getTitle());
@@ -54,15 +65,11 @@ public class TOrderServiceImpl extends ServiceImpl<TOrderMapper, TOrder> impleme
         order.setMobile(ucenterMemberVo.getMobile());
         order.setNickname(ucenterMemberVo.getNickname());
 
-        // 设置订单信息
-        order.setOrderNo(OrderNoUtil.getOrderNo());
-        order.setTotalFee(courseInfoOrderVo.getPrice());
-        order.setStatus(0);
-        order.setPayType(1);
 
         // 插入记录
         baseMapper.insert(order);
 
-        return order.getId();
+        // 返回订单号
+        return order.getOrderNo();
     }
 }

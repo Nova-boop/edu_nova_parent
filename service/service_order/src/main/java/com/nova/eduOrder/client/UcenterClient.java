@@ -13,6 +13,6 @@ public interface UcenterClient {
 
     // 根据用户ID 获取用户信息
     @GetMapping("/ucService/uCenterMember/getUserInfo/{userId}")
-    public UcenterMemberVo getUserInfo(@PathVariable String userId);
+    public UcenterMemberVo getUserInfo(@PathVariable("userId") String userId);
 
 }

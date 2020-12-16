@@ -12,5 +12,5 @@ public interface CourseClient {
 
     // 根据课程ID 返回课程信息 订单
     @GetMapping("/eduService/course/getCourseInfoOrder/{courseId}")
-    public CourseWebOrderVo getCourseInfoOrder(@PathVariable String courseId);
+    public CourseWebOrderVo getCourseInfoOrder(@PathVariable("courseId") String courseId);
 }
