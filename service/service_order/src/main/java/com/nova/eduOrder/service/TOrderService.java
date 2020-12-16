@@ -12,6 +12,7 @@ import com.nova.eduOrder.entity.TOrder;
  * @since 2020-12-14
  */
 public interface TOrderService extends IService<TOrder> {
+
     // 生成订单(根据课程ID和用户ID生成订单)
     String createOrder(String courseId, String memberIdByJwtToken);
 
