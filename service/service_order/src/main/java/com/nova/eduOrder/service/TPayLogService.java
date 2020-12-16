@@ -16,4 +16,10 @@ import java.util.Map;
 public interface TPayLogService extends IService<TPayLog> {
     // 生成微信支付二维码
     Map<String, String> createNative(String orderNo);
+
+    // 查询支付状态
+    Map<String, String> queryPayStatus(String orderNo);
+
+    // 更新订单状态
+    void updateOrderStatus(Map<String, String> map);
 }
