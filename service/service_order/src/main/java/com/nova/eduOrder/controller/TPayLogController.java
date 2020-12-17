@@ -40,13 +40,15 @@ public class TPayLogController {
 
         Map<String, String> map = payLogService.queryPayStatus(orderNo);
 
-        if (map==null) {
+        if (map == null) {
             return Result.error().code(20001).message("支付出错");
         }
+
         if (map.get("trade_state").equals("SUCCESS")) {
             payLogService.updateOrderStatus(map);
             return Result.ok().message("支付成功");
         }
+
         return Result.ok().code(25000).message("支付中");
     }
 

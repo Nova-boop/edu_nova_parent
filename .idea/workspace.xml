@@ -23,10 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e19f48f3-691e-419b-a509-9bef43edc454" name="Default Changelist" comment="用户登录 用户注册">
+      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/client/CourseOrderClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common_utils/target/classes/com/nova/commonutils/vo/UcenterMemberVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/EduCourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/EduCourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/front/FrontCourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/front/FrontCourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/target/classes/com/nova/eduService/client/VodFileDegradeFeignClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/target/classes/com/nova/eduService/client/VodFileDegradeFeignClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/target/classes/com/nova/eduService/controller/EduCourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/target/classes/com/nova/eduService/controller/EduCourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/target/classes/com/nova/eduService/controller/front/FrontCourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/target/classes/com/nova/eduService/controller/front/FrontCourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/controller/TOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/controller/TOrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/controller/TPayLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/controller/TPayLogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/service/TPayLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/service/TPayLogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/service/impl/TPayLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/service/impl/TPayLogServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +111,7 @@
       <recent name="D:\02_Projects\Java_Projects\edu_nova_parent\service\service_ucenter\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CodeGenerator.run (2)">
+  <component name="RunManager" selected="Spring Boot.EduApplication">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -242,9 +248,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.EduApplication" />
         <item itemvalue="JUnit.CodeGenerator.run (2)" />
         <item itemvalue="JUnit.CodeGenerator.run" />
-        <item itemvalue="Spring Boot.EduApplication" />
         <item itemvalue="Spring Boot.ServiceUcApplication" />
         <item itemvalue="JUnit.CodeGenerator.run (1)" />
       </list>
@@ -264,7 +270,7 @@
       <workItem from="1607305883651" duration="10270000" />
       <workItem from="1607336123583" duration="17005000" />
       <workItem from="1607415319839" duration="30561000" />
-      <workItem from="1607910445506" duration="42771000" />
+      <workItem from="1607910445506" duration="49553000" />
     </task>
     <task id="LOCAL-00001" summary="cms properties">
       <created>1607222809582</created>
@@ -420,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608084134137</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="获取微信支付支付状态,并更新支付记录">
+      <created>1608085687279</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1608085687280</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,7 +472,8 @@
     <MESSAGE value="创建订单服务" />
     <MESSAGE value="创建订单" />
     <MESSAGE value="实现微信支付" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现微信支付" />
+    <MESSAGE value="获取微信支付支付状态,并更新支付记录" />
+    <option name="LAST_COMMIT_MESSAGE" value="获取微信支付支付状态,并更新支付记录" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1192" y="503" key="#Custom_Plugin_Repositories" timestamp="1607336004774">
@@ -474,6 +488,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="312" y="0" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1607936172757" />
+    <state x="410" y="170" width="1128" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608088646610">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="410" y="170" width="1128" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608088646610" />
     <state x="354" y="203" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607911653866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -552,10 +570,10 @@
     <state x="316" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607415337729" />
     <state x="81" y="0" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1607305957920" />
     <state x="463" y="0" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607222599485" />
-    <state x="174" y="236" key="Vcs.Push.Dialog.v2" timestamp="1608084136799">
+    <state x="174" y="236" key="Vcs.Push.Dialog.v2" timestamp="1608087896679">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="174" y="236" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608084136799" />
+    <state x="174" y="236" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608087896679" />
     <state x="773" y="373" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1607223075643" />
     <state x="734" y="420" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607682540861">
       <screen x="0" y="0" width="1920" height="1040" />

@@ -2,7 +2,9 @@ package com.nova.eduService.controller.front;
 
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.nova.commonutils.JwtUtils;
 import com.nova.commonutils.Result;
+import com.nova.eduService.client.CourseOrderClient;
 import com.nova.eduService.entity.EduCourse;
 import com.nova.eduService.entity.chapter.ChapterVo;
 import com.nova.eduService.entity.frontVo.CourseFrontVo;
@@ -11,8 +13,10 @@ import com.nova.eduService.service.EduChapterService;
 import com.nova.eduService.service.EduCourseService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiParam;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RestController
@@ -27,6 +31,9 @@ public class FrontCourseController {
         this.courseService = courseService;
         this.chapterService = chapterService;
     }
+
+    @Autowired
+    private CourseOrderClient courseOrderClient;
 
     //条件分页查询课程列表
     @PostMapping("getCourseFrontList/{current}/{limit}")
@@ -45,17 +52,16 @@ public class FrontCourseController {
 
     // 根据课程ID 查询课程详情,返回讲师信息,课程详情,课程描述,章节列表
     @GetMapping("getCourseFrontInfo/{courseId}")
-    public Result getCourseFrontPageList(@PathVariable String courseId) {
+    public Result getCourseFrontPageList(@PathVariable String courseId,
+                                         HttpServletRequest request) {
 
         // 根据课程ID 查询课程和讲师
         CourseWebVo courseWebVo = courseService.selectCourseInfoById(courseId);
-
-
         // 查询章节
         List<ChapterVo> chapterVoList = chapterService.getChapterVideoByCourseId(courseId);
-
-        return Result.ok().data("courseWebVo", courseWebVo).data("chapterVoList", chapterVoList);
+        // 返回购买状态
+        Boolean isBuyCourse = courseOrderClient.isBuyCourse(courseId, JwtUtils.getMemberIdByJwtToken(request));
+        // 返回结果数据
+        return Result.ok().data("courseWebVo", courseWebVo).data("chapterVoList", chapterVoList).data("isBuyCourse", isBuyCourse);
     }
-
-
 }

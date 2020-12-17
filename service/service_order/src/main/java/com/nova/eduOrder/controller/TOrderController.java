@@ -42,10 +42,17 @@ public class TOrderController {
         return Result.ok().data("order", order);
     }
 
-    // todo 生成微信支付二维码接口
+    // 判断用户是否购买课程
+    @GetMapping("isBuyCourse/{courseId}/{userId}")
+    public Boolean isBuyCourse(@PathVariable String courseId, @PathVariable String userId) {
 
-    // todo 查询订单支付状态接口
+        QueryWrapper<TOrder> wrapper = new QueryWrapper<>();
+        wrapper.eq("course_id", courseId);
+        wrapper.eq("member_id", userId);
+        wrapper.eq("status", 1);
 
-
+        int orderCount = orderService.count(wrapper);
+        return orderCount > 0;
+    }
 }
 
