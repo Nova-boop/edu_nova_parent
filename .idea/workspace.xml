@@ -23,26 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e19f48f3-691e-419b-a509-9bef43edc454" name="Default Changelist" comment="用户登录 用户注册">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_otter_canal_client_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_otter_canal_common_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_otter_canal_protocol_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbutils_commons_dbutils_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_netty_netty_3_2_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_29.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/canal_client/canal_client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/canal_client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/canal_client/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canal_client/src/main/java/com/nova/canal/CanalApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canal_client/src/main/java/com/nova/canal/client/CanalClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,7 +262,7 @@
       <workItem from="1607415319839" duration="30561000" />
       <workItem from="1607910445506" duration="58076000" />
       <workItem from="1608213885460" duration="911000" />
-      <workItem from="1608257250997" duration="13222000" />
+      <workItem from="1608257250997" duration="15572000" />
     </task>
     <task id="LOCAL-00001" summary="cms properties">
       <created>1607222809582</created>
@@ -463,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608279376995</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="数据库同步">
+      <created>1608283369010</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1608283369010</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +496,8 @@
     <MESSAGE value="订单" />
     <MESSAGE value="统计分析模块" />
     <MESSAGE value="生成统计数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="生成统计数据" />
+    <MESSAGE value="数据库同步" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据库同步" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1192" y="503" key="#Custom_Plugin_Repositories" timestamp="1607336004774">
@@ -531,10 +522,10 @@
     <state x="354" y="203" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607911653866" />
     <state x="354" y="205" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1607305976302" />
     <state x="934" y="495" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1607222624913" />
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1608278086533">
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1608283691483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608278086533" />
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608283691483" />
     <state x="957" y="218" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1607686300860" />
     <state x="422" y="437" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1608275367586">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -607,10 +598,10 @@
     <state x="316" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608262546473" />
     <state x="81" y="0" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1607305957920" />
     <state x="463" y="0" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607222599485" />
-    <state x="174" y="236" key="Vcs.Push.Dialog.v2" timestamp="1608279993352">
+    <state x="174" y="236" key="Vcs.Push.Dialog.v2" timestamp="1608283374504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="174" y="236" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608279993352" />
+    <state x="174" y="236" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608283374504" />
     <state x="773" y="373" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1607223075643" />
     <state x="734" y="420" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607682540861">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -624,10 +615,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="233" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608080637864" />
-    <state x="532" y="237" key="run.anything.popup" timestamp="1608171458535">
+    <state x="532" y="237" key="run.anything.popup" timestamp="1608284350244">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608171458535" />
+    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608284350244" />
     <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1607685619494">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
