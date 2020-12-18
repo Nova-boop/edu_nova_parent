@@ -23,16 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e19f48f3-691e-419b-a509-9bef43edc454" name="Default Changelist" comment="用户登录 用户注册">
-      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/client/CourseOrderClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_statistics/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common_utils/target/classes/com/nova/commonutils/vo/UcenterMemberVo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/EduCourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/EduCourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/front/FrontCourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/front/FrontCourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/target/classes/com/nova/eduService/client/VodFileDegradeFeignClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/target/classes/com/nova/eduService/client/VodFileDegradeFeignClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/target/classes/com/nova/eduService/controller/EduCourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/target/classes/com/nova/eduService/controller/EduCourseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/target/classes/com/nova/eduService/controller/front/FrontCourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/target/classes/com/nova/eduService/controller/front/FrontCourseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/controller/TOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/controller/TOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/controller/TPayLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_order/src/main/java/com/nova/eduOrder/controller/TPayLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,15 +105,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.EduApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -236,15 +227,15 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.CodeGenerator.run (1)" />
+      <item itemvalue="JUnit.CodeGenerator.run" />
+      <item itemvalue="JUnit.CodeGenerator.run (2)" />
       <item itemvalue="Spring Boot.VodApplication" />
       <item itemvalue="Spring Boot.OssApplication" />
       <item itemvalue="Spring Boot.MsmApplication" />
+      <item itemvalue="Spring Boot.CmsApplication" />
+      <item itemvalue="Spring Boot.OrderApplication" />
       <item itemvalue="Spring Boot.EduApplication" />
       <item itemvalue="Spring Boot.ServiceUcApplication" />
-      <item itemvalue="JUnit.CodeGenerator.run" />
-      <item itemvalue="Spring Boot.CmsApplication" />
-      <item itemvalue="JUnit.CodeGenerator.run (2)" />
-      <item itemvalue="Spring Boot.OrderApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -270,7 +261,8 @@
       <workItem from="1607305883651" duration="10270000" />
       <workItem from="1607336123583" duration="17005000" />
       <workItem from="1607415319839" duration="30561000" />
-      <workItem from="1607910445506" duration="49553000" />
+      <workItem from="1607910445506" duration="58076000" />
+      <workItem from="1608213885460" duration="911000" />
     </task>
     <task id="LOCAL-00001" summary="cms properties">
       <created>1607222809582</created>
@@ -433,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608085687280</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="订单">
+      <created>1608169283040</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1608169283040</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +472,8 @@
     <MESSAGE value="创建订单" />
     <MESSAGE value="实现微信支付" />
     <MESSAGE value="获取微信支付支付状态,并更新支付记录" />
-    <option name="LAST_COMMIT_MESSAGE" value="获取微信支付支付状态,并更新支付记录" />
+    <MESSAGE value="订单" />
+    <option name="LAST_COMMIT_MESSAGE" value="订单" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1192" y="503" key="#Custom_Plugin_Repositories" timestamp="1607336004774">
@@ -484,10 +484,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="582" y="186" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1607327668936" />
-    <state x="312" y="0" key="#Project_Structure" timestamp="1607936172757">
+    <state x="312" y="0" key="#Project_Structure" timestamp="1608214816957">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="312" y="0" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1607936172757" />
+    <state x="312" y="0" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1608214816957" />
     <state x="410" y="170" width="1128" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608088646610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -579,18 +579,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="734" y="420" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607682540861" />
-    <state x="576" y="110" key="new project wizard" timestamp="1607936154558">
+    <state x="576" y="110" key="new project wizard" timestamp="1608214787432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="576" y="110" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1607936154558" />
+    <state x="576" y="110" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1608214787432" />
     <state x="707" y="233" key="refactoring.ChangeSignatureDialog" timestamp="1608080637864">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="233" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608080637864" />
-    <state x="532" y="237" key="run.anything.popup" timestamp="1607240232765">
+    <state x="532" y="237" key="run.anything.popup" timestamp="1608171458535">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607240232765" />
+    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608171458535" />
     <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1607685619494">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
