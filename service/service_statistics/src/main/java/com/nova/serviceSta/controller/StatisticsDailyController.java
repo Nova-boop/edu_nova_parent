@@ -4,10 +4,9 @@ package com.nova.serviceSta.controller;
 import com.nova.commonutils.Result;
 import com.nova.serviceSta.service.StatisticsDailyService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 /**
  * <p>
@@ -28,8 +27,16 @@ public class StatisticsDailyController {
     @PostMapping("createSta/{day}")
     public Result createSta(@PathVariable String day) {
         statisticsDailyService.createStatisticsByDay(day);
-
         return Result.ok();
+    }
+
+    // 获取统计图表数据
+    @GetMapping("showData/{type}/{start}/{end}")
+    public Result showData(@PathVariable String type,
+                           @PathVariable String start,
+                           @PathVariable String end) {
+        Map<String,Object> map = statisticsDailyService.getShowData(type, start, end);
+        return Result.ok().data(map);
     }
 
 
