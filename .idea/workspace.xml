@@ -23,16 +23,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e19f48f3-691e-419b-a509-9bef43edc454" name="Default Changelist" comment="用户登录 用户注册">
-      <change afterPath="$PROJECT_DIR$/service/service_statistics/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_otter_canal_client_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_otter_canal_common_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_otter_canal_protocol_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbutils_commons_dbutils_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_netty_netty_3_2_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canal_client/canal_client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canal_client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/canal_client/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_statistics/src/main/java/com/nova/serviceSta/controller/StatisticsDailyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_statistics/src/main/java/com/nova/serviceSta/controller/StatisticsDailyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_statistics/src/main/java/com/nova/serviceSta/service/StatisticsDailyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_statistics/src/main/java/com/nova/serviceSta/service/StatisticsDailyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_statistics/src/main/java/com/nova/serviceSta/service/impl/StatisticsDailyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_statistics/src/main/java/com/nova/serviceSta/service/impl/StatisticsDailyServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_statistics/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_statistics/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_statistics/target/classes/com/nova/serviceSta/controller/StatisticsDailyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_statistics/target/classes/com/nova/serviceSta/controller/StatisticsDailyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_statistics/target/classes/com/nova/serviceSta/schedule/scheduleTasks.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_statistics/target/classes/com/nova/serviceSta/schedule/scheduleTasks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_statistics/target/classes/com/nova/serviceSta/service/StatisticsDailyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_statistics/target/classes/com/nova/serviceSta/service/StatisticsDailyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_statistics/target/classes/com/nova/serviceSta/service/impl/StatisticsDailyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_statistics/target/classes/com/nova/serviceSta/service/impl/StatisticsDailyServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +279,7 @@
       <workItem from="1607415319839" duration="30561000" />
       <workItem from="1607910445506" duration="58076000" />
       <workItem from="1608213885460" duration="911000" />
-      <workItem from="1608257250997" duration="11707000" />
+      <workItem from="1608257250997" duration="13222000" />
     </task>
     <task id="LOCAL-00001" summary="cms properties">
       <created>1607222809582</created>
@@ -446,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608276767376</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="生成统计数据">
+      <created>1608279376995</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1608279376995</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,7 +505,8 @@
     <MESSAGE value="获取微信支付支付状态,并更新支付记录" />
     <MESSAGE value="订单" />
     <MESSAGE value="统计分析模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="统计分析模块" />
+    <MESSAGE value="生成统计数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="生成统计数据" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1192" y="503" key="#Custom_Plugin_Repositories" timestamp="1607336004774">
@@ -534,45 +552,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="220" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607415303545" />
-    <state width="1867" height="234" key="GridCell.Tab.0.bottom" timestamp="1608279126956">
+    <state width="1867" height="111" key="GridCell.Tab.0.bottom" timestamp="1608279999007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="234" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608279126956" />
+    <state width="1867" height="111" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608279999007" />
     <state width="1867" height="142" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="234" key="GridCell.Tab.0.center" timestamp="1608279126956">
+    <state width="1867" height="111" key="GridCell.Tab.0.center" timestamp="1608279999007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="234" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608279126956" />
+    <state width="1867" height="111" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608279999007" />
     <state width="1867" height="142" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="234" key="GridCell.Tab.0.left" timestamp="1608279126956">
+    <state width="1867" height="111" key="GridCell.Tab.0.left" timestamp="1608279999007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="234" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608279126956" />
+    <state width="1867" height="111" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608279999007" />
     <state width="1867" height="142" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135304" />
-    <state width="1867" height="234" key="GridCell.Tab.0.right" timestamp="1608279126956">
+    <state width="1867" height="111" key="GridCell.Tab.0.right" timestamp="1608279999007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="234" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608279126956" />
+    <state width="1867" height="111" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608279999007" />
     <state width="1867" height="142" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="234" key="GridCell.Tab.1.bottom" timestamp="1608279126957">
+    <state width="1867" height="111" key="GridCell.Tab.1.bottom" timestamp="1608279999007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="234" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608279126957" />
+    <state width="1867" height="111" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608279999007" />
     <state width="1867" height="142" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135306" />
-    <state width="1867" height="234" key="GridCell.Tab.1.center" timestamp="1608279126957">
+    <state width="1867" height="111" key="GridCell.Tab.1.center" timestamp="1608279999007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="234" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608279126957" />
+    <state width="1867" height="111" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608279999007" />
     <state width="1867" height="142" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="234" key="GridCell.Tab.1.left" timestamp="1608279126957">
+    <state width="1867" height="111" key="GridCell.Tab.1.left" timestamp="1608279999007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="234" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608279126957" />
+    <state width="1867" height="111" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608279999007" />
     <state width="1867" height="142" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="234" key="GridCell.Tab.1.right" timestamp="1608279126957">
+    <state width="1867" height="111" key="GridCell.Tab.1.right" timestamp="1608279999007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="234" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608279126957" />
+    <state width="1867" height="111" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608279999007" />
     <state width="1867" height="142" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135306" />
     <state x="188" y="91" key="MergeDialog" timestamp="1607682563794">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -589,19 +607,19 @@
     <state x="316" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608262546473" />
     <state x="81" y="0" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1607305957920" />
     <state x="463" y="0" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607222599485" />
-    <state x="174" y="236" key="Vcs.Push.Dialog.v2" timestamp="1608276836052">
+    <state x="174" y="236" key="Vcs.Push.Dialog.v2" timestamp="1608279993352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="174" y="236" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608276836052" />
+    <state x="174" y="236" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608279993352" />
     <state x="773" y="373" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1607223075643" />
     <state x="734" y="420" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607682540861">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="734" y="420" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607682540861" />
-    <state x="88" y="187" key="new project wizard" timestamp="1608258633673">
+    <state x="88" y="187" key="new project wizard" timestamp="1608282839196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="88" y="187" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1608258633673" />
+    <state x="88" y="187" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1608282839196" />
     <state x="707" y="233" key="refactoring.ChangeSignatureDialog" timestamp="1608080637864">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
