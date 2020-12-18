@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.baomidou:mybatis-plus-extension:3.0.5">
     <CLASSES>
-      <root url="jar://C:/Softwares/Maven/apache-maven-3.6.3/repos/com/baomidou/mybatis-plus-extension/3.0.5/mybatis-plus-extension-3.0.5.jar!/" />
+      <root url="jar://C:/Softwares/Java/Maven-repos/com/baomidou/mybatis-plus-extension/3.0.5/mybatis-plus-extension-3.0.5.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://C:/Softwares/Maven/apache-maven-3.6.3/repos/com/baomidou/mybatis-plus-extension/3.0.5/mybatis-plus-extension-3.0.5-javadoc.jar!/" />
+      <root url="jar://C:/Softwares/Java/Maven-repos/com/baomidou/mybatis-plus-extension/3.0.5/mybatis-plus-extension-3.0.5-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://C:/Softwares/Maven/apache-maven-3.6.3/repos/com/baomidou/mybatis-plus-extension/3.0.5/mybatis-plus-extension-3.0.5-sources.jar!/" />
+      <root url="jar://C:/Softwares/Java/Maven-repos/com/baomidou/mybatis-plus-extension/3.0.5/mybatis-plus-extension-3.0.5-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

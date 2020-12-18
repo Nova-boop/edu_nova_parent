@@ -59,5 +59,12 @@ public class UcenterMemberController {
         BeanUtils.copyProperties(member, memberVo);
         return memberVo;
     }
+
+    // 查看某一天的注册人数
+    @GetMapping("registerCount/{day}")
+    public Result registerCount(@PathVariable String day) {
+        Integer count = ucenterMemberService.registerCount(day);
+        return Result.ok().data("registerCount", count);
+    }
 }
 

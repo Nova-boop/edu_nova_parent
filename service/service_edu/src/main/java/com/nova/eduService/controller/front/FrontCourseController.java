@@ -26,14 +26,13 @@ public class FrontCourseController {
     // 注入service
     private final EduCourseService courseService;
     private final EduChapterService chapterService;
+    @Autowired
+    private CourseOrderClient courseOrderClient;
 
     public FrontCourseController(EduCourseService courseService, EduChapterService chapterService) {
         this.courseService = courseService;
         this.chapterService = chapterService;
     }
-
-    @Autowired
-    private CourseOrderClient courseOrderClient;
 
     //条件分页查询课程列表
     @PostMapping("getCourseFrontList/{current}/{limit}")

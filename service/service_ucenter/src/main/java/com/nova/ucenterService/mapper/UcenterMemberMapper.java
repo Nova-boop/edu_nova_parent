@@ -13,4 +13,6 @@ import com.nova.ucenterService.entity.UcenterMember;
  */
 public interface UcenterMemberMapper extends BaseMapper<UcenterMember> {
 
+    // 查看注册人数
+    Integer registerCount(String day);
 }

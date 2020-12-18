@@ -1,0 +1,134 @@
+2020-12-18 11:44:58.750 [main] INFO  com.nova.ucenterService.ServiceUcApplication - The following profiles are active: dev
+2020-12-18 11:44:59.810 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-18 11:44:59.813 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-18 11:44:59.843 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2020-12-18 11:45:00.198 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=921463e9-025c-33b9-a213-31dda0286ecf
+2020-12-18 11:45:00.368 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 11:45:00.428 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.nova.servicebase.RedisConfig$$EnhancerBySpringCGLIB$$d5dcbf37] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 11:45:00.482 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 11:45:00.826 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8150 (http)
+2020-12-18 11:45:00.840 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8150"]
+2020-12-18 11:45:00.841 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-18 11:45:00.842 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-12-18 11:45:01.022 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-18 11:45:01.022 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2240 ms
+2020-12-18 11:45:01.430 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-12-18 11:45:02.293 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-12-18 11:45:03.466 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-18 11:45:03.523 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 11:45:03.530 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 11:45:03.692 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 11:45:05.549 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-12-18 11:45:05.626 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2020-12-18 11:45:07.180 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-12-18 11:45:08.667 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-12-18 11:45:08.875 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-18 11:45:08.917 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-18 11:45:08.999 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-18 11:45:09.305 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8150"]
+2020-12-18 11:45:09.334 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8150 (http) with context path ''
+2020-12-18 11:45:09.387 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-ucenter 192.168.80.10:8150 register finished
+2020-12-18 11:45:10.869 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-12-18 11:45:10.871 [main] INFO  com.nova.ucenterService.ServiceUcApplication - Started ServiceUcApplication in 16.923 seconds (JVM running for 20.041)
+2020-12-18 11:47:01.530 [http-nio-0.0.0.0-8150-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-18 11:47:01.532 [http-nio-0.0.0.0-8150-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-18 11:47:01.543 [http-nio-0.0.0.0-8150-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-12-18 12:00:34.608 [main] INFO  com.nova.ucenterService.ServiceUcApplication - The following profiles are active: dev
+2020-12-18 12:00:37.200 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-18 12:00:37.205 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-18 12:00:37.289 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35ms. Found 0 repository interfaces.
+2020-12-18 12:00:37.791 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=921463e9-025c-33b9-a213-31dda0286ecf
+2020-12-18 12:00:37.921 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 12:00:37.963 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.nova.servicebase.RedisConfig$$EnhancerBySpringCGLIB$$ad896604] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 12:00:38.007 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 12:00:38.295 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8150 (http)
+2020-12-18 12:00:38.306 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8150"]
+2020-12-18 12:00:38.307 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-18 12:00:38.307 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-12-18 12:00:38.474 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-18 12:00:38.474 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3803 ms
+2020-12-18 12:00:38.929 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-12-18 12:00:39.923 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-12-18 12:00:41.441 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-18 12:00:41.501 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 12:00:41.510 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 12:00:41.802 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 12:00:43.856 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-12-18 12:00:43.939 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2020-12-18 12:00:45.658 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-12-18 12:00:47.255 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-12-18 12:00:47.529 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-18 12:00:47.564 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-18 12:00:47.636 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-18 12:00:47.957 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8150"]
+2020-12-18 12:00:48.000 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8150 (http) with context path ''
+2020-12-18 12:00:48.017 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-ucenter 192.168.80.10:8150 register finished
+2020-12-18 12:00:49.537 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-12-18 12:00:49.539 [main] INFO  com.nova.ucenterService.ServiceUcApplication - Started ServiceUcApplication in 21.377 seconds (JVM running for 23.19)
+2020-12-18 12:01:02.529 [http-nio-0.0.0.0-8150-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-18 12:01:02.531 [http-nio-0.0.0.0-8150-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-18 12:01:02.542 [http-nio-0.0.0.0-8150-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-12-18 12:03:11.349 [main] INFO  com.nova.ucenterService.ServiceUcApplication - The following profiles are active: dev
+2020-12-18 12:03:13.347 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-18 12:03:13.351 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-18 12:03:13.398 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2020-12-18 12:03:14.009 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=921463e9-025c-33b9-a213-31dda0286ecf
+2020-12-18 12:03:14.199 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 12:03:14.273 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.nova.servicebase.RedisConfig$$EnhancerBySpringCGLIB$$5de6b942] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 12:03:14.348 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 12:03:14.868 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8150 (http)
+2020-12-18 12:03:14.889 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8150"]
+2020-12-18 12:03:14.890 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-18 12:03:14.891 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-12-18 12:03:15.341 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-18 12:03:15.341 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3943 ms
+2020-12-18 12:03:16.005 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-12-18 12:03:17.209 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-12-18 12:03:18.995 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-18 12:03:19.049 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 12:03:19.060 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 12:03:19.363 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 12:03:21.348 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-12-18 12:03:21.438 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2020-12-18 12:03:22.987 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-12-18 12:03:24.513 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-12-18 12:03:24.669 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-18 12:03:24.705 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-18 12:03:24.819 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-18 12:03:25.138 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8150"]
+2020-12-18 12:03:25.171 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8150 (http) with context path ''
+2020-12-18 12:03:25.187 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-ucenter 192.168.80.10:8150 register finished
+2020-12-18 12:03:26.783 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-12-18 12:03:26.786 [main] INFO  com.nova.ucenterService.ServiceUcApplication - Started ServiceUcApplication in 22.234 seconds (JVM running for 24.135)
+2020-12-18 14:46:25.000 [main] INFO  com.nova.ucenterService.ServiceUcApplication - The following profiles are active: dev
+2020-12-18 14:46:26.211 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-12-18 14:46:26.215 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-18 14:46:26.252 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2020-12-18 14:46:26.605 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=921463e9-025c-33b9-a213-31dda0286ecf
+2020-12-18 14:46:26.743 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 14:46:26.791 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.nova.servicebase.RedisConfig$$EnhancerBySpringCGLIB$$ee33faba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 14:46:26.846 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-18 14:46:27.568 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8150 (http)
+2020-12-18 14:46:27.624 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8150"]
+2020-12-18 14:46:27.626 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-18 14:46:27.627 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-12-18 14:46:28.048 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-18 14:46:28.051 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3015 ms
+2020-12-18 14:46:28.766 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-12-18 14:46:30.396 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-12-18 14:46:32.559 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-18 14:46:32.673 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 14:46:32.692 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-12-18 14:46:33.185 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-18 14:46:36.198 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-12-18 14:46:36.274 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2020-12-18 14:46:37.964 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-12-18 14:46:39.560 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-12-18 14:46:39.760 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-18 14:46:39.800 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-18 14:46:39.893 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-18 14:46:40.200 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8150"]
+2020-12-18 14:46:40.248 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8150 (http) with context path ''
+2020-12-18 14:46:40.283 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-ucenter 192.168.80.10:8150 register finished
+2020-12-18 14:46:41.940 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-12-18 14:46:41.944 [main] INFO  com.nova.ucenterService.ServiceUcApplication - Started ServiceUcApplication in 22.202 seconds (JVM running for 24.256)
