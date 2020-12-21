@@ -135,7 +135,6 @@ public class EduCourseController {
 
     // 根据课程ID 返回课程信息 订单
     @GetMapping("getCourseInfoOrder/{courseId}")
-    @ApiOperation(hidden = true)
     public CourseWebOrderVo getCourseInfoOrder(@PathVariable String courseId) {
         CourseWebVo courseWebVo = eduCourseService.selectCourseInfoById(courseId);
         CourseWebOrderVo courseWebOrderVo = new CourseWebOrderVo();

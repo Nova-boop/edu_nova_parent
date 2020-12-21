@@ -6,3 +6,13 @@
 2020-12-18 12:03:19.059 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
 2020-12-18 14:46:32.671 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
 2020-12-18 14:46:32.691 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-12-21 09:48:33.471 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'eduChapterMapper' and 'com.nova.eduService.mapper.EduChapterMapper' mapperInterface. Bean already defined with the same name!
+2020-12-21 09:48:33.475 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'eduCommentMapper' and 'com.nova.eduService.mapper.EduCommentMapper' mapperInterface. Bean already defined with the same name!
+2020-12-21 09:48:33.475 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'eduCourseDescriptionMapper' and 'com.nova.eduService.mapper.EduCourseDescriptionMapper' mapperInterface. Bean already defined with the same name!
+2020-12-21 09:48:33.476 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'eduCourseMapper' and 'com.nova.eduService.mapper.EduCourseMapper' mapperInterface. Bean already defined with the same name!
+2020-12-21 09:48:33.477 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'eduSubjectMapper' and 'com.nova.eduService.mapper.EduSubjectMapper' mapperInterface. Bean already defined with the same name!
+2020-12-21 09:48:33.480 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'eduTeacherMapper' and 'com.nova.eduService.mapper.EduTeacherMapper' mapperInterface. Bean already defined with the same name!
+2020-12-21 09:48:33.481 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'eduVideoMapper' and 'com.nova.eduService.mapper.EduVideoMapper' mapperInterface. Bean already defined with the same name!
+2020-12-21 09:48:33.481 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nova.eduService.mapper]' package. Please check your configuration.
+2020-12-21 09:48:38.963 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-12-21 09:48:38.969 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
