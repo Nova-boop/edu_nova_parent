@@ -1,13 +1,14 @@
 package com.nova.ServiceAcl.controller;
 
 
+import com.nova.ServiceAcl.entity.Permission;
 import com.nova.ServiceAcl.service.PermissionService;
 import com.nova.commonutils.Result;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
-import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
 
 /**
  * <p>
@@ -25,8 +26,22 @@ public class PermissionController {
     private PermissionService permissionService;
 
     // 查询所有权限列表
-    @GetMapping("indexAllPermission")
-    public Result indexAllPermission(){
+    @ApiOperation(value = "查询所有权限列表")
+    @GetMapping("getAllPermission")
+    public Result indexAllPermission() {
+        List<Permission> list = permissionService.getAllPermission();
+        return Result.ok().data("children", list);
+    }
+
+    // 递归删除菜单
+    @DeleteMapping("removePermission")
+    public Result removePermission() {
+        return Result.ok();
+    }
+
+    // 给角色分配权限
+    @PostMapping("rolePermission")
+    public Result rolePermission() {
         return Result.ok();
     }
 

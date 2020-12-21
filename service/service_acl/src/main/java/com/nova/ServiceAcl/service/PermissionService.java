@@ -3,6 +3,8 @@ package com.nova.ServiceAcl.service;
 import com.nova.ServiceAcl.entity.Permission;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  * 权限 服务类
@@ -13,4 +15,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface PermissionService extends IService<Permission> {
 
+    // 查询所有权限列表
+    List<Permission> getAllPermission();
 }
