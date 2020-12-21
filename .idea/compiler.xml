@@ -13,6 +13,7 @@
         <module name="service_cms" />
         <module name="service_oss" />
         <module name="service_statistics" />
+        <module name="service_acl" />
         <module name="service_vod" />
         <module name="service_base" />
         <module name="canal_client" />
@@ -29,6 +30,7 @@
       <module name="edu_nova_parent" target="1.8" />
       <module name="infrastructure" target="1.8" />
       <module name="service" target="1.8" />
+      <module name="service_acl" target="1.8" />
       <module name="service_base" target="1.8" />
       <module name="service_cms" target="1.8" />
       <module name="service_edu" target="1.8" />
@@ -46,6 +48,7 @@
       <module name="canal_client" options="-parameters" />
       <module name="common_utils" options="-parameters" />
       <module name="infrastructure" options="-parameters" />
+      <module name="service_acl" options="-parameters" />
       <module name="service_base" options="-parameters" />
       <module name="service_cms" options="-parameters" />
       <module name="service_edu" options="-parameters" />

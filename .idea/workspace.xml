@@ -23,45 +23,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e19f48f3-691e-419b-a509-9bef43edc454" name="Default Changelist" comment="用户登录 用户注册">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_atguigu_common_utils_0_0_1_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_43_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_addons_reactor_extra_3_3_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_0_9_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_reactor_netty_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_webflux_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_gateway_core_2_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_gateway_2_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webflux_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_synchronoss_cloud_nio_multipart_parser_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_synchronoss_cloud_nio_stream_storage_1_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/api_gateway/api_gateway.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/api_gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/api_gateway/src/main/java/com/nova/gateway/ApiGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/api_gateway/src/main/java/com/nova/gateway/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/api_gateway/src/main/java/com/nova/gateway/filter/AuthGlobalFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/api_gateway/src/main/java/com/nova/gateway/handler/ErrorHandlerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/api_gateway/src/main/java/com/nova/gateway/handler/JsonExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/api_gateway/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/infrastructure.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/service_acl.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/ServiceAclApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_acl/src/test/java/AclGenerate/CodeGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_12_11_18_29_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_12_11_18_29__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/eduNova/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/eduNova/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/eduNova/log_warn.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/eduNova/log_warn.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/EduCourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/controller/EduCourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/target/classes/com/nova/eduService/controller/front/FrontCourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/target/classes/com/nova/eduService/controller/front/FrontCourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/api_gateway/src/main/java/com/nova/gateway/filter/AuthGlobalFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/api_gateway/src/main/java/com/nova/gateway/filter/AuthGlobalFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/eduNova/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/eduNova/log_error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/nova/eduService/config/CorsConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,11 +103,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="AclGenerate" />
       <recent name="staDemo" />
       <recent name="com.nova.commonutils.courseVo" />
       <recent name="com.nova.orderTest" />
       <recent name="com.nova.commonutils.vo" />
-      <recent name="demo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\02-JavaPrjs\edu_nova_parent\infrastructure\api_gateway\src\main\java\com\nova\gateway" />
@@ -143,7 +117,7 @@
       <recent name="D:\02_Projects\Java_Projects\edu_nova_parent\service\service_order\src\main\java\com\nova\eduOrder\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
+  <component name="RunManager" selected="JUnit.CodeGenerator.run">
     <configuration name="DateUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nova.serviceSta.utils.DateUtil" />
       <module name="service_statistics" />
@@ -166,6 +140,22 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeGenerator.run" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service_acl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AclGenerate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AclGenerate" />
+      <option name="MAIN_CLASS_NAME" value="AclGenerate.CodeGenerator" />
+      <option name="METHOD_NAME" value="run" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -231,19 +221,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceUcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="service_ucenter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nova.ucenterService.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nova.ucenterService.ServiceUcApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="service_statistics" />
       <extension name="coverage">
@@ -272,18 +249,18 @@
       <item itemvalue="Spring Boot.OrderApplication" />
       <item itemvalue="Spring Boot.EduApplication" />
       <item itemvalue="Spring Boot.StaApplication" />
-      <item itemvalue="Spring Boot.ServiceUcApplication" />
       <item itemvalue="Application.DateUtil" />
       <item itemvalue="Spring Boot.CanalApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
+      <item itemvalue="JUnit.CodeGenerator.run" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CodeGenerator.run" />
         <item itemvalue="Spring Boot.ApiGatewayApplication" />
         <item itemvalue="Spring Boot.EduApplication" />
         <item itemvalue="Spring Boot.StaApplication" />
         <item itemvalue="Application.DateUtil" />
-        <item itemvalue="Spring Boot.ServiceUcApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -303,7 +280,7 @@
       <workItem from="1607415319839" duration="30561000" />
       <workItem from="1607910445506" duration="58076000" />
       <workItem from="1608213885460" duration="911000" />
-      <workItem from="1608257250997" duration="19578000" />
+      <workItem from="1608257250997" duration="21011000" />
     </task>
     <task id="LOCAL-00001" summary="cms properties">
       <created>1607222809582</created>
@@ -501,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608285936688</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="gateway 网关">
+      <created>1608516330819</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1608516330819</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,7 +504,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cms properties" />
     <MESSAGE value="update 熔断器" />
     <MESSAGE value="Banner 管理" />
     <MESSAGE value="首页数据管理" />
@@ -545,7 +528,8 @@
     <MESSAGE value="统计分析模块" />
     <MESSAGE value="生成统计数据" />
     <MESSAGE value="数据库同步" />
-    <option name="LAST_COMMIT_MESSAGE" value="数据库同步" />
+    <MESSAGE value="gateway 网关" />
+    <option name="LAST_COMMIT_MESSAGE" value="gateway 网关" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1192" y="503" key="#Custom_Plugin_Repositories" timestamp="1607336004774">
@@ -556,10 +540,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="582" y="186" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1607327668936" />
-    <state x="312" y="0" key="#Project_Structure" timestamp="1608513467394">
+    <state x="312" y="0" key="#Project_Structure" timestamp="1608518443012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="312" y="0" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1608513467394" />
+    <state x="312" y="0" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1608518443012" />
     <state x="410" y="170" width="1128" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608088646610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -591,45 +575,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="220" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607415303545" />
-    <state width="1867" height="386" key="GridCell.Tab.0.bottom" timestamp="1608515760259">
+    <state width="1867" height="36" key="GridCell.Tab.0.bottom" timestamp="1608518368184">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="386" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608515760259" />
+    <state width="1867" height="36" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608518368184" />
     <state width="1867" height="142" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="386" key="GridCell.Tab.0.center" timestamp="1608515760258">
+    <state width="1867" height="36" key="GridCell.Tab.0.center" timestamp="1608518368183">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="386" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608515760258" />
+    <state width="1867" height="36" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608518368183" />
     <state width="1867" height="142" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="386" key="GridCell.Tab.0.left" timestamp="1608515760258">
+    <state width="1867" height="36" key="GridCell.Tab.0.left" timestamp="1608518368183">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="386" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608515760258" />
+    <state width="1867" height="36" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608518368183" />
     <state width="1867" height="142" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135304" />
-    <state width="1867" height="386" key="GridCell.Tab.0.right" timestamp="1608515760258">
+    <state width="1867" height="36" key="GridCell.Tab.0.right" timestamp="1608518368183">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="386" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608515760258" />
+    <state width="1867" height="36" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608518368183" />
     <state width="1867" height="142" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="386" key="GridCell.Tab.1.bottom" timestamp="1608515760259">
+    <state width="1867" height="36" key="GridCell.Tab.1.bottom" timestamp="1608518368185">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="386" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608515760259" />
+    <state width="1867" height="36" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608518368185" />
     <state width="1867" height="142" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135306" />
-    <state width="1867" height="386" key="GridCell.Tab.1.center" timestamp="1608515760259">
+    <state width="1867" height="36" key="GridCell.Tab.1.center" timestamp="1608518368184">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="386" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608515760259" />
+    <state width="1867" height="36" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608518368184" />
     <state width="1867" height="142" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="386" key="GridCell.Tab.1.left" timestamp="1608515760259">
+    <state width="1867" height="36" key="GridCell.Tab.1.left" timestamp="1608518368184">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="386" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608515760259" />
+    <state width="1867" height="36" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608518368184" />
     <state width="1867" height="142" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="386" key="GridCell.Tab.1.right" timestamp="1608515760259">
+    <state width="1867" height="36" key="GridCell.Tab.1.right" timestamp="1608518368184">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="386" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608515760259" />
+    <state width="1867" height="36" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608518368184" />
     <state width="1867" height="142" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135306" />
     <state x="188" y="91" key="MergeDialog" timestamp="1607682563794">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -646,19 +630,19 @@
     <state x="316" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608262546473" />
     <state x="81" y="0" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1607305957920" />
     <state x="463" y="0" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607222599485" />
-    <state x="174" y="236" key="Vcs.Push.Dialog.v2" timestamp="1608285938443">
+    <state x="174" y="236" key="Vcs.Push.Dialog.v2" timestamp="1608516336227">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="174" y="236" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608285938443" />
+    <state x="174" y="236" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608516336227" />
     <state x="773" y="373" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1607223075643" />
     <state x="734" y="420" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607682540861">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="734" y="420" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607682540861" />
-    <state x="316" y="221" key="new project wizard" timestamp="1608513444331">
+    <state x="316" y="221" key="new project wizard" timestamp="1608518357107">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="316" y="221" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1608513444331" />
+    <state x="316" y="221" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1608518357107" />
     <state x="707" y="233" key="refactoring.ChangeSignatureDialog" timestamp="1608080637864">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
