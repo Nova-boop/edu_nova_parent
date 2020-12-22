@@ -25,9 +25,11 @@
     <list default="true" id="e19f48f3-691e-419b-a509-9bef43edc454" name="Default Changelist" comment="用户登录 用户注册">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/controller/PermissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/controller/PermissionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/entity/RolePermission.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/entity/RolePermission.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/service/PermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/service/PermissionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/service/impl/PermissionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/service/impl/PermissionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/controller/PermissionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/controller/PermissionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/entity/RolePermission.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/entity/RolePermission.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/service/PermissionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/service/PermissionService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/service/impl/PermissionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/service/impl/PermissionServiceImpl.class" afterDir="false" />
     </list>
@@ -282,7 +284,7 @@
       <workItem from="1607415319839" duration="30561000" />
       <workItem from="1607910445506" duration="58076000" />
       <workItem from="1608213885460" duration="911000" />
-      <workItem from="1608257250997" duration="36013000" />
+      <workItem from="1608257250997" duration="37071000" />
     </task>
     <task id="LOCAL-00001" summary="cms properties">
       <created>1607222809582</created>
@@ -515,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608546103584</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="删除权限">
+      <created>1608602122996</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1608602122996</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +543,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Banner 管理" />
     <MESSAGE value="首页数据管理" />
     <MESSAGE value="实现redis 缓存" />
     <MESSAGE value="jwt utils 工具类" />
@@ -559,7 +567,8 @@
     <MESSAGE value="数据库同步" />
     <MESSAGE value="gateway 网关" />
     <MESSAGE value="acl 权限控制" />
-    <option name="LAST_COMMIT_MESSAGE" value="acl 权限控制" />
+    <MESSAGE value="删除权限" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除权限" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1192" y="503" key="#Custom_Plugin_Repositories" timestamp="1607336004774">
@@ -584,10 +593,10 @@
     <state x="354" y="203" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607911653866" />
     <state x="354" y="205" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1607305976302" />
     <state x="934" y="495" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1607222624913" />
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1608600831167">
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1608602287164">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608600831167" />
+    <state x="718" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608602287164" />
     <state x="957" y="218" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1607686300860" />
     <state x="422" y="437" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1608275367586">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -605,45 +614,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="220" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607415303545" />
-    <state width="1867" height="219" key="GridCell.Tab.0.bottom" timestamp="1608601923255">
+    <state width="1867" height="348" key="GridCell.Tab.0.bottom" timestamp="1608603064752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="219" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608601923255" />
+    <state width="1867" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608603064752" />
     <state width="1867" height="142" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="219" key="GridCell.Tab.0.center" timestamp="1608601923254">
+    <state width="1867" height="348" key="GridCell.Tab.0.center" timestamp="1608603064752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="219" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608601923254" />
+    <state width="1867" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608603064752" />
     <state width="1867" height="142" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="219" key="GridCell.Tab.0.left" timestamp="1608601923254">
+    <state width="1867" height="348" key="GridCell.Tab.0.left" timestamp="1608603064752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="219" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608601923254" />
+    <state width="1867" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608603064752" />
     <state width="1867" height="142" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135304" />
-    <state width="1867" height="219" key="GridCell.Tab.0.right" timestamp="1608601923255">
+    <state width="1867" height="348" key="GridCell.Tab.0.right" timestamp="1608603064752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="219" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608601923255" />
+    <state width="1867" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608603064752" />
     <state width="1867" height="142" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="219" key="GridCell.Tab.1.bottom" timestamp="1608601923255">
+    <state width="1867" height="348" key="GridCell.Tab.1.bottom" timestamp="1608603064753">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="219" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608601923255" />
+    <state width="1867" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608603064753" />
     <state width="1867" height="142" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135306" />
-    <state width="1867" height="219" key="GridCell.Tab.1.center" timestamp="1608601923255">
+    <state width="1867" height="348" key="GridCell.Tab.1.center" timestamp="1608603064752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="219" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608601923255" />
+    <state width="1867" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608603064752" />
     <state width="1867" height="142" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="219" key="GridCell.Tab.1.left" timestamp="1608601923255">
+    <state width="1867" height="348" key="GridCell.Tab.1.left" timestamp="1608603064752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="219" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608601923255" />
+    <state width="1867" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608603064752" />
     <state width="1867" height="142" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="219" key="GridCell.Tab.1.right" timestamp="1608601923255">
+    <state width="1867" height="348" key="GridCell.Tab.1.right" timestamp="1608603064753">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="219" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608601923255" />
+    <state width="1867" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608603064753" />
     <state width="1867" height="142" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135306" />
     <state x="188" y="91" key="MergeDialog" timestamp="1607682563794">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -660,10 +669,10 @@
     <state x="316" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608262546473" />
     <state x="81" y="0" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1607305957920" />
     <state x="463" y="0" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1607222599485" />
-    <state x="174" y="236" key="Vcs.Push.Dialog.v2" timestamp="1608546111822">
+    <state x="174" y="236" key="Vcs.Push.Dialog.v2" timestamp="1608602127942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="174" y="236" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608546111822" />
+    <state x="174" y="236" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608602127942" />
     <state x="773" y="373" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1607223075643" />
     <state x="734" y="420" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607682540861">
       <screen x="0" y="0" width="1920" height="1040" />

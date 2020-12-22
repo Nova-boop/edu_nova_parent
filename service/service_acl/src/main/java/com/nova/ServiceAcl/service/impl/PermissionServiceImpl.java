@@ -3,8 +3,11 @@ package com.nova.ServiceAcl.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.nova.ServiceAcl.entity.Permission;
+import com.nova.ServiceAcl.entity.RolePermission;
 import com.nova.ServiceAcl.mapper.PermissionMapper;
 import com.nova.ServiceAcl.service.PermissionService;
+import com.nova.ServiceAcl.service.RolePermissionService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -20,6 +23,8 @@ import java.util.List;
  */
 @Service
 public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permission> implements PermissionService {
+    @Autowired
+    private RolePermissionService rolePermissionService;
 
     // 使用递归封装数据的方法 - 根据顶层菜单,查询子菜单,并封装数据
     private static Permission selectChildren(Permission permissionNode, List<Permission> permissionList) {
@@ -83,6 +88,20 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
         idList.add(permissionId);
         // 删除
         baseMapper.deleteBatchIds(idList);
+    }
+
+    // 给角色分配权限
+    @Override
+    public void saveRolePermissionRelationship(String roleId, String[] permissionIds) {
+        List<RolePermission> permissionList = new ArrayList<>();
+
+        for (String permissionId : permissionIds) {
+            RolePermission rolePermission = new RolePermission();
+            rolePermission.setRoleId(roleId);
+            rolePermission.setPermissionId(permissionId);
+            permissionList.add(rolePermission);
+        }
+        rolePermissionService.saveBatch(permissionList);
     }
 
     // 根据id ,查询子菜单的id,封装到集合中

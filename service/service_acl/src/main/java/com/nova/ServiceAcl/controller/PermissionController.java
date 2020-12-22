@@ -43,8 +43,9 @@ public class PermissionController {
 
     // 给角色分配权限
     @ApiOperation(value = "给角色分配权限")
-    @PostMapping("rolePermission")
-    public Result rolePermission() {
+    @PostMapping("doAssign")
+    public Result rolePermission(String roleId, String[] permissionId) {
+        permissionService.saveRolePermissionRelationship(roleId,permissionId);
         return Result.ok();
     }
 

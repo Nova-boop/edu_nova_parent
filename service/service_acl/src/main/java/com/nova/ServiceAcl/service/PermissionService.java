@@ -20,4 +20,6 @@ public interface PermissionService extends IService<Permission> {
 
     // 递归删除菜单
     void removeChildBv(String permissionId);
+    // 给角色分配权限
+    void saveRolePermissionRelationship(String roleId, String[] permissionId);
 }
