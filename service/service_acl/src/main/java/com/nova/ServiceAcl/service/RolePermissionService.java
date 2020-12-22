@@ -1,7 +1,7 @@
 package com.nova.ServiceAcl.service;
 
-import com.nova.ServiceAcl.entity.RolePermission;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.nova.ServiceAcl.entity.RolePermission;
 
 /**
  * <p>

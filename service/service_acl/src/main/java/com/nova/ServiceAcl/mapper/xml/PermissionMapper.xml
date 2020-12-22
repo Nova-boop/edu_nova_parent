@@ -23,7 +23,7 @@
 
     <select id="selectPermissionByUserId" resultMap="permissionMap">
         select
-        <include refid="columns" />
+        <include refid="columns"/>
         from acl_user_role ur
         inner join acl_role_permission rp on rp.role_id = ur.role_id
         inner join acl_permission p on p.id = rp.permission_id

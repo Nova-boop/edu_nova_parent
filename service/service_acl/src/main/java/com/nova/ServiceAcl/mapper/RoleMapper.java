@@ -1,11 +1,11 @@
 package com.nova.ServiceAcl.mapper;
 
-import com.nova.ServiceAcl.entity.Role;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.nova.ServiceAcl.entity.Role;
 
 /**
  * <p>
- *  Mapper 接口
+ * Mapper 接口
  * </p>
  *
  * @author nova

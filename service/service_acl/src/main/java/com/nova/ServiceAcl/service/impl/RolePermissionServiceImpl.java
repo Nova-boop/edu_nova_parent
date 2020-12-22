@@ -1,9 +1,9 @@
 package com.nova.ServiceAcl.service.impl;
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.nova.ServiceAcl.entity.RolePermission;
 import com.nova.ServiceAcl.mapper.RolePermissionMapper;
 import com.nova.ServiceAcl.service.RolePermissionService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**

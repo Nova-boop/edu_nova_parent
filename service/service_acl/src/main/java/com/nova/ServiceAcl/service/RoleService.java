@@ -1,11 +1,11 @@
 package com.nova.ServiceAcl.service;
 
-import com.nova.ServiceAcl.entity.Role;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.nova.ServiceAcl.entity.Role;
 
 /**
  * <p>
- *  服务类
+ * 服务类
  * </p>
  *
  * @author nova

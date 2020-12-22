@@ -1,7 +1,7 @@
 package com.nova.ServiceAcl.mapper;
 
-import com.nova.ServiceAcl.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.nova.ServiceAcl.entity.User;
 
 /**
  * <p>

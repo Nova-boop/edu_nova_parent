@@ -30,21 +30,6 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
     @Autowired
     private UserService userService;
 
-
-    // 查询所有权限列表
-    @Override
-    public List<Permission> getAllPermission() {
-
-        // 查询所有权限
-        QueryWrapper<Permission> wrapper = new QueryWrapper<>();
-        wrapper.orderByDesc("id");
-        List<Permission> permissionList = baseMapper.selectList(wrapper);
-
-        // 封装数据
-        List<Permission> resultList = buildList(permissionList);
-        return resultList;
-    }
-
     // 使用递归封装数据的方法 - 根据顶层菜单,查询子菜单,并封装数据
     private static Permission selectChildren(Permission permissionNode, List<Permission> permissionList) {
 
@@ -62,6 +47,20 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
             }
         }
         return permissionNode;
+    }
+
+    // 查询所有权限列表
+    @Override
+    public List<Permission> getAllPermission() {
+
+        // 查询所有权限
+        QueryWrapper<Permission> wrapper = new QueryWrapper<>();
+        wrapper.orderByDesc("id");
+        List<Permission> permissionList = baseMapper.selectList(wrapper);
+
+        // 封装数据
+        List<Permission> resultList = buildList(permissionList);
+        return resultList;
     }
 
     // 使用递归封装数据的方法- 获取递归入口
@@ -137,7 +136,7 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
         }
         return selectPermissionValueList;
     }
-    
+
 
     /**
      * 判断用户是否系统管理员

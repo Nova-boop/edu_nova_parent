@@ -35,7 +35,7 @@ public class StatisticsDailyController {
     public Result showData(@PathVariable String type,
                            @PathVariable String start,
                            @PathVariable String end) {
-        Map<String,Object> map = statisticsDailyService.getShowData(type, start, end);
+        Map<String, Object> map = statisticsDailyService.getShowData(type, start, end);
         return Result.ok().data(map);
     }
 

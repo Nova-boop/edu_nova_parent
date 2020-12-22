@@ -1,7 +1,7 @@
 package com.nova.ServiceAcl.mapper;
 
-import com.nova.ServiceAcl.entity.Permission;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.nova.ServiceAcl.entity.Permission;
 
 import java.util.List;
 

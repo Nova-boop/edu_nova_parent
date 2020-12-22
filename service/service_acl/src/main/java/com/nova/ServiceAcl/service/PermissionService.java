@@ -1,7 +1,7 @@
 package com.nova.ServiceAcl.service;
 
-import com.nova.ServiceAcl.entity.Permission;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.nova.ServiceAcl.entity.Permission;
 
 import java.util.List;
 
@@ -20,6 +20,7 @@ public interface PermissionService extends IService<Permission> {
 
     // 递归删除菜单
     void removeChildBv(String permissionId);
+
     // 给角色分配权限
     void saveRolePermissionRelationship(String roleId, String[] permissionId);
 
