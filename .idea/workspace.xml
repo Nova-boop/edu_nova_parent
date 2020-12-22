@@ -23,21 +23,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e19f48f3-691e-419b-a509-9bef43edc454" name="Default Changelist" comment="用户登录 用户注册">
-      <change afterPath="$PROJECT_DIR$/common/spring_security/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_atguigu_common_utils_0_0_1_SNAPSHOT.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_alibaba_nacos_config_0_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_alibaba_nacos_config_0_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/resources/bootstrap.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/spring_security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring_security/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/spring_security/src/main/java/com/nova/Security/security/DefaultPasswordEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring_security/src/main/java/com/nova/Security/security/DefaultPasswordEncoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/api_gateway/api_gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/api_gateway/api_gateway.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/api_gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/api_gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_acl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_acl/service_acl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/service_acl.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/mapper/PermissionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/mapper/PermissionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/service/PermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/service/PermissionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/service/impl/PermissionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/service/impl/PermissionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/spring_security/src/main/java/com/nova/Security/config/TokenWebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring_security/src/main/java/com/nova/Security/config/TokenWebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/mapper/xml/PermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/src/main/java/com/nova/ServiceAcl/mapper/xml/PermissionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_acl/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_acl/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/mapper/PermissionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/mapper/PermissionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/mapper/xml/PermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/mapper/xml/PermissionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/service/PermissionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/service/PermissionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/service/impl/PermissionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/service/impl/PermissionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_acl/target/classes/com/nova/ServiceAcl/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/service_edu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/service_edu.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/target/classes/com/nova/eduService/config/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/target/classes/com/nova/eduService/config/CorsConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +123,7 @@
       <recent name="D:\02-JavaPrjs\edu_nova_parent\service\service_statistics\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceAclApplication">
+  <component name="RunManager" selected="Spring Boot.EduApplication">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -266,10 +270,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ServiceAclApplication" />
-        <item itemvalue="JUnit.CodeGenerator.run" />
-        <item itemvalue="Spring Boot.ApiGatewayApplication" />
         <item itemvalue="Spring Boot.EduApplication" />
+        <item itemvalue="Spring Boot.ServiceAclApplication" />
+        <item itemvalue="Spring Boot.ApiGatewayApplication" />
+        <item itemvalue="JUnit.CodeGenerator.run" />
         <item itemvalue="Spring Boot.StaApplication" />
       </list>
     </recent_temporary>
@@ -290,7 +294,7 @@
       <workItem from="1607415319839" duration="30561000" />
       <workItem from="1607910445506" duration="58076000" />
       <workItem from="1608213885460" duration="911000" />
-      <workItem from="1608257250997" duration="41257000" />
+      <workItem from="1608257250997" duration="47617000" />
     </task>
     <task id="LOCAL-00001" summary="cms properties">
       <created>1607222809582</created>
@@ -537,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608603647241</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="spring security">
+      <created>1608607405630</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1608607405630</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,7 +567,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="实现redis 缓存" />
     <MESSAGE value="jwt utils 工具类" />
     <MESSAGE value="阿里云短信发送服务" />
     <MESSAGE value="用户登录 注册" />
@@ -581,7 +591,8 @@
     <MESSAGE value="acl 权限控制" />
     <MESSAGE value="删除权限" />
     <MESSAGE value="给角色分配权限" />
-    <option name="LAST_COMMIT_MESSAGE" value="给角色分配权限" />
+    <MESSAGE value="spring security" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring security" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1192" y="503" key="#Custom_Plugin_Repositories" timestamp="1607336004774">
@@ -627,46 +638,62 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="220" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607415303545" />
-    <state width="1867" height="45" key="GridCell.Tab.0.bottom" timestamp="1608604843487">
+    <state width="1867" height="510" key="GridCell.Tab.0.bottom" timestamp="1608626256819">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="45" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608604843487" />
+    <state width="1867" height="510" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608626256819" />
     <state width="1867" height="142" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="45" key="GridCell.Tab.0.center" timestamp="1608604843487">
+    <state width="1867" height="510" key="GridCell.Tab.0.center" timestamp="1608626256818">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="45" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608604843487" />
+    <state width="1867" height="510" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608626256818" />
     <state width="1867" height="142" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="45" key="GridCell.Tab.0.left" timestamp="1608604843487">
+    <state width="1867" height="510" key="GridCell.Tab.0.left" timestamp="1608626256818">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="45" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608604843487" />
+    <state width="1867" height="510" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608626256818" />
     <state width="1867" height="142" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135304" />
-    <state width="1867" height="45" key="GridCell.Tab.0.right" timestamp="1608604843487">
+    <state width="1867" height="510" key="GridCell.Tab.0.right" timestamp="1608626256818">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="45" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608604843487" />
+    <state width="1867" height="510" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608626256818" />
     <state width="1867" height="142" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="45" key="GridCell.Tab.1.bottom" timestamp="1608604843489">
+    <state width="1867" height="510" key="GridCell.Tab.1.bottom" timestamp="1608626256819">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="45" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608604843489" />
+    <state width="1867" height="510" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608626256819" />
     <state width="1867" height="142" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135306" />
-    <state width="1867" height="45" key="GridCell.Tab.1.center" timestamp="1608604843488">
+    <state width="1867" height="510" key="GridCell.Tab.1.center" timestamp="1608626256819">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="45" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608604843488" />
+    <state width="1867" height="510" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608626256819" />
     <state width="1867" height="142" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="45" key="GridCell.Tab.1.left" timestamp="1608604843488">
+    <state width="1867" height="510" key="GridCell.Tab.1.left" timestamp="1608626256819">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="45" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608604843488" />
+    <state width="1867" height="510" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608626256819" />
     <state width="1867" height="142" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135305" />
-    <state width="1867" height="45" key="GridCell.Tab.1.right" timestamp="1608604843488">
+    <state width="1867" height="510" key="GridCell.Tab.1.right" timestamp="1608626256819">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="45" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608604843488" />
+    <state width="1867" height="510" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608626256819" />
     <state width="1867" height="142" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1607687135306" />
+    <state width="1867" height="138" key="GridCell.Tab.2.bottom" timestamp="1608621127964">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="138" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608621127964" />
+    <state width="1867" height="138" key="GridCell.Tab.2.center" timestamp="1608621127964">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="138" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608621127964" />
+    <state width="1867" height="138" key="GridCell.Tab.2.left" timestamp="1608621127964">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="138" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608621127964" />
+    <state width="1867" height="138" key="GridCell.Tab.2.right" timestamp="1608621127964">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="138" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608621127964" />
     <state x="188" y="91" key="MergeDialog" timestamp="1607682563794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
