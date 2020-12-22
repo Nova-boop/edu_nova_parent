@@ -34,12 +34,15 @@ public class PermissionController {
     }
 
     // 递归删除菜单
-    @DeleteMapping("removePermission")
-    public Result removePermission() {
+    @ApiOperation(value = "删除权限及子权限")
+    @DeleteMapping("removePermission/{permissionId}")
+    public Result removePermission(@PathVariable String permissionId) {
+        permissionService.removeChildBv(permissionId);
         return Result.ok();
     }
 
     // 给角色分配权限
+    @ApiOperation(value = "给角色分配权限")
     @PostMapping("rolePermission")
     public Result rolePermission() {
         return Result.ok();

@@ -17,4 +17,7 @@ public interface PermissionService extends IService<Permission> {
 
     // 查询所有权限列表
     List<Permission> getAllPermission();
+
+    // 递归删除菜单
+    void removeChildBv(String permissionId);
 }

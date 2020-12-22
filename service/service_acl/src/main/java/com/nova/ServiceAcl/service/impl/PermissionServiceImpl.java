@@ -21,22 +21,6 @@ import java.util.List;
 @Service
 public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permission> implements PermissionService {
 
-    // 使用递归封装数据的方法- 获取递归入口
-    public static List<Permission> buildList(List<Permission> permissionList) {
-        // 创建list 集合 封装最终的数据
-        List<Permission> finalNode = new ArrayList<>();
-
-        // 遍历 permissionList 得到pid 为0 设置 level 为1
-        for (Permission permissionNode : permissionList) {
-            if (permissionNode.getPid().equals("0")) {
-                permissionNode.setLevel(1);
-                // 根据顶层菜单,查询子菜单,并封装数据
-                finalNode.add(selectChildren(permissionNode, permissionList));
-            }
-        }
-        return finalNode;
-    }
-
     // 使用递归封装数据的方法 - 根据顶层菜单,查询子菜单,并封装数据
     private static Permission selectChildren(Permission permissionNode, List<Permission> permissionList) {
 
@@ -56,6 +40,22 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
         return permissionNode;
     }
 
+    // 使用递归封装数据的方法- 获取递归入口
+    private List<Permission> buildList(List<Permission> permissionList) {
+        // 创建list 集合 封装最终的数据
+        List<Permission> finalNode = new ArrayList<>();
+
+        // 遍历 permissionList 得到pid 为0 设置 level 为1
+        for (Permission permissionNode : permissionList) {
+            if (permissionNode.getPid().equals("0")) {
+                permissionNode.setLevel(1);
+                // 根据顶层菜单,查询子菜单,并封装数据
+                finalNode.add(selectChildren(permissionNode, permissionList));
+            }
+        }
+        return finalNode;
+    }
+
     // 查询所有权限列表
     @Override
     public List<Permission> getAllPermission() {
@@ -70,5 +70,34 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
         return resultList;
     }
 
+    // 递归删除菜单
+    @Override
+    public void removeChildBv(String permissionId) {
 
+        // 创建lIST 集合 用于存储删除记录的id
+        List<String> idList = new ArrayList<>();
+
+        // 向集合中设置删除的记录的id
+        this.selectPermissionChildById(permissionId, idList);
+        // 封装本机菜单的id
+        idList.add(permissionId);
+        // 删除
+        baseMapper.deleteBatchIds(idList);
+    }
+
+    // 根据id ,查询子菜单的id,封装到集合中
+    private void selectPermissionChildById(String id, List<String> idList) {
+        QueryWrapper<Permission> wrapper = new QueryWrapper<>();
+        wrapper.eq("pid", id);
+        wrapper.select("id");
+        List<Permission> childIdList = baseMapper.selectList(wrapper);
+
+        // 获取childIdList中的子菜单的id值,封装到idList中
+        childIdList.forEach(item -> {
+            // 添加当前的子菜单的id到list集合中
+            idList.add(item.getId());
+            // 递归调用
+            this.selectPermissionChildById(item.getId(), idList);
+        });
+    }
 }
