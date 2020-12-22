@@ -1,6 +1,7 @@
 package com.nova.Security.security;
 
-import com.atguigu.commonutils.MD5;
+
+import com.nova.commonutils.MD5;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 

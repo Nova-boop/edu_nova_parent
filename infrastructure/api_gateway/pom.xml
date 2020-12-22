@@ -12,7 +12,7 @@
     <artifactId>api_gateway</artifactId>
     <dependencies>
         <dependency>
-            <groupId>com.atguigu</groupId>
+            <groupId>com.nova</groupId>
             <artifactId>common_utils</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
